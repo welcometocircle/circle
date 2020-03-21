@@ -9,6 +9,8 @@
     "axios": "^0.19.2",
     "babel-cli": "^6.26.0",
     "body-parser": "^1.19.0",
+    "eslint-config-react-app": "^5.2.1",
+    "eslint-plugin-react-hooks": "^2.5.1",
     "express": "^4.17.1",
     "mongoose": "^5.9.5",
     "nodemon": "^2.0.2",
@@ -21,7 +23,7 @@
   },
   "scripts": {
     "webpack": "webpack",
-    "start": "npm run webpack && nodemon --hot --exec babel-node -- bin/www"
+    "start": "npm run webpack && nodemon --exec babel-node -- bin/www"
   },
   "eslintConfig": {
     "extends": "react-app"
