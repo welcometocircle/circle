@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "circle-innovation"
+    "default": "circle-innovation",
+    "staging": "circle-innovation"
   }
 }
