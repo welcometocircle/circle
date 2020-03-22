@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+.outerLogo{
+  position: absolute;
+  width: 1021px;
+  height: 1027px;
+  left: 213px;
+  top: 186px;
+}
+
+.logoTop {
+  position: absolute;
+  width: 1021px;
+  height: 1027px;
+  left: 213px;
+  top: 186px;
+}
+
+.gradientBack {
+ 
+  position: absolute;
+  width: 1021px;
+  height: 1027px;
+  left: 213px;
+  top: 186px;
+  border-radius: 50%;
+  background-color: #f60;
+  -webkit-filter: blur(100px) saturate(400%);
+  -moz-filter: blur(100px) saturate(400%);
+  -o-filter: blur(100px) saturate(400%);
+  -ms-filter: blur(100px) saturate(400%);
+  filter:blur(100px) saturate(400%);
+}
