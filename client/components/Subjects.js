@@ -11,24 +11,24 @@ class Subjects extends Component {
                 </div>
                 <div className="subject-region">
                     <div className="row justify-content-center">
-                        <div className="col-lg-1 col-xs-3"></div>
-                        <div className="col-lg-10 col-xs-6">
+                        <div className="col-lg-1 col-1"></div>
+                        <div className="col-lg-10 col-10">
                             <div className="row">
-                                <div className="col-lg-3">
+                                <div className="col-lg-3 col-6">
                                     <SubjectArea img="../assets/science.png" title="Science" />
                                 </div>
-                                <div className="col-lg-3">
+                                <div className="col-lg-3 col-6">
                                     <SubjectArea img="../assets/tech.png" title="Tech" />
                                 </div>
-                                <div className="col-lg-3">
+                                <div className="col-lg-3 col-6">
                                     <SubjectArea img="../assets/business.png" title="Business" />
                                 </div>
-                                <div className="col-lg-3">
+                                <div className="col-lg-3 col-6">
                                     <SubjectArea img="../assets/socialsci.png" title="Social Science" />
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-1 col-xs-3"></div>
+                        <div className="col-lg-1 col-1"></div>
                     </div>
                 </div>
             </div >

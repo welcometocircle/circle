@@ -1,3 +1,117 @@
+@media only screen and (max-width: 600px) {
+    body .innovation-title{
+        font-size: 50px;
+    }
+
+    .subjects-background .subject-main-title{
+        font-size: 60px;
+    }
+
+    .subjects-background .subject-title{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .subjects-background .subject-area{
+        background-color: white;
+        border-radius: 25px;
+        padding: 15px;
+        height: 200px; 
+        margin-bottom: 15px;
+    }
+
+    .subjects-background .subjects{
+        padding: 30px 60px 40px;
+    }
+
+    .conf-background .conference-title{
+        font-size: 45px;
+    }
+
+    .conf-process{
+        display: flex;
+        margin-top: 50px;
+    }
+    
+    .conf-background .conference{
+        max-width: none;
+    }
+
+    .conf-background .line{
+        width: 30px;
+        height: 0px;
+        border:1px solid #C8C8C8;
+        margin-top: 30px;
+        
+    }
+    
+    .conf-background .process-item{
+        max-width: 50px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    
+    .conf-background .process-img{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .conf-background .process-text{
+        font-size: 15px;
+    }
+
+    .conf2-background .conf2-title{
+        font-size: 50px;
+    }
+
+    .conf2-background .conf2-text{
+        max-width: 250px;
+        margin: auto;
+        font-size: 20px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .team .team-title{
+        font-size: 40px;
+    }
+
+    .team-section .team-pic-wrapper{
+        max-width: 375px;
+    }
+
+    .team-section .team-pic{
+        width: 375px;
+        margin-bottom: 20px;
+    }
+
+    .team-section .team-join{
+        height: 40px;
+        width: 160px;
+        padding-top: 5px;
+    }
+
+    .team-section .team-txt{
+        font-size: 20px;
+    }
+
+    .toronto .toronto-title{
+        font-size: 30px;
+    }
+
+    body .toronto{
+        max-width: 375px;
+    }
+
+    .toronto .toronto-pic{
+        width: 375px;
+    }
+
+    .inquiries .inquiries-title{
+        font-size: 50px;
+    }
+    
+  }
 
 .mynav{
     background-color: white;
@@ -20,6 +134,7 @@
     font-weight: bold;
     letter-spacing: -2px;
     font-size: 70px;
+    /*70px;*/
     text-align: center;
     background: -webkit-linear-gradient(#BE29B8, #FC1B51);
     -webkit-background-clip: text;
@@ -47,7 +162,7 @@
 
 .subject-title{
     font-family: 'DM Sans', sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     color: black;
     font-weight: bold;
     margin-top: 50px;
@@ -96,9 +211,13 @@
     background-color: white;
     border-radius: 25px;
     padding: 20px;
-    height: 270px;
+    height: 240px;
     /*width: 270px;*/ 
 
+}
+
+.subject-area-img{
+    height: 50px;
 }
 
 
@@ -115,7 +234,8 @@
     width: 100%;
     box-sizing: border-box;
     max-width: 700px;
-    padding: 30px 60px 90px;
+    padding-top: 30px;
+    padding: 30px 60px 50px;
 }
 
 .conference-title{
@@ -173,7 +293,9 @@
 
 .conf-process{
     display: flex;
-    margin-top: 50px;
+    margin: auto;
+    max-width: 700px;
+    padding-bottom: 50px;
 }
 
 .line{

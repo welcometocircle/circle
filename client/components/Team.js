@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Team extends Component {
     render() {
         return (
-            <div>
+            <div className="team-section">
                 <div class="team">
                     <h2 className="team-title">By a team like no other.</h2>
                 </div>
