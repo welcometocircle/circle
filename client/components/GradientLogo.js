@@ -47,7 +47,7 @@ class GradientLogo extends Component {
                 <div className='gradientContainer'>
                     <div className="gradientBack"></div>
 
-                    <img src="../assets/logo-1.gif" class="logoTop" />
+                    <img src="../assets/blackcircletext.png" class="logoTop" />
 
                 </div>  
             // </div>         

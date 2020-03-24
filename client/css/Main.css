@@ -16,21 +16,22 @@
 }
 
 .gradientContainer {
-    top: 0;
+    /* top: 0; */
     margin: 0 auto;
-    padding: 15%;
+    margin-top: -30%;
+    padding: 12.5%;
     /* width: 500px;
     height:500px; */
-    width: 50%;
+    width: 75%;
     /* background-color: #161616; */
 
 
 }
 
 .logoTop {
-    position: absolute;
-    margin-top: -10%;
-    width: 20%;
+    /* position: absolute; */
+    margin-top: -83%;
+    width: 100%;
     /* width: 300px; */
     /* z-index: 1; */
     /* padding-block-start: 50px; */
@@ -38,20 +39,20 @@
 }
 
 .gradientBack {
-    position: absolute;
+    /* position: absolute; */
     padding: 10%;
-    margin-top: -10%;
+    margin-top: 50%;
 
     /* width: 500px; */
-    /* height: 500px; */
+    height: 500px;
     /* z-index: 0; */
     /* border-radius: 50%; */
     background-color: #f60;
-    -webkit-filter: blur(100px) saturate(400%);
-    -moz-filter: blur(100px) saturate(400%);
-    -o-filter: blur(100px) saturate(400%);
-    -ms-filter: blur(100px) saturate(400%);
-    filter: blur(100px) saturate(400%);
+    -webkit-filter: blur(250px) saturate(500%);
+    -moz-filter: blur(250px) saturate(500%);
+    -o-filter: blur(250px) saturate(500%);
+    -ms-filter: blur(250px) saturate(500%);
+    filter: blur(250px) saturate(500%);
 }
 
 .innovation-title{
