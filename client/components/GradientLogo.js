@@ -20,22 +20,22 @@ class GradientLogo extends Component {
 
     componentDidMount(){
         // this.myTween = TweenLite.to(this.myElement,1,{x:100,y:100});var colors = { top: "#8fd3f4", bottom: "#84fab0" };
-        var colors1 = { top: "#80002d", bottom: "#510885" };
-        var colors2 = { top: "#9b08bf", bottom: "#16dbdb" };
+        // var colors1 = { top: "#80002d", bottom: "#510885" };
+        // var colors2 = { top: "#9b08bf", bottom: "#16dbdb" };
 
-        var rot = 0;
-        var rotamt = 360;
+        // var rot = 0;
+        // var rotamt = 360;
 
-        var tl = gsap.timeline({repeat:-1,ease: "none" })
+        // var tl = gsap.timeline({repeat:-1,ease: "none" })
 
 
-        function gradientFromTo(tl,col1,col2) {
-            tl.fromTo('.gradientBack', { backgroundImage: "-webkit-linear-gradient(top," + col1.top + " , " + col1.bottom + " )", background: "linear-gradient(to top," + col1.top + " , " + col1.bottom + " )", rotation: rot, ease: "none" }, { duration: 5, backgroundImage: "-webkit-linear-gradient(top," + col2.top + " , " + col2.bottom + " )", background: "linear-gradient(to top," + col2.top + " , " + col2.bottom + " )", rotation: rot + rotamt, ease: "none" });
-            rot += rotamt;
-        }
+        // function gradientFromTo(tl,col1,col2) {
+        //     tl.fromTo('.gradientBack', { backgroundImage: "-webkit-linear-gradient(top," + col1.top + " , " + col1.bottom + " )", background: "linear-gradient(to top," + col1.top + " , " + col1.bottom + " )", rotation: rot, ease: "none" }, { duration: 5, backgroundImage: "-webkit-linear-gradient(top," + col2.top + " , " + col2.bottom + " )", background: "linear-gradient(to top," + col2.top + " , " + col2.bottom + " )", rotation: rot + rotamt, ease: "none" });
+        //     rot += rotamt;
+        // }
 
-        gradientFromTo(tl,colors1,colors2);
-        gradientFromTo(tl,colors2, colors1);
+        // gradientFromTo(tl,colors1,colors2);
+        // gradientFromTo(tl,colors2, colors1);
 
 
     }
@@ -44,10 +44,10 @@ class GradientLogo extends Component {
         return (
             
             // <div className='container-sm'>
-                <div className='gradientContainer'>
-                    <div className="gradientBack"></div>
-
-                    <img src="../assets/blackcircletext.png" class="logoTop" />
+                <div className='gradient-container'>
+                    {/* <div className="gradient-back"></div> */}
+                <img src='../assets/Circle Logo Gradient 30 sat 10.gif' className='gradient-gif'/>
+                <img src="../assets/blackcircle.png" class="logo-top" />
 
                 </div>  
             // </div>         
