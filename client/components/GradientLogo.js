@@ -44,7 +44,7 @@ class GradientLogo extends Component {
         return (
             
             // <div className='container-sm'>
-                <div className='outerLogo'>
+                <div className='gradientContainer'>
                     <div className="gradientBack"></div>
 
                     <img src="../assets/logo-1.gif" class="logoTop" />

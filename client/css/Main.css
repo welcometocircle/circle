@@ -15,7 +15,7 @@
     margin-right: 40px;;
 }
 
-.outerLogo {
+.gradientContainer {
     top: 0;
     margin: 0 auto;
     padding: 15%;
@@ -32,7 +32,7 @@
     margin-top: -10%;
     width: 20%;
     /* width: 300px; */
-    z-index: 1;
+    /* z-index: 1; */
     /* padding-block-start: 50px; */
 
 }
@@ -44,7 +44,7 @@
 
     /* width: 500px; */
     /* height: 500px; */
-    z-index: 0;
+    /* z-index: 0; */
     /* border-radius: 50%; */
     background-color: #f60;
     -webkit-filter: blur(100px) saturate(400%);
