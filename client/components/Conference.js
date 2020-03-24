@@ -23,7 +23,7 @@ class Conference extends Component {
                     <div className="line"></div>
                     <div className="register process-item">
                         <img className="process-img" src="../assets/teams.png"></img>
-                        <p className="process-text">Randomized Teams</p>
+                        <p className="process-text">Form Teams</p>
                     </div>
                     <div className="line"></div>
                     <div className="register process-item">

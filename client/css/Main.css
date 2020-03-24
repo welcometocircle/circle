@@ -8,20 +8,25 @@
     }
 
     .subjects-background .subject-title{
-        font-size: 25px;
+        font-size: 20px;
         margin-bottom: 20px;
     }
 
     .subjects-background .subject-area{
         background-color: white;
         border-radius: 25px;
-        padding: 15px;
-        height: 200px; 
+        padding: 10px;
+        height: 170px; 
         margin-bottom: 15px;
+        
     }
 
     .subjects-background .subjects{
         padding: 30px 60px 40px;
+    }
+    
+    body .conf-background{
+        padding: 0px;
     }
 
     .conf-background .conference-title{
@@ -31,6 +36,7 @@
     .conf-process{
         display: flex;
         margin-top: 50px;
+       
     }
     
     .conf-background .conference{
@@ -43,6 +49,10 @@
         border:1px solid #C8C8C8;
         margin-top: 30px;
         
+    }
+
+    .conf-background .conf-process{
+        max-width: 325px;
     }
     
     .conf-background .process-item{
@@ -57,7 +67,7 @@
     }
     
     .conf-background .process-text{
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .conf2-background .conf2-title{
@@ -224,6 +234,7 @@
 .conf-background{
     background-image: linear-gradient(#303030, #161616);
     width: 100%;
+    padding: 60px;
 }
 
 .conference{
@@ -252,7 +263,7 @@
 
 .conf-date{
     border-radius: 25px;
-    border-color: -webkit-linear-gradiento(to right, #33F4E9, #1BF1FF);;
+    border-color: -webkit-linear-gradient(to right, #33F4E9, #1BF1FF);;
     padding: 20px;
     height: 30px;
     width: 50px;
@@ -294,14 +305,14 @@
 .conf-process{
     display: flex;
     margin: auto;
-    max-width: 700px;
+    max-width: 600px;
     padding-bottom: 50px;
 }
 
 .line{
-    width: 70px;
+    width: 90px;
     height: 0px;
-    border:1px solid #C8C8C8;
+    border: 1px solid #C8C8C8;
     margin-top: 30px;
     
 }
@@ -360,7 +371,7 @@
     font-family: 'DM Sans', sans-serif;
     font-size: 20px;
     color: #D2D2D2;
-    margin-top: 20px;
+
 }
 
 .list{
