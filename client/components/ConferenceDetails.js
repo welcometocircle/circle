@@ -9,7 +9,7 @@ class ConferenceDetails extends Component {
                     <div className="row">
                         <div className="col-lg-2"></div>
                         <div className="col-lg-3">
-                            <p class="conf2-text">Circle Conference aims to go beyond and provide students with greater access to opportunities and networks within their sectors – and of course much more than just that.</p>
+                            <p className="conf2-text">Circle Conference aims to go beyond and provide students with greater access to opportunities and networks within their sectors – and of course much more than just that.</p>
                         </div>
                         <div className="col-lg-5">
                             <div className="conf2-area">

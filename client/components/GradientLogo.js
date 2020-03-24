@@ -37,20 +37,20 @@ class GradientLogo extends Component {
         gradientFromTo(tl,colors1,colors2);
         gradientFromTo(tl,colors2, colors1);
 
-        // while (true) {
-        //     gradientToTwo(tl);
-        //     gradientToOne(tl);
-        // }
+
     }
     
     render() {
         return (
-            <div class='outerLogo'>
-                <div class="gradientBack"></div>
+            
+            // <div className='container-sm'>
+                <div className='gradientContainer'>
+                    <div className="gradientBack"></div>
 
-                <img src="../assets/logo-1.gif" class="logoTop"/>
+                    <img src="../assets/blackcircletext.png" class="logoTop" />
 
-            </div>            
+                </div>  
+            // </div>         
         )
     }
 }
