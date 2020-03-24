@@ -4,7 +4,7 @@ class Team extends Component {
     render() {
         return (
             <div>
-                <div class="team">
+                <div className="team">
                     <h2 className="team-title">By a team like no other.</h2>
                 </div>
                 <div className="team-pic-wrapper">

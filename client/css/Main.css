@@ -15,13 +15,52 @@
     margin-right: 40px;;
 }
 
+.outerLogo {
+    top: 0;
+    margin: 0 auto;
+    padding: 15%;
+    /* width: 500px;
+    height:500px; */
+    width: 50%;
+    /* background-color: #161616; */
+
+
+}
+
+.logoTop {
+    position: absolute;
+    margin-top: -10%;
+    width: 20%;
+    /* width: 300px; */
+    z-index: 1;
+    /* padding-block-start: 50px; */
+
+}
+
+.gradientBack {
+    position: absolute;
+    padding: 10%;
+    margin-top: -10%;
+
+    /* width: 500px; */
+    /* height: 500px; */
+    z-index: 0;
+    /* border-radius: 50%; */
+    background-color: #f60;
+    -webkit-filter: blur(100px) saturate(400%);
+    -moz-filter: blur(100px) saturate(400%);
+    -o-filter: blur(100px) saturate(400%);
+    -ms-filter: blur(100px) saturate(400%);
+    filter: blur(100px) saturate(400%);
+}
+
 .innovation-title{
     font-family: 'DM Sans', sans-serif;
     font-weight: bold;
     letter-spacing: -2px;
     font-size: 70px;
     text-align: center;
-    background: -webkit-linear-gradient(#BE29B8, #FC1B51);
+    background: -webkit-linear-gradient(0.2turn,#BE29B8, #FC1B51);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -78,6 +117,7 @@
 .subjects-background{
     background-color: #F1F1F1;
     padding-bottom: 90px;
+    padding-top: 40px;
 }
 
 .subjects{
@@ -105,6 +145,7 @@
 .conf-background{
     background-image: linear-gradient(#303030, #161616);
     width: 100%;
+    padding-top: 60px;
 }
 
 .conference{
@@ -209,7 +250,8 @@
 .conf2-background{
     background-color: #1D1D1D;
     width: 100%;
-    padding-top: 20px;
+    padding-top: 60px;
+    padding-bottom: 30px;
 }
 
 .conf2-title{
@@ -218,7 +260,7 @@
     letter-spacing: -2px;
     font-size: 70px;
     text-align: center;
-    background: -webkit-linear-gradient(#38FFF3, #D04BFF);
+    background: -webkit-linear-gradient(0.2turn,#38FFF3, #D04BFF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 30px;
@@ -270,7 +312,7 @@
     width: 100%;
     box-sizing: border-box;
     max-width: 700px;
-    padding: 30px 60px 90px;
+    padding: 60px 60px 90px;
 }
 
 .team-pic-wrapper{
