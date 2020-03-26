@@ -19,7 +19,8 @@
     /* margin-bottom: -50px; */
     /* margin-top: auto;
     margin-bottom: auto; */
-    
+    background: url("/circle/client/assets/blackcircle.png");
+    background-repeat: no-repeat;
     transform: scale(1);
 }
 .gradient-text{
