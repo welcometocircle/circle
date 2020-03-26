@@ -42,8 +42,19 @@ class GradientLogo extends Component {
     
     render() {
         return (
-            <div className='gradient-logo'>
-                <img src="../assets/gradientLogoOverOrange.png" className="img-responsive center-block"/>
+            <div className='container'>
+                <div className="row align-items-center row-no-gutters">
+                    <div className="col-md-6 gradient-logo">
+                        <img src="../assets/gradientLogoOverUnder2.png" className="img-responsive" />
+                    </div>
+                    <div class="col-md-4">
+                        <h4 className="welcome-title">Welcome to Circle</h4>
+                        <h1 className="ideas-title">Ideas start here.</h1>
+                    </div>
+                    
+                </div>
+                
+
             </div>         
         )
     }
