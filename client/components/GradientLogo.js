@@ -12,38 +12,22 @@ import gsap from 'gsap';
 // export default GradientLogo;
 
 class GradientLogo extends Component {
-    constructor(props){
-        super(props);
-        // this.myElement = null;
-        // this.tl = null;
-    }
-
-    componentDidMount(){
-        // this.myTween = TweenLite.to(this.myElement,1,{x:100,y:100});var colors = { top: "#8fd3f4", bottom: "#84fab0" };
-        // var colors1 = { top: "#80002d", bottom: "#510885" };
-        // var colors2 = { top: "#9b08bf", bottom: "#16dbdb" };
-
-        // var rot = 0;
-        // var rotamt = 360;
-
-        // var tl = gsap.timeline({repeat:-1,ease: "none" })
-
-
-        // function gradientFromTo(tl,col1,col2) {
-        //     tl.fromTo('.gradientBack', { backgroundImage: "-webkit-linear-gradient(top," + col1.top + " , " + col1.bottom + " )", background: "linear-gradient(to top," + col1.top + " , " + col1.bottom + " )", rotation: rot, ease: "none" }, { duration: 5, backgroundImage: "-webkit-linear-gradient(top," + col2.top + " , " + col2.bottom + " )", background: "linear-gradient(to top," + col2.top + " , " + col2.bottom + " )", rotation: rot + rotamt, ease: "none" });
-        //     rot += rotamt;
-        // }
-
-        // gradientFromTo(tl,colors1,colors2);
-        // gradientFromTo(tl,colors2, colors1);
-
-
-    }
     
     render() {
         return (
-            <div className='gradient-logo'>
-                <img src="../assets/gradientLogoOverOrange.png" className="img-responsive center-block"/>
+            <div className='container'>
+                <div className="row align-items-center">
+                    <div className="col-md-6 gradient-logo">
+                        <img src="../assets/gradientLogoOverUnder2.png" className="img-responsive" />
+                    </div>
+                    <div class="col-md-4">
+                        <h4 className="welcome-title">Welcome to Circle</h4>
+                        <h1 className="ideas-title">Ideas start here.</h1>
+                    </div>
+                    
+                </div>
+                
+
             </div>         
         )
     }
