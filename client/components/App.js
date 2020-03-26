@@ -1,55 +1,52 @@
 import React from 'react';
-import '../css/App.css';
-import '../css/Main.css';
-import MyNavbar from './MyNavbar.js'
-import GradientLogo from './GradientLogo.js'
-import Subjects from './Subjects';
-import Conference from './Conference';
-import ConferenceDetails from './ConferenceDetails';
-import Team from './Team';
-import Inquiries from './Inquiries';
-import 'bootstrap/dist/css/bootstrap.css';
+import Routes from "./Routes";
+import MyNavbar from './MyNavbar'
+import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import { Link } from "react-router-dom";
+import { LinkContainer } from "react-router-bootstrap";
 
 
-function App() {
+function App(props) {
   return (
-    <div>
-      <MyNavbar />
-      {/* <h1>Circle lolll</h1>
-      <FirstComponent />
-      <h1>GRADIENT COMPONENT</h1> */}
-      {/*<GradientLogo/>*/}
-
-      {/* Simple text - not necessary to put in individual component */}
-      <GradientLogo/>
-      <div className="innovation">
-        <h2 className="innovation-title">Innovation is just the beginning</h2>
-        <p className="gen-text">Circle is a new-age innovation company dedicated to bringing opportunities for students and empowering them to become the leaders of tomorrow. With an interdisicplinary focus, we aspire for students of multiple sectors to come together and create for the future.</p>
-      </div>
-
-      <Subjects />
-
-      <Conference />
-
-      <ConferenceDetails />
-
-      <Team />
-
-      {/* Simple text - not necessary to put in individual component */}
-      <div className="toronto">
-        <h2 className="toronto-title">Made in the <img className="heart" src="../assets/heart.png"></img> of Toronto</h2>
-        <img className="toronto-pic" src="../assets/toronto.png" />
-      </div>
-
-      <Inquiries />
-
-      <div className="footer">
-        <div className="footer-wrapper">
-          <h3 className="footer-title">circle</h3>
-        </div>
-      </div>
-    </div >
+    <div className="">
+      <Navbar className="mynav" expand="lg">
+        {/* <Navbar.Header> */}
+        <Navbar.Brand>
+          <Link className="brand-title" to="/">circle</Link>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav " />
+        {/* </Navbar.Header> */}
+        <Navbar.Collapse>
+          <Nav className="ml-auto">
+            <LinkContainer to="/opportunities">
+              <NavItem className="mynav-txt">Opportunities</NavItem>
+            </LinkContainer>
+            <LinkContainer to="/faqs">
+              <NavItem className="mynav-txt">FAQs</NavItem>
+            </LinkContainer>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+      <Routes />
+    </div>
   );
 }
 
 export default App;
+
+{/* <a className="brand-title" href="/">circle</a> 
+        <button className="navbar-toggler mynav-toggler" type="button" data-toggle="collapse" data-target="#mynav" aria-controls="mynav" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"><i
+            class="fas fa-bars fa-1x"></i></span>
+        </button> 
+        <div className="navbar-collapse collapse " id="mynav">
+
+          <ul className="navbar-nav ml-auto mynav-items">
+            <li className="nav-item ">
+              <a className="nav-link mynav-txt" href="#">Opportunities</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link mynav-txt" href="#">FAQs</a>
+            </li>
+          </ul>
+        </div> */}

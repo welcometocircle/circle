@@ -1,6 +1,15 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     body .innovation-title{
         font-size: 50px;
+    }
+
+    .mynav .mynav-txt{
+        margin-left: 20px;
+    }
+
+    body .subjects-background{
+        padding: 0px;
+        padding-bottom: 50px;
     }
 
     .subjects-background .subject-main-title{
@@ -15,14 +24,21 @@
     .subjects-background .subject-area{
         background-color: white;
         border-radius: 25px;
-        padding: 10px;
-        height: 170px; 
+        padding: 15px;
+        height: 170px;
+        width: 200px;
         margin-bottom: 15px;
         
     }
 
+    .subjects-background .subject-region{
+        max-width: 200px;
+        margin: auto;
+    }
+
     .subjects-background .subjects{
         padding: 30px 60px 40px;
+        
     }
     
     body .conf-background{
@@ -120,23 +136,72 @@
     .inquiries .inquiries-title{
         font-size: 50px;
     }
+
+    .inquiries .inquiry-text{
+        font-size: 15px;
+    }
+
+    .inquiries .inquiry-button{
+        width: 150px;
+        margin-right: 0px;
+    }
+
+    .footer .footer-wrapper{
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+
+    .footer .footer-title{
+        margin-left: 60px;
+    }
+
+    body .footer{
+        padding: 10px;
+    }
+
+    body .opportunities{
+        margin-left: 80px;
+    }
+
+    .opportunities .opportunities-title{
+        font-size: 40px;
+    }
+
+    .opportunities .opportunities-text{
+        font-size: 20px;
+    }
     
   }
 
 .mynav{
     background-color: white;
     margin-top: 20px;
+    margin-bottom: 0px;
 }
 
 .mynav-items{
     margin-right: 50px;
 }
 
+.mynav-lists li{
+    float: right;
+    list-style-type: none;
+}
+
+.mynav-lists{
+    margin-bottom: 50px;
+}
+
 .mynav-txt{
     font-family: 'DM Sans', sans-serif;
     font-size: 20px;
     color: #CBCBCB;
-    margin-right: 40px;;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.mynav-toggler{
+    border-color: rgba(0, 0, 0, 0);
 }
 
 .gradientContainer {
@@ -148,8 +213,6 @@
     height:500px; */
     width: 75%;
     /* background-color: #161616; */
-
-
 }
 
 .logoTop {
@@ -179,6 +242,52 @@
     filter: blur(250px) saturate(500%);
 }
 
+.opportunities{
+    width: 500px;
+    margin-left: 120px;
+    margin-top: 50px;
+}
+
+.opportunities-background{
+    background: url('../assets/opportunities.png') no-repeat;
+    max-width: 100vw;
+}
+
+.opportunities-title{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    letter-spacing: -2px;
+    font-size: 65px;
+    /*70px;*/
+    background: -webkit-linear-gradient(0.2turn, #FF5858, #E40097);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.opportunities-link{
+    background-color: #373737;
+    border-radius: 50px;
+    height: 50px;
+    padding-top: 10px;
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.opportunities-link-txt{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    color: #FAFAFA;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.opportunities-text{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 25px;
+    color: #939393;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 .innovation-title{
     font-family: 'DM Sans', sans-serif;
@@ -213,7 +322,7 @@
 
 .subject-title{
     font-family: 'DM Sans', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     color: black;
     font-weight: bold;
     margin-top: 50px;
@@ -231,8 +340,6 @@
 }
 
 .innovation{
-    display: flex;
-    flex-direction: column;
     margin: auto;
     position: relative;
     width: 100%;
@@ -243,7 +350,7 @@
 
 .subjects-background{
     background-color: #F1F1F1;
-    padding-bottom: 90px;
+    padding: 70px;
 }
 
 .subjects{
@@ -261,7 +368,7 @@
 .subject-area{
     background-color: white;
     border-radius: 25px;
-    padding: 20px;
+    padding: 15px;
     height: 240px;
     /*width: 270px;*/ 
 
@@ -273,7 +380,7 @@
 
 
 .conf-background{
-    background-image: linear-gradient(#303030, #161616);
+    background-image: linear-gradient(#0C0C0C, #161616);
     width: 100%;
     padding: 60px;
 }
@@ -381,7 +488,7 @@
 }
 
 .conf2-background{
-    background-color: #1D1D1D;
+    background-color: #121212;
     width: 100%;
     padding-top: 20px;
 }
