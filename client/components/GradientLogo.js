@@ -45,12 +45,15 @@ class GradientLogo extends Component {
             
             // <div className='container-sm'>
                 <div className='gradient-container'>
+                 {/* <div> */}
                     {/* <div className="gradient-back"></div> */}
-                <img src='../assets/Circle Logo Gradient 30 sat 10.gif' className='gradient-gif'/>
-                <img src="../assets/blackcircle.png" class="logo-top" />
-
-                </div>  
-            // </div>         
+                {/* <img src='../assets/gradient250.gif' className='gradient-gif'/> */}
+                {/* <div className='gradient-gif-backgroundimg'></div> */}
+                {/* <img src="../assets/blackcircle.png" class="logo-top" /> */}
+                <img src="../assets/gradientLogoNew.png" className="gradient-logo img-responsive center-block"/>
+                {/* <video controls="controls" poster="circle.png" preload="none" src="../assets/gradientLogo.mov" width="100%" controlsList="nofullscreen nodownload noremote foobar"></video> */}
+                {/* </div>   */}
+            </div>         
         )
     }
 }

@@ -17,15 +17,21 @@
 
 .gradient-container {
     /* top: 0; */
-    margin: 0 auto;
-    margin-top: -25%;
-    padding: 12.5%;
+    /* margin: 0 auto; */
+    /* margin-top: -25%; */
+    /* padding: 12.5%; */
     /* width: 500px;
     height:500px; */
-    width: 75%;
+    /* width: 100%;
+    margin-left: 32%; */
     /* background-color: #161616; */
-
-
+    /* max-width: 700px;
+    margin: auto; */
+}
+.gradient-logo{
+    /* .img-responsive(); */
+    /* .center-block(); */
+    
 }
 
 .logo-top {
@@ -58,14 +64,26 @@
 
 .gradient-gif{
     width: 100%;
-    scale: 50%;
-    margin-top: 20%;
-    -webkit-filter: blur(110px) ;
-    -moz-filter: blur(110px) ;
-    -o-filter: blur(110px);
-    -ms-filter: blur(110px);
-    filter: blur(110px);
+    transform: scale(1.1);
+    margin-top: 25%;
+    -webkit-filter: blur(100px) ;
+    -moz-filter: blur(100px) ;
+    -o-filter: blur(100px);
+    -ms-filter: blur(100px);
+    filter: blur(100px);
+    /* backdrop-filter: blur(100px);*/
 }
+/* .gradient-gif-backgroundimg{
+    height: 50%;
+    width: 100%;
+    margin-left: 25%;
+    transform: scale(0.5);
+    margin-top: 25%;
+    background-image: url(../assets/gradient250.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+} */
 
 .innovation-title{
     font-family: 'DM Sans', sans-serif;

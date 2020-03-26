@@ -21,7 +21,7 @@ function App() {
       {/*<GradientLogo/>*/}
 
       {/* Simple text - not necessary to put in individual component */}
-      <GradientLogo/>
+      {/* <GradientLogo/> */}
       <div className="innovation">
         <h2 className="innovation-title">Innovation is just the beginning</h2>
         <p className="gen-text">Circle is a new-age innovation company dedicated to bringing opportunities for students and empowering them to become the leaders of tomorrow. With an interdisicplinary focus, we aspire for students of multiple sectors to come together and create for the future.</p>

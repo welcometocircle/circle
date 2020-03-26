@@ -1,33 +1,29 @@
-[debug] [2020-03-24T15:15:32.562Z] ----------------------------------------------------------------------
-[debug] [2020-03-24T15:15:32.564Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
-[debug] [2020-03-24T15:15:32.564Z] CLI Version:   7.16.0
-[debug] [2020-03-24T15:15:32.564Z] Platform:      darwin
-[debug] [2020-03-24T15:15:32.564Z] Node Version:  v12.13.1
-[debug] [2020-03-24T15:15:32.564Z] Time:          Tue Mar 24 2020 11:15:32 GMT-0400 (Eastern Daylight Time)
-[debug] [2020-03-24T15:15:32.564Z] ----------------------------------------------------------------------
-[debug] [2020-03-24T15:15:32.564Z] 
-[debug] [2020-03-24T15:15:32.571Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-03-24T15:15:32.571Z] > authorizing via signed-in user
-[debug] [2020-03-24T15:15:32.571Z] [iam] checking project circle-innovation for permissions ["firebase.projects.get","firebasehosting.sites.update"]
-[debug] [2020-03-24T15:15:32.573Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/circle-innovation:testIamPermissions  
-
-[debug] [2020-03-24T15:15:33.050Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-24T15:15:33.052Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/circle-innovation  
- 
-[debug] [2020-03-24T15:15:33.365Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Deploying to 'circle-innovation'...
-[info] 
-[info] i  deploying hosting
-[debug] [2020-03-24T15:15:33.368Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/circle-innovation/versions  
-
-[debug] [2020-03-24T15:15:34.059Z] <<< HTTP RESPONSE 200
-[info] i  hosting[circle-innovation]: beginning deploy...
-[info] i  hosting[circle-innovation]: found 49 files in client
-[debug] [2020-03-24T15:15:35.507Z] [hosting] hash cache [Y2xpZW50] stored for 49 files
-[debug] [2020-03-24T15:15:35.508Z] [hosting][hash queue][FINAL]
-[debug] [2020-03-24T15:15:35.509Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/circle-innovation/versions/eac5d75f49ae3b63:populateFiles  
+[debug] [2020-03-26T02:45:08.853Z] ----------------------------------------------------------------------
+[debug] [2020-03-26T02:45:08.855Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2020-03-26T02:45:08.855Z] CLI Version:   7.16.1
+[debug] [2020-03-26T02:45:08.855Z] Platform:      darwin
+[debug] [2020-03-26T02:45:08.855Z] Node Version:  v12.13.1
+[debug] [2020-03-26T02:45:08.856Z] Time:          Wed Mar 25 2020 22:45:08 GMT-0400 (Eastern Daylight Time)
+[debug] [2020-03-26T02:45:08.856Z] ----------------------------------------------------------------------
+[debug] [2020-03-26T02:45:08.856Z] 
+[debug] [2020-03-26T02:45:08.863Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-26T02:45:08.863Z] > authorizing via signed-in user
+[debug] [2020-03-26T02:45:08.863Z] [iam] checking project circle-innovation for permissions ["firebase.projects.get"]
+[debug] [2020-03-26T02:45:08.865Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-03-26T02:45:08.865Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
  <request body omitted>
-[debug] [2020-03-24T15:15:36.225Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-24T15:15:36.230Z] [hosting][populate queue][FINAL]
-[debug] [2020-03-24T15:15:36.230Z] [hosting] uploads queued: 7
+[debug] [2020-03-26T02:45:09.094Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T02:45:09.107Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/circle-innovation:testIamPermissions  
+
+[debug] [2020-03-26T02:45:09.320Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T02:45:09.322Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/circle-innovation  
+ 
+[debug] [2020-03-26T02:45:09.609Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/maitray/Documents/_Projects/Sites/Circle/circle'...
+[info] 
+[debug] [2020-03-26T02:45:09.612Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/circle-innovation/webApps/-/config  
+ 
+[debug] [2020-03-26T02:45:09.913Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: client
+[info] ✔  hosting: Local server: http://localhost:5000
