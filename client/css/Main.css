@@ -14,7 +14,10 @@
     color: #CBCBCB;
     margin-right: 40px;;
 }
-
+.gradient-logo {
+    margin-top: -20px;
+    margin-bottom: -50px;
+}
 
 .innovation-title{
     font-family: 'DM Sans', sans-serif;
