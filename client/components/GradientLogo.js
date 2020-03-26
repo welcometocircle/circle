@@ -43,7 +43,7 @@ class GradientLogo extends Component {
     render() {
         return (
             <div className='container'>
-                <div className="row align-items-center row-no-gutters">
+                <div className="row align-items-center">
                     <div className="col-md-6 gradient-logo">
                         <img src="../assets/gradientLogoOverUnder2.png" className="img-responsive" />
                     </div>
