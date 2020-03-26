@@ -203,43 +203,9 @@
 .mynav-toggler{
     border-color: rgba(0, 0, 0, 0);
 }
-
-.gradientContainer {
-    /* top: 0; */
-    margin: 0 auto;
-    margin-top: -30%;
-    padding: 12.5%;
-    /* width: 500px;
-    height:500px; */
-    width: 75%;
-    /* background-color: #161616; */
-}
-
-.logoTop {
-    /* position: absolute; */
-    margin-top: -83%;
-    width: 100%;
-    /* width: 300px; */
-    /* z-index: 1; */
-    /* padding-block-start: 50px; */
-
-}
-
-.gradientBack {
-    /* position: absolute; */
-    padding: 10%;
-    margin-top: 50%;
-
-    /* width: 500px; */
-    height: 500px;
-    /* z-index: 0; */
-    /* border-radius: 50%; */
-    background-color: #f60;
-    -webkit-filter: blur(250px) saturate(500%);
-    -moz-filter: blur(250px) saturate(500%);
-    -o-filter: blur(250px) saturate(500%);
-    -ms-filter: blur(250px) saturate(500%);
-    filter: blur(250px) saturate(500%);
+.gradient-logo {
+    margin-top: -20px;
+    margin-bottom: -50px;
 }
 
 .opportunities{
