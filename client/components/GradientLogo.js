@@ -15,12 +15,12 @@ class GradientLogo extends Component {
     
     render() {
         return (
-            <div className='container'>
+            <div className="container grad-container">
                 <div className="row align-items-center">
-                    <div className="col-md-6 gradient-logo">
-                        <img src="../assets/gradientLogoOverUnder2.png" className="img-responsive" />
+                    <div className="col-lg-6 gradient-logo">
+                        <img src="../assets/gradientLogoOverUnder2.png" className="gradient-logo-resize img-responsive" />
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4">
                         <h4 className="welcome-title">Welcome to Circle</h4>
                         <h1 className="ideas-title">Ideas start here.</h1>
                     </div>

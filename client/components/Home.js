@@ -12,44 +12,38 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 
 function Home() {
-  return (
-    <div>
-      {/* <MyNavbar /> */}
-      <GradientLogo/>
-      <div class="container">
-        <div className=" innovation align-content-center">
-          <div className="col">
-            <h2 className="innovation-title">Innovation is just the beginning</h2>
-            <p className="gen-text">Circle is a new-age innovation company dedicated to bringing opportunities for students and empowering them to become the leaders of tomorrow. With an interdisicplinary focus, we aspire for students of multiple sectors to come together and create for the future.</p>
-          </div>
-          
-        </div>
-      </div>
-      
+    return (
+        <div>
+            {/* <MyNavbar /> */}
+            <GradientLogo/>
+            <div className="innovation">
+                <h2 className="innovation-title">Innovation is just the beginning</h2>
+                <p className="gen-text">Circle is a new-age innovation company dedicated to bringing opportunities for students and empowering them to become the leaders of tomorrow. With an interdisicplinary focus, we aspire for students of multiple sectors to come together and create for the future.</p>
+            </div>
 
-      <Subjects />
+            <Subjects />
 
-      <Conference />
+            <Conference />
 
-      <ConferenceDetails />
+            <ConferenceDetails />
 
-      <Team />
+            <Team />
 
-      <div className="toronto">
-        <h2 className="toronto-title">Made in the <img className="heart" src="../assets/heart.png"></img> of Toronto</h2>
-        <img className="toronto-pic" src="../assets/toronto.png" />
-      </div>
+            <div className="toronto">
+                <h2 className="toronto-title">Made in the <img className="heart" src="../assets/heart.png"></img> of Toronto</h2>
+                <img className="toronto-pic" src="../assets/toronto.png" />
+            </div>
 
-      <Inquiries />
+            <Inquiries />
 
-      <div className="footer">
-        <div className="footer-wrapper">
-          <h3 className="footer-title">circle</h3>
-        </div>
-      </div>
+            <div className="footer">
+                <div className="footer-wrapper">
+                    <h3 className="footer-title">circle</h3>
+                </div>
+            </div>
 
-    </div >
-  );
+        </div >
+    );
 }
 
 export default Home;

@@ -5,7 +5,8 @@ module.exports = {
     entry: './client/index.js',
     output: {
         path: path.join(__dirname, 'client'),
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        publicPath: "/"
     },
     module: {
         rules: [{
@@ -26,8 +27,8 @@ module.exports = {
         }]
     },
     devServer: {
-        publicPath: "/",
         contentBase: "./client",
-        hot: true
+        hot: true,
+        historyApiFallback: true
     },
 }
