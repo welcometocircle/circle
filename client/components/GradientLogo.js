@@ -15,30 +15,16 @@ class GradientLogo extends Component {
     
     render() {
         return (
-            <div className='container'>
+            <div className='container gradient-container'>
                 <div className="d-flex justify-content-center">
                     <h4 className="welcome-title">Welcome to Circle</h4>
                 </div>
                 <div className="d-flex justify-content-center">
-                    <h1 className="ideas-title">Ideas Start Here!</h1>
+                    <h1 className="ideas-title">Ideas Start Here</h1>
                 </div>
                 <div className="d-flex justify-content-center">
-                    <img src="../assets/gradientLogoOverUnder2.png" className="img-responsive" />
-                    {/* <div className="col-md-6 gradient-logo">
-                        <img src="../assets/gradientLogoOverUnder2.png" className="img-responsive gradient-logo" />
-                    </div> */}
-                    {/* <div class="col-md-4">
-                            
-                            <h1 className="ideas-title">Ideas</h1>
-                            <h1 className="ideas-title">Start</h1>
-                            <h1 className="ideas-title">Here.</h1>
-                        
-                        <h1 className="ideas-title">Ideas start here.</h1>
-                    </div>
-                     */}
+                    <img src="../assets/gradientLogoOverUnder3Faster2x.png" className="img-responsive gradient-logo" />
                 </div>
-                
-
             </div>         
         )
     }
