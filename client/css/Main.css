@@ -208,6 +208,15 @@
     cursor: pointer;
 }
 
+.mynav-txt:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.mynav-txt:link .mynav-txt:visited .mynav-txt:active {
+    text-decoration: none;
+}
+
 .mynav-toggler{
     border-color: rgba(0, 0, 0, 0);
 }
@@ -320,6 +329,13 @@
     color: #272727;
     font-size: 30px;
     margin-left: 100px;
+}
+.brand-title:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+.brand-title:link .brand-title:visited .brand-title:active {
     text-decoration: none;
 }
 
@@ -652,16 +668,35 @@
     margin-bottom: 50px;
 }
 
-.inquiry-button{
+.link-button{
     background-color: #EFEFEF;
     border-radius: 50px;
     height: 50px;
     padding-top: 12px;
     width: 200px;
-    margin-right: 20px
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.link-button:hover{
+    background-color: #fae1e1;
+    text-decoration: none;
+}
+.link-button:link {
+    color:black;
+    text-decoration: none;
+}
+.link-button:visited {
+    color: black;
+    text-decoration: none;
+}
+.link-button:active {
+    color: black;
+    text-decoration: none;
 }
 
-.inquiry-text{
+.link-text {
     font-family: 'DM Sans', sans-serif;
     font-weight: bold;
     color: #000000;

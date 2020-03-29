@@ -10,8 +10,8 @@ class Team extends Component {
                 <div className="team-pic-wrapper">
                     <img className="team-pic" src="../assets/team.png" />
                 </div>
-                <div className="team-join">
-                    <p className="team-txt">Join the team</p>
+                <div className="d-flex justify-content-center">
+                    <a href="#/opportunities" class='link-button link-text'>Join the team</a>
                 </div>
             </div>
         )
