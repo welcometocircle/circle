@@ -28,6 +28,14 @@ function App(props) {
         </Navbar.Collapse>
       </Navbar>
       <Routes />
+      <footer className="footer">
+        <div className="footer-wrapper">
+          <div className="title-wrap">
+            <h3 className="footer-title">circle</h3>
+          </div>
+          {/* <a href="#" class="fa fa-instagram footer-social" href="https://www.instagram.com/welcometocircle/"></a> */}
+        </div>
+      </footer>
     </div>
   );
 }

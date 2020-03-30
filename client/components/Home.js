@@ -36,11 +36,7 @@ function Home() {
 
             <Inquiries />
 
-            <div className="footer">
-                <div className="footer-wrapper">
-                    <h3 className="footer-title">circle</h3>
-                </div>
-            </div>
+            
 
         </div >
     );
