@@ -1,15 +1,4 @@
 import React, { Component } from 'react';
-import gsap from 'gsap';
-
-
-// function GradientLogo() {
-//     return (
-//         <div id="circlelogogradient_hype_container" class="HYPE_document" style="margin:auto;position:relative;width:100%;height:100%;overflow:hidden;">
-//         <script type="text/javascript" charset="utf-8" src="../animations/GradientLogo/Circle%20Logo%20Gradient.hyperesources/circlelogogradient_hype_generated_script.js?67181"></script>
-//         </div>);
-// }
-
-// export default GradientLogo;
 
 class GradientLogo extends Component {
     
@@ -24,6 +13,12 @@ class GradientLogo extends Component {
                 </div>
                 <div className="d-flex justify-content-center">
                     <img src="../assets/gradientLogoOverUnder3Faster2x.png" className="img-responsive gradient-logo" />
+                    {/* <img src="../assets/blackcircle.png" id='tmpGradient' data-original-img="../assets/gradientLogoOverUnder3Faster2x.png" onLoad="loadImage()"/>
+                    <script>
+                        loadImage(){
+                            $('#tmpGradient').attr('src', $('#tmpGradient').attr('data-original-img'))
+                        } 
+                    </script> */}
                 </div>
             </div>         
         )
