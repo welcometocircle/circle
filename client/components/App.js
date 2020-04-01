@@ -29,11 +29,38 @@ function App(props) {
       </Navbar>
       <Routes />
       <footer className="footer">
-        <div className="footer-wrapper">
+        {/* <div className="footer-wrapper">
           <div className="title-wrap">
             <h3 className="footer-title">circle</h3>
           </div>
-          {/* <a href="#" class="fa fa-instagram footer-social" href="https://www.instagram.com/welcometocircle/"></a> */}
+          <a href="#" class="fa fa-instagram footer-social" href="https://www.instagram.com/welcometocircle/"></a>
+        </div> */}
+
+        <div className="container footer-wrapper">
+          <div className="row">
+            <div className="col-lg-3">
+              <div className="title-wrap">
+                <h3 className="footer-title">circle</h3>
+              </div>
+            </div>
+            <div className="col-lg-5">
+            </div>
+            <div className="col-lg-1 col-3">
+              <a class="footer-social" target="_blank" href="https://www.instagram.com/welcometocircle/">
+                <i className="fa fa-instagram"></i>
+              </a>
+            </div>
+            <div className="col-lg-1 col-3">
+              <a class="footer-social" target="_blank" href="https://www.facebook.com/welcometocircle/">
+                <i className="fa fa-facebook"></i>
+              </a>
+            </div>
+            <div className="col-lg-1 col-3">
+              <a class="footer-social" target="_blank" href="https://www.linkedin.com/company/connectwithcircle/about/">
+                <i className="fa fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </footer>
     </div>

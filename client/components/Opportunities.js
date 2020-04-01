@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import '../css/Main.css'
 
 class Opportunities extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
     render() {
         return (
             <div>
@@ -12,35 +16,35 @@ class Opportunities extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-6 col-md-6 col-sm-6">
-                                    <div className="opportunities-link">
-                                        <p className="opportunities-link-txt">Digital Design Lead</p>
-                                    </div>
+                                    <a href="https://joincircle.typeform.com/to/KBNU1K" target="_blank" className="opportunities-anchor">
+                                        <p className="opportunities-link opportunities-link-txt">Digital Design Lead</p>
+                                    </a>
                                 </div>
                                 <div className="col-lg-6 col-md-6 col-sm-6">
-                                    <div className="opportunities-link">
-                                        <p className="opportunities-link-txt">Finance Lead</p>
-                                    </div>
+                                    <a href="https://joincircle.typeform.com/to/KBNU1K" target="_blank" className="opportunities-anchor">
+                                        <p className="opportunities-link opportunities-link-txt">Finance Lead</p>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-6 col-md-6 col-sm-6">
-                                    <div className="opportunities-link">
-                                        <p className="opportunities-link-txt">Sponsorship Lead</p>
-                                    </div>
+                                    <a href="https://joincircle.typeform.com/to/KBNU1K" target="_blank" className="opportunities-anchor">
+                                        <p className="opportunities-link opportunities-link-txt">Sponsorship Lead</p>
+                                    </a>
                                 </div>
                                 <div className="col-lg-6 col-md-6 col-sm-6">
-                                    <div className="opportunities-link">
-                                        <p className="opportunities-link-txt">Event Lead</p>
-                                    </div>
+                                    <a href="https://joincircle.typeform.com/to/KBNU1K" target="_blank" className="opportunities-anchor">
+                                        <p className="opportunities-link opportunities-link-txt">Event Lead</p>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                 </div>
-                
+
             </div>
 
         )

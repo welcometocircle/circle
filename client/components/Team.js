@@ -11,7 +11,7 @@ class Team extends Component {
                     <img className="team-pic" src="../assets/team.png" />
                 </div>
                 <div className="d-flex justify-content-center">
-                    <a href="#/opportunities" class='link-button link-text'>Join the team</a>
+                    <a href="/opportunities" class='link-button link-text'>Join the team</a>
                 </div>
             </div>
         )
