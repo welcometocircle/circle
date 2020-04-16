@@ -9,7 +9,7 @@ class Faqs extends Component {
                     <h2 className="faqs-title">FAQs</h2>
                     <div className="faq">
                         <h3 className="faqs-question">What is Circle?</h3>
-                        <p className="faqs-answer">We aim to create a fagship event in which students from science, technology, business, and social science will be put into teams and tackle a given global challenge using their skills.</p>
+                        <p className="faqs-answer">We aim to create a flagship event in which students from science, technology, business, and social science will be put into teams and tackle a given global challenge using their skills.</p>
                         <p className="faqs-answer">Circle itself is the company that will create this event along with many other endeavors to promote opportunities and innovation within these sectors.</p>
                     </div>
                     <div className="divider"></div>

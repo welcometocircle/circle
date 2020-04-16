@@ -174,17 +174,27 @@
         background: white;
     }
     .opportunities-background .opportunities{
-        margin-left: 80px;
+        /* margin-left: 80px; */
         max-width: 300px;
-        /* margin: auto; */
+        padding-bottom: 30px;
+        padding-top: 20px;
+        margin: auto;
     }
 
     .opportunities .opportunities-title{
         font-size: 45px;
+        text-align: center;
     }
 
     .opportunities .opportunities-text{
         font-size: 20px;
+        text-align: center;
+
+    }
+
+    .opportunities .opportunities-links{
+        /* margin-left: 20px; */
+        max-width: 225px;
     }
 
     h1.ideas-title {
@@ -555,7 +565,7 @@
 .conf2-background{
     background-color: #121212;
     width: 100%;
-    padding: 150px;
+    padding: 150px 0px;
 }
 
 .conf2-title{
@@ -801,7 +811,7 @@
 .title-wrap{
     margin-left: 70px;
     background: url('../assets/circle.png') no-repeat;
-    background-size: 50px 50px;
+    background-size: 45px 45px;
     padding-bottom: 50px;
 }
 
@@ -811,7 +821,7 @@
     color: #000000;
     font-size: 30px;
     letter-spacing: -2px;
-    margin-top: 0px;
+    padding-top: 3px;
     margin-left: 60px
 }
 

@@ -7,7 +7,7 @@ class Subjects extends Component {
             <div className="subjects-background">
                 <div className="subjects">
                     <h2 className="subject-main-title">All 4 One.</h2>
-                    <p className="gen-text">Designed with core sectors in mind, Circle intergrates science, technology, business, and social science to bring solutions to the issues we face today.</p>
+                    <p className="gen-text">Designed with core sectors in mind, Circle integrates science, technology, business, and social science to bring solutions to the issues we face today.</p>
                 </div>
                 <div className="subject-region">
                     <div className="row justify-content-center">

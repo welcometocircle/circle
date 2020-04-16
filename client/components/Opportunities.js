@@ -13,7 +13,7 @@ class Opportunities extends Component {
                     <div className="opportunities">
                         <h2 className="opportunities-title">Joining the dream team.</h2>
                         <p className="opportunities-text">Current openings:</p>
-                        <div className="container">
+                        <div className="container opportunities-links">
                             <div className="row">
                                 <div className="col-lg-6 col-md-6 col-sm-6">
                                     <a href="https://joincircle.typeform.com/to/KBNU1K" target="_blank" className="opportunities-anchor">
@@ -27,7 +27,7 @@ class Opportunities extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="container">
+                        <div className="container opportunities-links">
                             <div className="row">
                                 <div className="col-lg-6 col-md-6 col-sm-6">
                                     <a href="https://joincircle.typeform.com/to/KBNU1K" target="_blank" className="opportunities-anchor">

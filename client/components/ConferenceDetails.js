@@ -7,8 +7,8 @@ class ConferenceDetails extends Component {
                 <h2 className="conf2-title">Just about everything.</h2>
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-2"></div>
-                        <div className="col-lg-3">
+                        <div className="col-lg-2 col-md-1 col-sm-1 col-1"></div>
+                        <div className="col-lg-3 col-md-12 col-sm-12 col-12">
                             <p className="conf2-text">Circle Conference aims to go beyond and provide students with greater access to opportunities and networks within their sectors – and of course much more than just that.</p>
                         </div>
                         <div className="col-lg-5">
