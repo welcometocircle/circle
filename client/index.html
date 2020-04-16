@@ -28,6 +28,35 @@
 </head>
 
 <body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
+
+<!-- Add the standard Performance Monitoring library -->
+  <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-performance.js"></script>
+
+<script src="/__/firebase/init.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDXXvSk7wAg0bO_f-5-bE9ZE4TE6ilFVyM",
+    authDomain: "circle-innovation.firebaseapp.com",
+    databaseURL: "https://circle-innovation.firebaseio.com",
+    projectId: "circle-innovation",
+    storageBucket: "circle-innovation.appspot.com",
+    messagingSenderId: "740178600284",
+    appId: "1:740178600284:web:39336e871233bbe3b0e199",
+    measurementId: "G-C53Y5MQ586"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  var perf = firebase.performance();
+</script>
+
   <div id="root"></div>
 
 
