@@ -4,6 +4,7 @@ import '../css/Main.css'
 class Opportunities extends Component {
     componentDidMount() {
         window.scrollTo(0, 0);
+        analytics.logEvent("Opportunities Did Mount")
     }
 
     render() {

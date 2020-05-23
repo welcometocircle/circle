@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import '../css/Main.css'
 
 class Faqs extends Component {
+    componentDidMount(){
+        analytics.logEvent("FAQs Did Mount")
+    }
     render() {
         return (
             <div className="faqs-background">

@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="./css/App.css">
   <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -37,7 +37,6 @@
 <!-- Add the standard Performance Monitoring library -->
   <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-performance.js"></script>
 
-<script src="/__/firebase/init.js"></script>
 
 <script>
   // Your web app's Firebase configuration
@@ -53,8 +52,8 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-  var perf = firebase.performance();
+  const analytics = firebase.analytics();
+  const perf = firebase.performance();
 </script>
 
   <div id="root"></div>
