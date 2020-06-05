@@ -1,3 +1,76 @@
+/* @Override from main 
+   making footer and header dark scale
+*/
+.mynav{
+    background-color: black !important;
+    padding-top: 20px !important;
+    padding-bottom: 0px;
+    margin: 0 0 0 0;
+}
+.brand-title {
+    color: white;
+}
+.mynav-txt:hover {
+    color: white;
+}
+.footer{
+    background-color: #212121;
+}
+.title-wrap {
+    margin-left: 70px;
+    background: url('../assets/circle-white.png') no-repeat;
+    background-size: 45px 45px;
+    padding-bottom: 50px;
+}
+.footer-title {
+    color: white;
+}
+.footer-social {
+    color: white;
+}
+body {
+    background-color: black;
+}
+
+/* Compass Page styles */
+
 .compass{
-    
+    /* margin-left: 120px;
+    margin-top: 50px; */
+    margin: 60px auto;
+    text-align: center;
+}
+
+.compass-background{
+    background-color: black;
+}
+.compass-logo {
+
+}
+
+.compass-title{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    letter-spacing: -2px;
+    font-size: 70px;
+    /*70px;*/
+    background: -webkit-linear-gradient(0.2turn, #ceaa8e, #b2805f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.compass-subtitle{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 25px;
+    color: #939393;
+    margin-bottom: 20px;
+}
+
+.compass-desc{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 25px;
+    color: #939393;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

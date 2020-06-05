@@ -11,38 +11,15 @@ class Compass extends Component {
     render() {
         return (
             <div>
-                <div className="opportunities-background">
-                    <div className="opportunities">
-                        <h2 className="opportunities-title">Joining the dream team.</h2>
-                        <p className="opportunities-text">Current openings:</p>
-                        <div className="container opportunities-links">
-                            <div className="row">
-                                <div className="col-lg-6 col-md-6 col-sm-6">
-                                    <a href="https://joincircle.typeform.com/to/KBNU1K" target="_blank" className="opportunities-anchor">
-                                        <p className="opportunities-link opportunities-link-txt">Digital Design Lead</p>
-                                    </a>
-                                </div>
-                                <div className="col-lg-6 col-md-6 col-sm-6">
-                                    <a href="https://joincircle.typeform.com/to/KBNU1K" target="_blank" className="opportunities-anchor">
-                                        <p className="opportunities-link opportunities-link-txt">Finance Lead</p>
-                                    </a>
-                                </div>
-                            </div>
+                <div className="compass-background">
+                    <div className="compass container">
+                        <div className="row justify-content-center">
+                            <img src="assets/compass-logo.png" className="compass-logo col-lg-2 col-6"/>
                         </div>
-                        <div className="container opportunities-links">
-                            <div className="row">
-                                <div className="col-lg-6 col-md-6 col-sm-6">
-                                    <a href="https://joincircle.typeform.com/to/KBNU1K" target="_blank" className="opportunities-anchor">
-                                        <p className="opportunities-link opportunities-link-txt">Sponsorship Lead</p>
-                                    </a>
-                                </div>
-                                <div className="col-lg-6 col-md-6 col-sm-6">
-                                    <a href="https://joincircle.typeform.com/to/KBNU1K" target="_blank" className="opportunities-anchor">
-                                        <p className="opportunities-link opportunities-link-txt">Event Lead</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        <h2 className="compass-title">compass</h2>
+                        <h3 className="compass-subtitle">a virtual hackathon like no other</h3>
+                        <p className="compass-desc">coming soon</p>
+                        
                     </div>
 
                 </div>
