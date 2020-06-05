@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import '../css/Main.css';
-import '../css/compass.css'
+import '../css/compass.css';
+
+
 
 class Compass extends Component {
     componentDidMount() {
