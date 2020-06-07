@@ -37,8 +37,8 @@ body {
 .compass{
     /* margin-left: 120px;
     margin-top: 50px; */
-    margin: 60px auto;
     text-align: center;
+    margin-top: 60px !important;
 }
 
 .compass-background{
@@ -67,10 +67,27 @@ body {
     margin-bottom: 20px;
 }
 
+.compass-shape-div {
+    position: relative;
+}
+
 .compass-desc{
     font-family: 'DM Sans', sans-serif;
     font-size: 15px;
-    color: #939393;
+    font-weight: bold;
+    color: black;
     margin-top: 20px;
     margin-bottom: 20px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.compass-shape {
+    text-align: center;
+    height: 35vh;
+    overflow: hidden;
+    top: 0 !important;
 }
