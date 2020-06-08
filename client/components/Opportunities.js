@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import '../css/Main.css'
 
 class Opportunities extends Component {
+    constructor(props) {
+        super(props);
+        document.documentElement.setAttribute('data-theme', 'light');
+    }
+
     componentDidMount() {
         window.scrollTo(0, 0);
         analytics.logEvent("Opportunities Did Mount")

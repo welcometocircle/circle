@@ -13,8 +13,8 @@ class Inquiries extends Component {
                     <div className="inquiry-button">
                         <p className="inquiry-text">Sponsorship</p>
                     </div> */}
-                    <a href="mailto:info@hellocircle.ca" class='link-button link-text'>General Inquiries</a>
-                    <a href="mailto:sponsorship@hellocircle.ca" class='link-button link-text'>Sponsorship</a>
+                    <a href="mailto:info@hellocircle.ca" className='link-button link-text'>General Inquiries</a>
+                    <a href="mailto:sponsorship@hellocircle.ca" className='link-button link-text'>Sponsorship</a>
                 </div>
             </div>
         )

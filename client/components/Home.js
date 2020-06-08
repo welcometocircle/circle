@@ -12,6 +12,10 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 
 class Home extends Component {
+    constructor(props) {
+        super(props);
+        document.documentElement.setAttribute('data-theme', 'light');
+    }
     componentDidMount(){
         analytics.logEvent("Home Did Mount")
     }

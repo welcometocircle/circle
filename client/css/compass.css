@@ -1,35 +1,8 @@
-/* @Override from main 
-   making footer and header dark scale
-*/
-.mynav{
-    background-color: black !important;
-    padding-top: 20px !important;
-    padding-bottom: 0px;
-    margin: 0 0 0 0;
-}
-.brand-title {
-    color: white;
-}
-.mynav-txt:hover {
-    color: white;
-}
-.footer{
-    background-color: #212121;
-}
 .title-wrap {
     margin-left: 70px;
     background: url('../assets/circle-white.png') no-repeat;
     background-size: 45px 45px;
     padding-bottom: 50px;
-}
-.footer-title {
-    color: white;
-}
-.footer-social {
-    color: white;
-}
-body {
-    background-color: black;
 }
 
 /* Compass Page styles */
@@ -41,9 +14,6 @@ body {
     margin-top: 60px !important;
 }
 
-.compass-background{
-    background-color: black;
-}
 .compass-logo {
 
 }
@@ -75,7 +45,6 @@ body {
     font-family: 'DM Sans', sans-serif;
     font-size: 15px;
     font-weight: bold;
-    color: black;
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;

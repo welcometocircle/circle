@@ -7,7 +7,7 @@ class SubjectArea extends Component {
 
     render() {
         return (
-            <div class="subject-area">
+            <div className="subject-area">
                 <img className="subject-area-img" src={this.props.img}/>
                 <p className="subject-title">{this.props.title}</p>
             </div>

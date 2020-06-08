@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import '../css/Main.css'
 
 class Faqs extends Component {
+    constructor(props) {
+        super(props);
+        document.documentElement.setAttribute('data-theme', 'light');
+    }
     componentDidMount(){
         analytics.logEvent("FAQs Did Mount")
     }

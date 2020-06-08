@@ -12,6 +12,7 @@ class Compass extends Component {
             isStopped: false,
             isPaused: false
         };
+        document.documentElement.setAttribute('data-theme','dark');
     }
 
     componentDidMount() {
@@ -32,10 +33,10 @@ class Compass extends Component {
         };
         return (
             <div>
-                <div className="compass-background">
+                <div>
                     <div className="compass container">
                         <div className="row justify-content-center">
-                            <Lottie isClickToPauseDisabled options={aniCompass} height={500} width={500}/>
+                            <Lottie isClickToPauseDisabled options={aniCompass} height={200} width={200}/>
                         </div>
                         <h2 className="compass-title">compass</h2>
                         <h3 className="compass-subtitle">a virtual hackathon like no other</h3>
