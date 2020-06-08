@@ -17,6 +17,7 @@ class Home extends Component {
         document.documentElement.setAttribute('data-theme', 'light');
     }
     componentDidMount(){
+        window.scrollTo(0, 0);
         analytics.logEvent("Home Did Mount")
     }
     render(){

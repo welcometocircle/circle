@@ -4,6 +4,7 @@ import '../css/Main.css'
 class Opportunities extends Component {
     constructor(props) {
         super(props);
+        
         document.documentElement.setAttribute('data-theme', 'light');
     }
 

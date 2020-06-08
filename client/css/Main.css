@@ -11,7 +11,7 @@
     --footer-title-color:black;
     --footer-social-color:black;
     --footer-social-hover:grey;
-
+    --footer-logo:url('../assets/circle.png');
     --body-bg-color:white;
 }
 
@@ -28,7 +28,7 @@
     --footer-title-color:white;
     --footer-social-color:white;
     --footer-social-hover:grey;
-
+    --footer-logo:url('../assets/circle-white.png');
     --body-bg-color:black;
 }
 
@@ -317,7 +317,6 @@ body {
     /* display: block;
     max-width: 100%;
     max-height: auto; */
-
 }
 .gradient-text{
     margin-top: auto;
@@ -405,6 +404,7 @@ body {
     background: -webkit-linear-gradient(0.2turn, #BE29B8, #FC1B51);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-top: -20%;
 }
 
 .brand-title{
@@ -851,7 +851,7 @@ body {
 
 .title-wrap{
     margin-left: 70px;
-    background: url('../assets/circle.png') no-repeat;
+    background: var(--footer-logo) no-repeat;
     background-size: 45px 45px;
     padding-bottom: 50px;
 }

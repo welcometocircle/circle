@@ -1,7 +1,7 @@
 import React, { Component, createRef, useEffect } from 'react';
 import '../css/compass.css';
 import Lottie from "react-lottie";
-import * as aniCompassData from "../assets/compass-rotating-logo/compass-logo-layered.json"
+import * as aniCompassData from "../assets/animations/compass-rotating-logo/compass-logo-layered.json"
 
 
 
@@ -26,9 +26,11 @@ class Compass extends Component {
                 animationData: aniCompassData.default,
                 loop: true,
                 autoplay: true,
-                assetsPath: "../assets/compass-rotating-logo/images/",
+                renderer:'canvas',
                 rendererSettings:{
-                    preserveAspectRatio: 'xMidYMid slice'
+                    preserveAspectRatio: 'xMidYMid meet',
+                    // progressiveLoad:true,
+                    // clearCanvas:true,
                 }
         };
         return (
