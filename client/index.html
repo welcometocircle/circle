@@ -37,6 +37,7 @@
 <!-- Add the standard Performance Monitoring library -->
   <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-performance.js"></script>
 
+  <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-storage.js"></script>
 <script>
   // Your web app's Firebase configuration
   var firebaseConfig = {
@@ -53,6 +54,8 @@
   firebase.initializeApp(firebaseConfig);
   const analytics = firebase.analytics();
   const perf = firebase.performance();
+  const storage = firebase.storage();
+  const storageRef = storage.ref();
 </script>
 
 <div id="root"></div>
