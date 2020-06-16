@@ -14,6 +14,7 @@ class SponsPkg extends Component {
     componentDidMount() {
 		    //   <a href={getFile.url}
 	// download={getFile.saveAsFileName}></a>
+		analytics.logEvent("SponsPkg Did Mount")
 		var link = document.getElementById("fileLink");
 		link.click()
 		// window.location.replace('http://www.hellocircle.ca')
