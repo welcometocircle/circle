@@ -7,56 +7,135 @@
 
 /* Compass Page styles */
 
-.compass{
-    /* margin-left: 120px;
+.compass {
+  /* margin-left: 120px;
     margin-top: 50px; */
-    text-align: center;
-    margin-top: 60px !important;
+  text-align: center;
+  margin-top: 60px !important;
 }
 
 .compass-logo {
-
 }
 
-.compass-title{
-    font-family: 'DM Sans', sans-serif;
-    font-weight: bold;
-    letter-spacing: -2px;
-    font-size: 70px;
-    /*70px;*/
-    background: -webkit-linear-gradient(0.2turn, #ceaa8e, #b2805f);
+.compass-landing-title {
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  letter-spacing: -2px;
+  font-size: 90px;
+  color: white;
+  /*70px;*/
+  /* background: -webkit-linear-gradient(0.2turn, #ceaa8e, #b2805f);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
 }
 
-
-.compass-subtitle{
-    font-family: 'DM Sans', sans-serif;
-    font-size: 25px;
-    color: #939393;
-    margin-bottom: 20px;
+.compass-subtitle {
+  font-family: "DM Sans", sans-serif;
+  font-size: 25px;
+  color: #939393;
+  margin-bottom: 20px;
 }
 
 .compass-shape-div {
-    position: relative;
-}
-
-.compass-desc{
-    font-family: 'DM Sans', sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: relative;
 }
 
 .compass-shape {
-    text-align: center;
-    height: 35vh;
-    overflow: hidden;
-    top: 0 !important;
+  text-align: center;
+  height: 35vh;
+  overflow: hidden;
+  top: 0 !important;
+}
+
+.compass-date {
+  margin-top: 40px;
+}
+
+.compass-date-text {
+  font-family: "DM Sans", sans-serif;
+  font-size: 17px;
+  color: #fafafa;
+  text-align: center;
+  margin-top: 5px;
+  background-color: #373737;
+  border-radius: 50px;
+  height: 50px;
+  padding-top: 12px;
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.compass-conv {
+  margin-top: 100px;
+}
+
+.compass-title {
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  letter-spacing: -2px;
+  font-size: 70px;
+  color: white;
+  text-align: center;
+
+  /*70px;*/
+  background: -webkit-linear-gradient(0.2turn, #ceaa8e, #b2805f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.compass-h5 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  font-size: 33px;
+  letter-spacing: -1.5px;
+  color: white;
+  text-align: center;
+}
+
+.compass-desc {
+  font-family: "DM Sans", sans-serif;
+  font-size: 17px;
+  font-weight: lighter;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.compass-perk-grid {
+  margin-top: 80px;
+}
+
+.compass-perk-row {
+  margin-top: 60px;
+}
+
+.compass-perk-title {
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  letter-spacing: -1.5px;
+  color: white;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.compass-reg {
+  margin-top: 80px;
+}
+
+.compass-reg-text {
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  letter-spacing: -0.5px;
+  margin-top: 5px;
+  background-color: #373737;
+  border-radius: 50px;
+  height: 50px;
+  padding-top: 8px;
+  width: 500px;
+  margin-bottom: 20px;
 }
