@@ -126,7 +126,7 @@
 
 .compass-reg-text {
   font-family: "DM Sans", sans-serif;
-  font-weight: bold;
+  font-weight: lighter;
   font-size: 25px;
   color: white;
   text-align: center;
@@ -137,5 +137,29 @@
   height: 50px;
   padding-top: 8px;
   width: 500px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 576px) {
+  .compass-landing-title {
+    font-size: 60px;
+  }
+
+  .compass-h5 {
+    font-size: 25px;
+  }
+
+  .compass-desc {
+    font-size: 15px;
+  }
+
+  .compass-perk-row {
+    margin-top: 0;
+  }
+
+  .compass-reg-text {
+    font-size: 20px;
+    padding-top: 10px;
+    width: 320px;
+  }
 }

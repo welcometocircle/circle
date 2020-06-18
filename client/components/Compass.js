@@ -56,7 +56,10 @@ class Compass extends Component {
           <div className="compass-conv">
             <h3 className="compass-title">Tag word. Tag Word.</h3>
             <div className="row justify-content-center">
-              <img src="../assets/compass-innovation.png" className="col-10" />
+              <img
+                src="../assets/compass-innovation.png"
+                className="col-12 col-lg-10"
+              />
             </div>
             <h5 className="compass-h5">
               From the convenience of your home on July 18-19
@@ -75,8 +78,8 @@ class Compass extends Component {
                 </div>
                 <h4 className="compass-perk-title">Guest Speakers</h4>
                 <p className="compass-desc">
-                  Explore different perspectives and gain valuable insight
-                  through presentaions given by industry experts
+                  Gain inspiration through the insight and journey of industry
+                  experts
                 </p>
               </div>
               <div className="col-12 col-lg-4 col-md-4">
@@ -85,8 +88,7 @@ class Compass extends Component {
                 </div>
                 <h4 className="compass-perk-title">Network</h4>
                 <p className="compass-desc">
-                  Meet new people, consider new ideas and engage in motivating
-                  conversations around key topics
+                  Engage in conversations that diversify your perspective
                 </p>
               </div>
             </div>
@@ -97,16 +99,20 @@ class Compass extends Component {
                 </div>
                 <h4 className="compass-perk-title">Panelist Sessions</h4>
                 <p className="compass-desc">
-                  Immerse yourself in over ___ sessions presented by ____ to
-                  help you build the next generation of solutions
+                  Embrace your curiousity by taking the opportunity to ask
+                  questions to a panel of speakers
                 </p>
               </div>
               <div className="col-12 col-lg-4 col-md-4">
                 <div className="row justify-content-center">
-                  <img src="../assets/compass-network.png" className="col-9" />
+                  <img src="../assets/compass-problems.png" className="col-9" />
                 </div>
                 <h4 className="compass-perk-title">Problem Solving</h4>
-                <p className="compass-desc">Tackle problems head on and get</p>
+                <p className="compass-desc">
+                  Immerse yourself in an environment of fellow problem solvers
+                  in their respective disciplines and collaborate to find an
+                  applicable solution
+                </p>
               </div>
             </div>
           </div>
