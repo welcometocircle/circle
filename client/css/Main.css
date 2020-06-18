@@ -3,6 +3,7 @@
   --nav-brand-focus-color: black;
   --nav-brand-title-color: #272727;
   --nav-bg-color: white;
+  --nav-toggle-color: #e7e7e7;
   --nav-txt-color: #cbcbcb;
   --nav-txt-hover-color: black;
   --nav-toggler-color: rgba(0, 0, 0, 0);
@@ -20,9 +21,11 @@
   --nav-brand-focus-color: white;
   --nav-brand-title-color: white;
   --nav-bg-color: black;
+  --nav-collaspe-color: white;
   --nav-txt-color: #cbcbcb;
   --nav-txt-hover-color: white;
-  --nav-toggler-color: rgba(0, 0, 0, 0);
+  --nav-toggler-color: e7e7e7;
+  
 
   --footer-bg-color: #212121;
   --footer-title-color: white;
@@ -42,7 +45,7 @@
   }
 
   body .brand-title {
-    margin-left: 130px;
+    margin-left: 20%;
   }
 
   .mynav .mynav-txt {
@@ -248,14 +251,15 @@ body {
   color: var(--nav-brand-focus-color);
 }
 
-.mynav {
-  background-color: var(--nav-bg-color);
-  padding-top: 20px;
-  padding-bottom: 0px;
-  margin: 0 0 0 0;
+.navbar-brand {
+  margin-right: auto !important;
 }
-.navbar-toggler {
-  margin: 0 auto;
+
+.navbar-toggler{
+  /* margin: 0 auto !important; */
+  margin-left: auto !important;
+  /* background: var(--nav-collaspe-color);  */
+  background-color: var(--nav-toggle-color) !important;
 }
 
 .mynav-items {
@@ -277,6 +281,7 @@ body {
   color: var(--nav-txt-color);
   margin-right: 40px;
   cursor: pointer;
+  letter-spacing: -1px;
 }
 
 .mynav-text-compass {
@@ -298,10 +303,6 @@ body {
 
 .mynav-txt:link .mynav-txt:visited .mynav-txt:active {
   text-decoration: none;
-}
-
-.mynav-toggler {
-  border-color: var(--nav-toggler-color);
 }
 /* .gradient-container{
     margin-top: 100%;
@@ -415,7 +416,7 @@ body {
   letter-spacing: -2px;
   color: var(--nav-brand-title-color);
   font-size: 30px;
-  margin-left: 100px;
+  margin-left: 40%;
 }
 .brand-title:hover {
   color: grey;

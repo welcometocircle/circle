@@ -1,24 +1,36 @@
 import React, { Component } from 'react';
 //import '../css/NavBar.css'
 import 'bootstrap/dist/css/bootstrap.css';
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 import { Link } from "react-router-dom";
-
+import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from "react-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
 
 class MyNavbar extends Component {
   render() {
     return (
-      <Navbar fluid className="navbar navbar-expand-sm mynav navbar-light">
-        <Navbar.Header>
-          <Navbar.Brand>
-            <Link className="brand-title" to="/">circle</Link>
-          </Navbar.Brand>
-          <Navbar.Toggle />
-        </Navbar.Header>
+      <Navbar className="mynav" expand="lg">
+        {/* <Navbar.Header> */}
+        <Navbar.Brand className="mr-auto">
+          <Link className="brand-title" to="/">
+            circle
+          </Link>
+        </Navbar.Brand>
+
+        <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+        {/* </Navbar.Header> */}
         <Navbar.Collapse>
-          <Nav pullRight>
-            <NavItem href="/signup">Opportunities</NavItem>
-            <NavItem href="/login">FAQs</NavItem>
+          <Nav className="ml-auto">
+            <LinkContainer to="/opportunities">
+              <NavItem className="mynav-txt">Opportunities</NavItem>
+            </LinkContainer>
+            <LinkContainer to="/faqs">
+              <NavItem className="mynav-txt">FAQs</NavItem>
+            </LinkContainer>
+            <LinkContainer to="/compass">
+              <NavItem className="mynav-txt mynav-text-compass">
+                Compass
+              </NavItem>
+            </LinkContainer>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
