@@ -63,7 +63,8 @@
 
 .compass-learn-more{
   text-decoration: none !important;
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .compass-date {
@@ -187,14 +188,14 @@
 
 .compass-home {
   background-color: black;
-  height: 50vh;
-  padding-top: 2vh;
-  margin-top: -2vh;
+  height:100%;
+  padding-top: 20vh;
+  margin-top: -20vh;
 }
 
 .compass-img-innovation {
-  height: 50%;
-  width: 50%;
+  height: 60%;
+  width: 60%;
 }
 
 .compass-img-perk{

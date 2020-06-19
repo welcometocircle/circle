@@ -48,7 +48,7 @@ class Home extends Component {
               />
             </div>
             <h2 className="compass-landing-title">Compass</h2>
-            <h3 className="compass-subheading">a conference for the future</h3>
+            <h3 className="compass-subheading">A conference for the future</h3>
             <a
               className="row justify-content-center compass-learn-more"
               href="/compass"
@@ -69,7 +69,7 @@ class Home extends Component {
           </p>
         </div>
         <Subjects />
-        <Conference />
+        {/* <Conference /> */}
         <ConferenceDetails />
         <Team />
         <div className="toronto">

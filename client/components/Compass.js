@@ -43,7 +43,7 @@ class Compass extends Component {
               />
             </div>
             <h2 className="compass-landing-title">Compass</h2>
-            <h3 className="compass-subheading">a conference for the future</h3>
+            <h3 className="compass-subheading">A conference for the future</h3>
   
             <div className="row justify-content-center compass-date">
               <p className="compass-date-text">July 18 | July 19</p>
@@ -55,11 +55,11 @@ class Compass extends Component {
           </div>
 
           <div className="compass-conv">
-            <h3 className="compass-title">a whole new direction</h3>
+            <h3 className="compass-title">A whole new direction</h3>
             <div className="row justify-content-center">
               <img
                 src="../assets/compass-innovation.png"
-                className = "col-12 col-lg-5  compass-img-innovation"
+                className = "col-12 col-lg-7  compass-img-innovation"
               />
             </div>
             <h5 className="compass-h5">
