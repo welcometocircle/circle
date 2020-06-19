@@ -28,7 +28,21 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
 }
+.compass-subheading{
+  font-family: "DM Sans",
+  sans-serif;
+  font-weight: bold;
+  letter-spacing: -2px;
+  font-size: 30px;
+  color: white;
+  text-align: center;
 
+
+  /*70px;*/
+  background: -webkit-linear-gradient(0.2turn, #ceaa8e, #b2805f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .compass-subtitle {
   font-family: "DM Sans", sans-serif;
   font-size: 25px;
@@ -45,6 +59,11 @@
   height: 35vh;
   overflow: hidden;
   top: 0 !important;
+}
+
+.compass-learn-more{
+  text-decoration: none !important;
+  margin-top: 10px;
 }
 
 .compass-date {
@@ -168,5 +187,17 @@
 
 .compass-home {
   background-color: black;
-  height: 90vh;
+  height: 50vh;
+  padding-top: 2vh;
+  margin-top: -2vh;
+}
+
+.compass-img-innovation {
+  height: 50%;
+  width: 50%;
+}
+
+.compass-img-perk{
+  height: 50%;
+  width: 50%;
 }

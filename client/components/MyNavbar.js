@@ -28,7 +28,7 @@ class MyNavbar extends Component {
             </LinkContainer>
             <LinkContainer to="/compass">
               <NavItem className="mynav-txt mynav-text-compass">
-                Compass
+                Compass Conference
               </NavItem>
             </LinkContainer>
           </Nav>

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../css/App.css";
 import "../css/Main.css";
+import "../css/compass.css"
 import MyNavbar from "./MyNavbar.js";
 import GradientLogo from "./GradientLogo.js";
 import Subjects from "./Subjects";
@@ -15,7 +16,7 @@ import "bootstrap/dist/css/bootstrap.css";
 class Home extends Component {
   constructor(props) {
     super(props);
-    document.documentElement.setAttribute("data-theme", "light");
+    document.documentElement.setAttribute("data-theme", "home");
   }
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -47,8 +48,9 @@ class Home extends Component {
               />
             </div>
             <h2 className="compass-landing-title">Compass</h2>
+            <h3 className="compass-subheading">a conference for the future</h3>
             <a
-              className="row justify-content-center compass-date"
+              className="row justify-content-center compass-learn-more"
               href="/compass"
             >
               <p className="compass-date-text">Learn More</p>
