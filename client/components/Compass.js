@@ -54,7 +54,7 @@ class Compass extends Component {
           </div>
 
           <div className="compass-conv">
-            <h3 className="compass-title">The Online Ideation Challenge</h3>
+            <h3 className="compass-title">a whole new direction</h3>
             <div className="row justify-content-center">
               <img
                 src="../assets/compass-innovation.png"
@@ -66,10 +66,10 @@ class Compass extends Component {
             </h5>
             <div className="row justify-content-center">
               <p className="compass-desc col-11 col-lg-5">
-                Circle’s first ever 2-day online ideation challenge conference
-                named Compass. Students from across North America will
-                participate in this digital experience to solve global
-                challenges under the overarching theme to be announced.
+                Circle's first ever 2-day digital conference, Compass aims to
+                revolutionize education. Students will participate in teams to
+                solve global challenges, interact with panelists, view keynotes,
+                and more – all from the convenience of their home.
               </p>
             </div>
           </div>

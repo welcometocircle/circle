@@ -25,7 +25,6 @@
   --nav-txt-color: #cbcbcb;
   --nav-txt-hover-color: white;
   --nav-toggler-color: e7e7e7;
-  
 
   --footer-bg-color: #212121;
   --footer-title-color: white;
@@ -255,7 +254,7 @@ body {
   margin-right: auto !important;
 }
 
-.navbar-toggler{
+.navbar-toggler {
   /* margin: 0 auto !important; */
   margin-left: auto !important;
   /* background: var(--nav-collaspe-color);  */
@@ -334,6 +333,9 @@ body {
   text-align: center;
   font-weight: bold;
   line-height: 90%;
+  background: -webkit-linear-gradient(0.2turn, #be29b8, #fc1b51);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .opportunities {
   max-width: 500px;
@@ -407,7 +409,7 @@ body {
   background: -webkit-linear-gradient(0.2turn, #be29b8, #fc1b51);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-top: -20%;
+  margin-top: ;
 }
 
 .brand-title {

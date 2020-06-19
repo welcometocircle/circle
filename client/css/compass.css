@@ -49,6 +49,7 @@
 
 .compass-date {
   margin-top: 40px;
+  text-decoration: none !important;
 }
 
 .compass-date-text {
@@ -63,6 +64,7 @@
   padding-top: 12px;
   width: 200px;
   margin-bottom: 20px;
+  text-decoration: none !important;
 }
 
 .compass-conv {
@@ -162,4 +164,9 @@
     padding-top: 10px;
     width: 320px;
   }
+}
+
+.compass-home {
+  background-color: black;
+  height: 90vh;
 }
