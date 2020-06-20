@@ -28,15 +28,13 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
 }
-.compass-subheading{
-  font-family: "DM Sans",
-  sans-serif;
+.compass-subheading {
+  font-family: "DM Sans", sans-serif;
   font-weight: bold;
   letter-spacing: -2px;
   font-size: 30px;
   color: white;
   text-align: center;
-
 
   /*70px;*/
   background: -webkit-linear-gradient(0.2turn, #ceaa8e, #b2805f);
@@ -61,7 +59,7 @@
   top: 0 !important;
 }
 
-.compass-learn-more{
+.compass-learn-more {
   text-decoration: none !important;
   margin-top: 20px;
   margin-bottom: 40px;
@@ -70,6 +68,7 @@
 .compass-date {
   margin-top: 40px;
   text-decoration: none !important;
+  width: auto;
 }
 
 .compass-date-text {
@@ -85,6 +84,14 @@
   width: 200px;
   margin-bottom: 20px;
   text-decoration: none !important;
+}
+
+.compass-link {
+  text-decoration: none !important;
+}
+
+.compass-video {
+  margin-top: 100px;
 }
 
 .compass-conv {
@@ -162,6 +169,11 @@
   margin-bottom: 50px;
 }
 
+.compass-end-button {
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+
 @media (max-width: 576px) {
   .compass-landing-title {
     font-size: 60px;
@@ -188,7 +200,7 @@
 
 .compass-home {
   background-color: black;
-  height:100%;
+  height: 100%;
   padding-top: 20vh;
   margin-top: -20vh;
 }
@@ -198,7 +210,7 @@
   width: 60%;
 }
 
-.compass-img-perk{
+.compass-img-perk {
   height: 50%;
   width: 50%;
 }

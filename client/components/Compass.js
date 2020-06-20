@@ -43,10 +43,14 @@ class Compass extends Component {
               />
             </div>
             <h2 className="compass-landing-title">Compass</h2>
-            <h3 className="compass-subheading">A conference for the future</h3>
-  
+            <h3 className="compass-subheading">
+              A conference for the future <br /> July 18 - 19
+            </h3>
+
             <div className="row justify-content-center compass-date">
-              <p className="compass-date-text">July 18 | July 19</p>
+              <a href="#" target="_blank" className="compass-link">
+                <p className="compass-date-text">Register Now</p>
+              </a>
             </div>
 
             <div className="row justify-content-center compass-date">
@@ -54,12 +58,23 @@ class Compass extends Component {
             </div>
           </div>
 
+          <div className="row justify-content-center compass-video">
+            <iframe
+              width="720"
+              height="405"
+              src="https://www.youtube.com/embed/L0dDUoPa1TQ"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+
           <div className="compass-conv">
             <h3 className="compass-title">A whole new direction</h3>
             <div className="row justify-content-center">
               <img
                 src="../assets/compass-innovation.png"
-                className = "col-12 col-lg-7  compass-img-innovation"
+                className="col-12 col-lg-7  compass-img-innovation"
               />
             </div>
             <h5 className="compass-h5">
@@ -79,7 +94,10 @@ class Compass extends Component {
             <div className="row justify-content-between">
               <div className="col-12 col-lg-4 col-md-4">
                 <div className="row justify-content-center">
-                  <img src="../assets/compass-speakers.png" className="col-9 compass-img-perk" />
+                  <img
+                    src="../assets/compass-speakers.png"
+                    className="col-9 compass-img-perk"
+                  />
                 </div>
                 <h4 className="compass-perk-title">Guest Speakers</h4>
                 <p className="compass-desc">
@@ -89,7 +107,10 @@ class Compass extends Component {
               </div>
               <div className="col-12 col-lg-4 col-md-4">
                 <div className="row justify-content-center">
-                  <img src="../assets/compass-network.png" className="col-9 compass-img-perk" />
+                  <img
+                    src="../assets/compass-network.png"
+                    className="col-9 compass-img-perk"
+                  />
                 </div>
                 <h4 className="compass-perk-title">Network</h4>
                 <p className="compass-desc">
@@ -100,7 +121,10 @@ class Compass extends Component {
             <div className="row justify-content-between compass-perk-row">
               <div className="col-12 col-lg-4 col-md-4">
                 <div className="row justify-content-center">
-                  <img src="../assets/compass-panel.png" className="col-9 compass-img-perk" />
+                  <img
+                    src="../assets/compass-panel.png"
+                    className="col-9 compass-img-perk"
+                  />
                 </div>
                 <h4 className="compass-perk-title">Panelist Sessions</h4>
                 <p className="compass-desc">
@@ -110,7 +134,10 @@ class Compass extends Component {
               </div>
               <div className="col-12 col-lg-4 col-md-4">
                 <div className="row justify-content-center">
-                  <img src="../assets/compass-problems.png" className="col-9 compass-img-perk" />
+                  <img
+                    src="../assets/compass-problems.png"
+                    className="col-9 compass-img-perk"
+                  />
                 </div>
                 <h4 className="compass-perk-title">Problem Solving</h4>
                 <p className="compass-desc">
@@ -121,8 +148,19 @@ class Compass extends Component {
               </div>
             </div>
           </div>
-          <div className="row justify-content-center compass-reg">
-            <p className="compass-reg-text">Registration Opens June 22</p>
+          <div className="compass-end-button">
+            <div className="row justify-content-center compass-date mt-05">
+              <a href="#" target="_blank" className="compass-link">
+                <p className="compass-date-text">Register Now</p>
+              </a>
+            </div>
+            <div className="row justify-content-center">
+              <p className="compass-desc col-11 col-lg-5 mt-0">
+                Whether you are a high school freshman or university grad, this
+                conference is for you! No worries needed - all from the
+                convenience of your home.
+              </p>
+            </div>
           </div>
         </div>
       </div>
