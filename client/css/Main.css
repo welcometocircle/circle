@@ -850,12 +850,14 @@ body {
 .footer {
   background-color: var(--footer-bg-color);
   /* width: 100vw; */
-  padding-top: 50px;
+  margin-top: 50px;
   /* padding-bottom: 50px; */
 }
 
 .footer-wrapper {
+  background-color: var(--footer-bg-color);
   margin-left: 0px;
+  padding-top: 50px;
   /* margin-top: 30px; */
   /* margin-bottom: 50px; */
 }

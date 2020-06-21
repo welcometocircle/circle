@@ -9,10 +9,6 @@ import '../css/Main.css'
 class Footer extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            isStopped: false,
-            isPaused: false
-        };
     }
     render() {
         return (

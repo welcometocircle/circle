@@ -65,13 +65,15 @@
   margin-bottom: 40px;
 }
 
-.compass-date {
+.compass-btn {
   margin-top: 40px;
   text-decoration: none !important;
   width: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.compass-date-text {
+.compass-btn-text {
   font-family: "DM Sans", sans-serif;
   font-size: 17px;
   color: #fafafa;
@@ -81,8 +83,18 @@
   border-radius: 50px;
   height: 50px;
   padding-top: 12px;
+  
   width: 200px;
   margin-bottom: 20px;
+  text-decoration: none !important;
+}
+
+.compass-btn-text:hover{
+    background-color: #ceaa8e;
+    text-decoration: none !important;
+}
+
+.compass-link {
   text-decoration: none !important;
 }
 

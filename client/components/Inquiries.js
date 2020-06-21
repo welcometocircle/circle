@@ -6,6 +6,7 @@ class Inquiries extends Component {
             <div className="inquiries">
                 <h2 className="inquiries-title">Hey, Hi, Hello.</h2>
                 <h3 className="inquiries-subtitle">Get in touch with us.</h3>
+                
                 <div className="inquiry-buttons" >
                     {/* <div type='button' className="inquiry-button" onClick="window.location='mailto:info@hellocircle.ca';" >
                         <p className="inquiry-text">General Inquiries</p>

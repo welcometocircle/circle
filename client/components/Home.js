@@ -9,9 +9,9 @@ import Conference from "./Conference";
 import ConferenceDetails from "./ConferenceDetails";
 import Team from "./Team";
 import Inquiries from "./Inquiries";
-import Lottie from "react-lottie";
-import * as aniCompassData from "../assets/animations/compass-rotating-logo/compass-logo-layered.json";
 import "bootstrap/dist/css/bootstrap.css";
+import CLogoAnimation from "./Compass/CLogoAnimation"
+import CBtn from "./Compass/CBtn"
 
 class Home extends Component {
   constructor(props) {
@@ -23,42 +23,25 @@ class Home extends Component {
     analytics.logEvent("Home Did Mount");
   }
   render() {
-    const aniCompass = {
-      animationData: aniCompassData.default,
-      loop: true,
-      autoplay: true,
-      renderer: "canvas",
-      rendererSettings: {
-        preserveAspectRatio: "xMidYMid meet",
-        // progressiveLoad:true,
-        // clearCanvas:true,
-      },
-    };
+
     return (
       <div>
         {/* <MyNavbar /> */}
         <div className="compass-home">
           <div className="compass container">
-            <div className="row justify-content-center">
-              <Lottie
-                isClickToPauseDisabled
-                options={aniCompass}
-                height={200}
-                width={200}
-              />
-            </div>
+            <CLogoAnimation/>
+
             <h2 className="compass-landing-title">Compass</h2>
             <h3 className="compass-subheading">A conference for the future</h3>
-            <a
-              className="row justify-content-center compass-learn-more"
-              href="/compass"
-            >
-              <p className="compass-date-text">Learn More</p>
-            </a>
+            <div style={{marginTop: "10px", marginBottom: "40px"}} className="d-flex justify-content-center">
+              <CBtn txt="Learn More" href="/compass"/>
+              <CBtn txt="Register Now!" href="https://forms.gle/nXT8L5Q9ejrr1H259" newTab={true}/>
+            </div>
           </div>
         </div>
 
         <GradientLogo />
+        
         <div className="innovation">
           {/* <h2 className="innovation-title">Innovation is just the beginning</h2> */}
           <p className="gen-text">
@@ -72,6 +55,8 @@ class Home extends Component {
         {/* <Conference /> */}
         <ConferenceDetails />
         <Team />
+
+        
         <div className="toronto">
           <h2 className="toronto-title">
             Made in the <img className="heart" src="../assets/heart.png"></img>{" "}
