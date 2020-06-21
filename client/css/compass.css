@@ -196,6 +196,11 @@
     padding-top: 10px;
     width: 320px;
   }
+
+  .compass-video iframe {
+    height: 310px;
+    padding: 30px;
+  }
 }
 
 .compass-home {
