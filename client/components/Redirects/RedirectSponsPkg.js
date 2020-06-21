@@ -2,7 +2,7 @@ import React, { Component, createRef, useEffect } from 'react';
 
 
 
-class SponsPkg extends Component {
+class RedirectSponsPkg extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -41,4 +41,4 @@ class SponsPkg extends Component {
 	}
 }
 
-export default SponsPkg;
+export default RedirectSponsPkg;

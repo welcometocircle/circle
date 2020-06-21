@@ -4,7 +4,9 @@ import HomePage from "./Home/HomePage";
 import Opportunities from "./Opportunities";
 import Faqs from "./Faqs";
 import CompassPage from "./Compass/CompassPage";
-import SponsPkg from "./SponsPkg"
+import RedirectSponsPkg from "./Redirects/RedirectSponsPkg";
+import RedirectRegister from "./Redirects/RedirectRegister";
+
 export default function Routes() {
   return (
     <Switch>
@@ -12,7 +14,8 @@ export default function Routes() {
       <Route path="/opportunities" exact component={Opportunities} />
       <Route path="/faqs" exact component={Faqs} />
       <Route path="/compass" exact component={CompassPage} />
-      <Route path="/sponspkg" exact component = {SponsPkg}/>
+      <Route path="/sponspkg" exact component = {RedirectSponsPkg}/>
+      <Route path="/register" exact component = {RedirectRegister}/>
     </Switch>
   );
 }
