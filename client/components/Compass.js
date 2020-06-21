@@ -48,7 +48,7 @@ class Compass extends Component {
             </h3>
 
             <div className="row justify-content-center compass-date">
-              <a href="#" target="_blank" className="compass-link">
+              <a href="https://forms.gle/nXT8L5Q9ejrr1H259" target="_blank" className="compass-link">
                 <p className="compass-date-text">Register Now</p>
               </a>
             </div>
@@ -150,7 +150,7 @@ class Compass extends Component {
           </div>
           <div className="compass-end-button">
             <div className="row justify-content-center compass-date mt-05">
-              <a href="#" target="_blank" className="compass-link">
+              <a href="https://forms.gle/nXT8L5Q9ejrr1H259" target="_blank" className="compass-link">
                 <p className="compass-date-text">Register Now</p>
               </a>
             </div>
