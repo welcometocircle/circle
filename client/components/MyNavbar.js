@@ -17,7 +17,6 @@ class MyNavbar extends Component {
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-        {/* </Navbar.Header> */}
         <Navbar.Collapse>
           <Nav className="ml-auto">
             <LinkContainer to="/opportunities">

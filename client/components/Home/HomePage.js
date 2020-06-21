@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import "../css/App.css";
-import "../css/Main.css";
-import "../css/compass.css"
-import MyNavbar from "./MyNavbar.js";
+import "../../css/App.css";
+import "../../css/Main.css";
+import "../../css/compass.css"
 import GradientLogo from "./GradientLogo.js";
 import Subjects from "./Subjects";
 import Conference from "./Conference";
@@ -10,10 +9,10 @@ import ConferenceDetails from "./ConferenceDetails";
 import Team from "./Team";
 import Inquiries from "./Inquiries";
 import "bootstrap/dist/css/bootstrap.css";
-import CLogoAnimation from "./Compass/CLogoAnimation"
-import CBtn from "./Compass/CBtn"
+import CLogoAnimation from "../Compass/CLogoAnimation"
+import CBtn from "../Compass/CBtn"
 
-class Home extends Component {
+class HomePage extends Component {
   constructor(props) {
     super(props);
     document.documentElement.setAttribute("data-theme", "home");
@@ -26,7 +25,6 @@ class Home extends Component {
 
     return (
       <div>
-        {/* <MyNavbar /> */}
         <div className="compass-home">
           <div className="compass container">
             <CLogoAnimation/>
@@ -70,4 +68,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default HomePage;
