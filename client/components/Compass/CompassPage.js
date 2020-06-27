@@ -1,9 +1,10 @@
 import React, { Component, createRef, useEffect } from "react";
 import "../../css/compass.css";
-import CBtn from "./CBtn"
-import CYoutubeVid from "./CYoutubeVid"
+import CBtn from "./CBtn";
+import CYoutubeVid from "./CYoutubeVid";
 import CLogoAnimation from "./CLogoAnimation";
 import CPerk from "./CPerk";
+import CSponsor from "./CSponsor";
 
 class CompassPage extends Component {
   constructor(props) {
@@ -21,23 +22,26 @@ class CompassPage extends Component {
       <div>
         <div>
           <div className="compass container">
-          
-            <CLogoAnimation/>
+            <CLogoAnimation />
 
             <h2 className="compass-landing-title">Compass</h2>
             <h3 className="compass-subheading">
               A conference for the future <br /> July 18 - 19
             </h3>
 
-            <CBtn txt="Register Now!" href="https://forms.gle/nXT8L5Q9ejrr1H259" newTab={true}/>
+            <CBtn
+              txt="Register Now!"
+              href="https://forms.gle/nXT8L5Q9ejrr1H259"
+              newTab={true}
+            />
 
             <div className="row justify-content-center compass-date">
               <img src="../assets/arrow-down.png" />
             </div>
           </div>
 
-          <CYoutubeVid ytURL="https://www.youtube.com/embed/L0dDUoPa1TQ"/>
-          
+          <CYoutubeVid ytURL="https://www.youtube.com/embed/L0dDUoPa1TQ" />
+
           <div className="compass-conv">
             <h3 className="compass-title">A whole new direction</h3>
             <div className="row justify-content-center">
@@ -61,16 +65,79 @@ class CompassPage extends Component {
 
           <div className="container compass-perk-grid">
             <div className="row justify-content-between compass-perk-row">
-              <CPerk img="../assets/compass-speakers.png" title="Guest Speaker" desc="Gain inspiration through the insight and journey of industry experts"/>
-              <CPerk img="../assets/compass-network.png" title="Network" desc="Engage in conversations that diversify your perspective"/>
+              <CPerk
+                img="../assets/compass-speakers.png"
+                title="Guest Speaker"
+                desc="Gain inspiration through the insight and journey of industry experts"
+              />
+              <CPerk
+                img="../assets/compass-network.png"
+                title="Network"
+                desc="Engage in conversations that diversify your perspective"
+              />
             </div>
             <div className="row justify-content-between compass-perk-row">
-              <CPerk img="../assets/compass-panel.png" title="Panelist Sessions" desc=" Embrace your curiousity by taking the opportunity to ask questions to a panel of speakers"/>
-              <CPerk img="../assets/compass-problems.png" title="Problem Solving" desc=" Immerse yourself in an environment of fellow problem solvers in their respective disciplines and collaborate to find an applicable solution"/>
+              <CPerk
+                img="../assets/compass-panel.png"
+                title="Panelist Sessions"
+                desc=" Embrace your curiousity by taking the opportunity to ask questions to a panel of speakers"
+              />
+              <CPerk
+                img="../assets/compass-problems.png"
+                title="Problem Solving"
+                desc=" Immerse yourself in an environment of fellow problem solvers in their respective disciplines and collaborate to find an applicable solution"
+              />
             </div>
           </div>
-          
-          <CBtn txt="Register Now!" href="https://forms.gle/nXT8L5Q9ejrr1H259" newTab={true} />
+
+          <div className="container mt-5">
+            <h3 className="compass-title my-5">Speakers for days</h3>
+            <div className="row justify-content-md-around justify-content-center compass-sponsor-row">
+              <CSponsor
+                src="../../assets/compass/CSpeaker600.png"
+                name="Harsh Patel"
+                title="Circle Innovation"
+                btntxt="LinkedIn"
+                href="https://www.linkedin.com/in/harshhpaatel/"
+              />
+              <CSponsor
+                src="../../assets/compass/CSpeaker600.png"
+                name="Harsh Patel"
+                title="Circle Innovation"
+                btntxt="LinkedIn"
+                href="https://www.linkedin.com/in/harshhpaatel/"
+              />
+              <CSponsor
+                src="../../assets/compass/CSpeaker600.png"
+                name="Harsh Patel"
+                title="Circle Innovation"
+                btntxt="LinkedIn"
+                href="https://www.linkedin.com/in/harshhpaatel/"
+              />
+            </div>
+            <div className="row justify-content-md-around justify-content-center my-lg-5 my-0">
+              <CSponsor
+                src="../../assets/compass/CSpeaker600.png"
+                name="Harsh Patel"
+                title="Circle Innovation"
+                btntxt="LinkedIn"
+                href="https://www.linkedin.com/in/harshhpaatel/"
+              />
+              <CSponsor
+                src="../../assets/compass/CSpeaker600.png"
+                name="Harsh Patel"
+                title="Circle Innovation"
+                btntxt="LinkedIn"
+                href="https://www.linkedin.com/in/harshhpaatel/"
+              />
+            </div>
+          </div>
+
+          <CBtn
+            txt="Register Now!"
+            href="https://forms.gle/nXT8L5Q9ejrr1H259"
+            newTab={true}
+          />
 
           <div className="row justify-content-center">
             <p className="compass-desc col-11 col-lg-5 mt-0">
