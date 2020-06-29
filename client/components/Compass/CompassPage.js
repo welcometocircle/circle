@@ -4,7 +4,7 @@ import CBtn from "./CBtn";
 import CYoutubeVid from "./CYoutubeVid";
 import CLogoAnimation from "./CLogoAnimation";
 import CPerk from "./CPerk";
-import CSponsor from "./CSponsor";
+import CSpeaker from "./CSpeaker";
 
 class CompassPage extends Component {
   constructor(props) {
@@ -93,42 +93,55 @@ class CompassPage extends Component {
           <div className="container mt-5">
             <h3 className="compass-title my-5">Speakers for days</h3>
             <div className="row justify-content-md-around justify-content-center compass-sponsor-row">
-              <CSponsor
-                src="../../assets/compass/CSpeaker600.png"
-                name="Harsh Patel"
-                title="Circle Innovation"
+              <CSpeaker
+                src="../../assets/compass/Cspeaker-jonathan.png"
+                name="Jonathan Javier"
+                title="Founder & CEO"
+                company="Wonsulting"
                 btntxt="LinkedIn"
-                href="https://www.linkedin.com/in/harshhpaatel/"
+                href="https://www.linkedin.com/in/jonathanmjavier"
               />
-              <CSponsor
-                src="../../assets/compass/CSpeaker600.png"
-                name="Harsh Patel"
-                title="Circle Innovation"
+              <CSpeaker
+                src="../../assets/compass/Cspeaker-jerry.png"
+                name="Jerry Lee"
+                title="COO"
+                company="Wonsulting"
                 btntxt="LinkedIn"
-                href="https://www.linkedin.com/in/harshhpaatel/"
+                href="https://www.linkedin.com/in/jehakjerrylee"
               />
-              <CSponsor
-                src="../../assets/compass/CSpeaker600.png"
-                name="Harsh Patel"
-                title="Circle Innovation"
+              <CSpeaker
+                src="../../assets/compass/Cspeaker-gabriella.png"
+                name="Gabriella Paniccia"
+                title="Technology Advisory Intern"
+                company="Ernst & Young (EY)"
                 btntxt="LinkedIn"
-                href="https://www.linkedin.com/in/harshhpaatel/"
+                href="https://www.linkedin.com/in/gabriella-paniccia/"
               />
             </div>
             <div className="row justify-content-md-around justify-content-center my-lg-5 my-0">
-              <CSponsor
-                src="../../assets/compass/CSpeaker600.png"
-                name="Harsh Patel"
-                title="Circle Innovation"
+              <CSpeaker
+                src="../../assets/compass/Cspeaker-stephanie.png"
+                name="Stephanie Nuesi"
+                title="Founder & CEO"
+                company="Max Up"
                 btntxt="LinkedIn"
-                href="https://www.linkedin.com/in/harshhpaatel/"
+                href="https://www.linkedin.com/in/stephanienuesi"
               />
-              <CSponsor
-                src="../../assets/compass/CSpeaker600.png"
-                name="Harsh Patel"
-                title="Circle Innovation"
+              <CSpeaker
+                src="../../assets/compass/Cspeaker-denys.png"
+                name="Denys Linkov"
+                title="Cloud Engineer"
+                company="RBC"
                 btntxt="LinkedIn"
-                href="https://www.linkedin.com/in/harshhpaatel/"
+                href="https://www.linkedin.com/in/denyslinkov"
+              />
+              <CSpeaker
+                src="../../assets/compass/Cspeaker-dr-prasa.png"
+                name="Dr. Prasa Gopee-Ramanan"
+                title="Diagnostic Radiologist"
+                company="University of Toronto"
+                btntxt="LinkedIn"
+                href="https://www.linkedin.com/in/drpgr"
               />
             </div>
           </div>
@@ -141,10 +154,13 @@ class CompassPage extends Component {
 
           <div className="row justify-content-center">
             <p className="compass-desc col-11 col-lg-5 mt-0">
-              Whether you are a high school freshman or university grad, this
-              conference is for you! No worries needed - all from the
-              convenience of your home. Testing 123 - AKSHAR
+              Participate in an all - new ideation challenge. Teams will solve a
+              given case using innovative principles and interdisciplinary
+              approaches.
             </p>
+          </div>
+          <div class="row justify-content-center compass-desc bold">
+            <b>Registration closes July 5, 2020</b>
           </div>
         </div>
       </div>

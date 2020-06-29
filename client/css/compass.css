@@ -242,11 +242,24 @@
   margin-bottom: 6rem;
 }
 
+.bold {
+  font-weight: bolder;
+}
+
 /* Sponsor Component */
 
 .compass-sponsor {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 25px;
+}
+
+.compass-h6 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  letter-spacing: -1.5px;
+  color: white;
+  text-align: center;
 }
 
 .compass-sponsor-btn-text {

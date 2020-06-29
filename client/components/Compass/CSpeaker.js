@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../../css/compass.css";
 
-class CSponsor extends Component {
+class CSpeaker extends Component {
   constructor(props) {
     super(props);
   }
@@ -17,8 +17,9 @@ class CSponsor extends Component {
         <div className="row justify-content-center mt-5">
           <img src={this.props.src} className="compass-sponsor-img col-10" />
         </div>
-        <h5 className="compass-h5 mt-5">{this.props.name}</h5>
+        <h6 className="compass-h6 mt-5">{this.props.name}</h6>
         <p className="compass-desc mt-2">{this.props.title}</p>
+        <p className="compass-desc mt-0">{this.props.company}</p>
         <div className="row justify-content-center">
           <a
             href={this.props.href}
@@ -33,4 +34,4 @@ class CSponsor extends Component {
   }
 }
 
-export default CSponsor;
+export default CSpeaker;
