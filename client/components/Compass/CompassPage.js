@@ -5,6 +5,7 @@ import CYoutubeVid from "./CYoutubeVid";
 import CLogoAnimation from "./CLogoAnimation";
 import CPerk from "./CPerk";
 import CSpeaker from "./CSpeaker";
+import CSponsor from "./CSponsor";
 
 class CompassPage extends Component {
   constructor(props) {
@@ -142,6 +143,20 @@ class CompassPage extends Component {
                 company="University of Toronto"
                 btntxt="LinkedIn"
                 href="https://www.linkedin.com/in/drpgr"
+              />
+            </div>
+          </div>
+
+          <div className="container mt-5">
+            <h3 className="compass-title my-5">We ❤️ our sponsors</h3>
+            <div className="row justify-content-md-around justify-content-center align-items-center compass-sponsor-row">
+              <CSponsor
+                src="../../assets/compass/sponsors/mossify.png"
+                href="https://mossify.ca"
+              />
+              <CSponsor
+                src="../../assets/compass/sponsors/1517.png"
+                href="https://www.1517.org/"
               />
             </div>
           </div>

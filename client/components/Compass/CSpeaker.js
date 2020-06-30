@@ -6,16 +6,10 @@ class CSpeaker extends Component {
     super(props);
   }
   render() {
-    //    var tg = "";
-    //    if (this.props.newTab == true) {
-    //      console.log(true)
-    //     // this.setState({target: "_blank"})
-    //      tg = "_blank"
-
     return (
-      <div className="col-lg-3 col-11 mb-lg-0 mb-5 compass-sponsor">
+      <div className="col-lg-3 col-11 mb-lg-0 mb-5 compass-speaker">
         <div className="row justify-content-center mt-5">
-          <img src={this.props.src} className="compass-sponsor-img col-10" />
+          <img src={this.props.src} className="compass-speaker-img col-10" />
         </div>
         <h6 className="compass-h6 mt-5">{this.props.name}</h6>
         <p className="compass-desc mt-2">{this.props.title}</p>
@@ -26,7 +20,7 @@ class CSpeaker extends Component {
             className="compass-link mt-3"
             target="_blank"
           >
-            <p className="compass-sponsor-btn-text">{this.props.btntxt}</p>
+            <p className="compass-speaker-btn-text">{this.props.btntxt}</p>
           </a>
         </div>
       </div>

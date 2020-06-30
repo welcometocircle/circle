@@ -246,14 +246,14 @@
   font-weight: bolder;
 }
 
-/* Sponsor Component */
+/* Speaker Component */
 
-.compass-sponsor-img {
+.compass-speaker-img {
   height: 50%;
   width: 50%;
 }
 
-.compass-sponsor {
+.compass-speaker {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 25px;
 }
@@ -267,7 +267,7 @@
   text-align: center;
 }
 
-.compass-sponsor-btn-text {
+.compass-speaker-btn-text {
   font-family: "DM Sans", sans-serif;
   font-size: 17px;
   color: #fafafa;
@@ -283,7 +283,19 @@
   text-decoration: none !important;
 }
 
-.compass-sponsor-btn-text:hover {
+.compass-speaker-btn-text:hover {
   background-color: #ceaa8e;
   text-decoration: none !important;
+}
+
+/* Sponsor Component */
+
+.compass-sponsor-img {
+  height: 50% !important;
+  width: 50% !important;
+  opacity: 0.7;
+}
+
+.compass-sponsor-img:hover {
+  opacity: 1;
 }
