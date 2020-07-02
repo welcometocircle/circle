@@ -145,18 +145,31 @@ class CompassPage extends Component {
                 href="https://www.linkedin.com/in/drpgr"
               />
             </div>
+            <div className="row justify-content-md-around justify-content-center my-lg-5 my-0">
+              <CSpeaker
+                src="../../assets/compass/Cspeaker-dr-laura-jana.png"
+                name="Dr. Laura Jana"
+                title="Pediatrician"
+                btntxt="LinkedIn"
+                href="https://www.linkedin.com/in/drlaurajana"
+              />
+            </div>
           </div>
 
           <div className="container mt-5">
             <h3 className="compass-title my-5">We ❤️ our sponsors</h3>
             <div className="row justify-content-md-around justify-content-center align-items-center compass-sponsor-row">
               <CSponsor
-                src="../../assets/compass/sponsors/mossify.png"
-                href="https://mossify.ca"
+                src="../../assets/compass/sponsors/next36.png"
+                href="https://www.nextcanada.com/next-36/"
               />
               <CSponsor
                 src="../../assets/compass/sponsors/1517.png"
                 href="https://www.1517.org/"
+              />
+              <CSponsor
+                src="../../assets/compass/sponsors/mossify.png"
+                href="https://mossify.ca"
               />
             </div>
           </div>
