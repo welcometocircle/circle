@@ -157,7 +157,7 @@ class CompassPage extends Component {
           </div>
 
           <div className="container mt-5">
-            <h3 className="compass-title my-5">We ❤️ our sponsors</h3>
+            <h3 className="compass-title my-5">We ❤️ our supporters</h3>
             <div className="row justify-content-md-around justify-content-center align-items-center compass-sponsor-row">
               <CSponsor
                 src="../../assets/compass/sponsors/next36.png"
