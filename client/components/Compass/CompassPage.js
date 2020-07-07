@@ -153,6 +153,22 @@ class CompassPage extends Component {
                 btntxt="LinkedIn"
                 href="https://www.linkedin.com/in/drlaurajana"
               />
+              <CSpeaker
+                src="../../assets/compass/Cspeaker-devin.png"
+                name="Devin Golets"
+                title="Higher Education Consultant"
+                company="Top Hat"
+                btntxt="LinkedIn"
+                href="https://www.linkedin.com/in/devingolets"
+              />
+              <CSpeaker
+                src="../../assets/compass/Cspeaker-dr-nigmendra.png"
+                name="Dr. Nigmendra Narain"
+                title="Political Science Lecturer"
+                company="Western University"
+                btntxt="LinkedIn"
+                href="https://www.linkedin.com/in/nigmendra-narain-a3194248"
+              />
             </div>
           </div>
 
