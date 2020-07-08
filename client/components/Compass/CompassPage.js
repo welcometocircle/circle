@@ -113,8 +113,8 @@ class CompassPage extends Component {
               <CSpeaker
                 src="../../assets/compass/Cspeaker-gabriella.png"
                 name="Gabriella Paniccia"
-                title="Technology Advisory Intern"
-                company="Ernst & Young (EY)"
+                title="Consultant"
+                company="Big 4 Accounting Firms"
                 btntxt="LinkedIn"
                 href="https://www.linkedin.com/in/gabriella-paniccia/"
               />
