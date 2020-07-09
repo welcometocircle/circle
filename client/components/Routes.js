@@ -6,6 +6,7 @@ import Faqs from "./Faqs";
 import CompassPage from "./Compass/CompassPage";
 import RedirectSponsPkg from "./Redirects/RedirectSponsPkg";
 import RedirectRegister from "./Redirects/RedirectRegister";
+import CoffeeChatPage from "./Compass/CoffeeChatPage";
 
 export default function Routes() {
   return (
@@ -14,6 +15,7 @@ export default function Routes() {
       <Route path="/opportunities" exact component={Opportunities} />
       <Route path="/faqs" exact component={Faqs} />
       <Route path="/compass" exact component={CompassPage} />
+      <Route path="/compass-coffee-chats" exact component={CoffeeChatPage} />
       <Route path="/sponspkg" exact component = {RedirectSponsPkg}/>
       <Route path="/register" exact component = {RedirectRegister}/>
     </Switch>

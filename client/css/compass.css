@@ -299,3 +299,31 @@
 .compass-sponsor-img:hover {
   opacity: 1;
 }
+
+.coffee-cup{
+  background-image: url("../assets/coffee-cup.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right;
+}
+
+.coffee-icon{
+  margin-top: -90px;
+  margin-bottom: -60px;
+}
+
+.compass-speaker-btn{
+}
+.compass-coffee-btn{
+  margin-top: -30px;
+}
+.coffee-top{
+  /* margin-bottom: -50px; */
+}
+
+
+@media only screen and (max-width: 600px) {
+  .coffee-icon {
+    visibility: hidden;
+  }
+}
