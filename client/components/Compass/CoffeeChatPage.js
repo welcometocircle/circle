@@ -88,7 +88,7 @@ class CoffeeChatPage extends Component {
               />
               <CSponsor
                 src="../../assets/compass/sponsors/1517.png"
-                href="https://www.1517.org/"
+                href="https://www.1517fund.com"
               />
               <CSponsor
                 src="../../assets/compass/sponsors/mossify.png"
