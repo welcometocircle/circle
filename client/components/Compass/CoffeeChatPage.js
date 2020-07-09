@@ -28,7 +28,6 @@ class CoffeeChatPage extends Component {
             <p className="compass-desc">Signup is only for registered Compass participants</p>
           </div>
 
-
           <div className="container mt-5">
             <div className="row justify-content-md-around justify-content-center compass-sponsor-row">
               <CSpeakerCoffee
@@ -39,7 +38,7 @@ class CoffeeChatPage extends Component {
                 btntxt="LinkedIn"
                 href="https://www.linkedin.com/in/gabriella-paniccia/"
                 btnCoffeeTxt = "Chat Signup"
-                chatLink = "https://www.google.com"
+                chatLink = "https://calendly.com/compasscoffeechats/chat-with-gabriella-paniccia"
               />
               <CSpeakerCoffee
                 src="../../assets/compass/Cspeaker-stephanie.png"
@@ -49,7 +48,7 @@ class CoffeeChatPage extends Component {
                 btntxt="LinkedIn"
                 href="https://www.linkedin.com/in/stephanienuesi"
                 btnCoffeeTxt = "Chat Signup"
-                chatLink = "https://www.google.com"
+                chatLink = "https://calendly.com/compasscoffeechats/chat-with-stephanie-nuesi"
               />
             </div>
             <div className="row justify-content-center coffee-icon">
@@ -64,7 +63,7 @@ class CoffeeChatPage extends Component {
                 btntxt="LinkedIn"
                 href="https://www.linkedin.com/in/denyslinkov"
                 btnCoffeeTxt = "Chat Signup"
-                chatLink = "https://www.google.com"
+                chatLink = "https://calendly.com/compasscoffeechats/chat-with-denys-linkov"
               />
               <CSpeakerCoffee
                 src="../../assets/compass/Cspeaker-dr-prasa.png"
@@ -74,7 +73,7 @@ class CoffeeChatPage extends Component {
                 btntxt="LinkedIn"
                 href="https://www.linkedin.com/in/drpgr"
                 btnCoffeeTxt = "Chat Signup"
-                chatLink = "https://www.google.com"
+                chatLink = "https://calendly.com/compasscoffeechats/chat-with-dr-prasa"
               />
             </div>
           </div>

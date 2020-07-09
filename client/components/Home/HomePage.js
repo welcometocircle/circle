@@ -31,9 +31,8 @@ class HomePage extends Component {
 
             <h2 className="compass-landing-title">Compass</h2>
             <h3 className="compass-subheading">A conference for the future</h3>
-            <div style={{marginTop: "10px", marginBottom: "40px"}} className="d-flex justify-content-center">
+            <div style={{marginTop: "-15px", marginBottom: "20px"}} className="d-flex justify-content-center">
               <CBtn txt="Learn More" href="/compass"/>
-              <CBtn txt="Register Now!" href="https://forms.gle/nXT8L5Q9ejrr1H259" newTab={true}/>
             </div>
           </div>
         </div>

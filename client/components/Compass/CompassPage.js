@@ -30,13 +30,7 @@ class CompassPage extends Component {
               A conference for the future <br /> July 18 - 19
             </h3>
 
-            <CBtn
-              txt="Register Now!"
-              href="https://forms.gle/nXT8L5Q9ejrr1H259"
-              newTab={true}
-            />
-
-            <div className="row justify-content-center compass-date">
+            <div className="row justify-content-center">
               <img src="../assets/arrow-down.png" />
             </div>
           </div>
@@ -188,23 +182,6 @@ class CompassPage extends Component {
                 href="https://mossify.ca"
               />
             </div>
-          </div>
-
-          <CBtn
-            txt="Register Now!"
-            href="https://forms.gle/nXT8L5Q9ejrr1H259"
-            newTab={true}
-          />
-
-          <div className="row justify-content-center">
-            <p className="compass-desc col-11 col-lg-5 mt-0">
-              Participate in an all - new ideation challenge. Teams will solve a
-              given case using innovative principles and interdisciplinary
-              approaches.
-            </p>
-          </div>
-          <div class="row justify-content-center compass-desc bold">
-            <b>Registration closes July 5, 2020</b>
           </div>
         </div>
       </div>
