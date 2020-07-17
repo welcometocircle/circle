@@ -51,9 +51,9 @@ class CoffeeChatPage extends Component {
                 chatLink = "https://calendly.com/compasscoffeechats/chat-with-stephanie-nuesi"
               />
             </div>
-            <div className="row justify-content-center coffee-icon">
+            {/* <div className="row justify-content-center coffee-icon">
               <img src="../../assets/coffee-icon.png" className="justify-content-center"/>
-            </div>
+            </div> */}
             <div className="row justify-content-md-around justify-content-center my-lg-5 my-0">
               <CSpeakerCoffee
                 src="../../assets/compass/Cspeaker-denys.png"
@@ -74,6 +74,15 @@ class CoffeeChatPage extends Component {
                 href="https://www.linkedin.com/in/drpgr"
                 btnCoffeeTxt = "Chat Signup"
                 chatLink = "https://calendly.com/compasscoffeechats/chat-with-dr-prasa"
+              />
+              <CSpeaker
+                src="../../assets/compass/Cspeaker-devin.png"
+                name="Devin Golets"
+                title="Higher Education Consultant"
+                company="Top Hat"
+                extraInfo = "Please contact directly via LinkedIn to sign up"
+                btntxt="LinkedIn"
+                href="https://www.linkedin.com/in/devingolets"
               />
             </div>
           </div>

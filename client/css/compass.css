@@ -320,10 +320,39 @@
 .coffee-top{
   /* margin-bottom: -50px; */
 }
+.countdown-container{
+  margin-top: 13vh;
+  margin-bottom: 13vh;
+}
+.countdown-txt{
+    font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  letter-spacing: -2px;
+  font-size: 60px;
+  color: white;
+  text-align: center;
 
+  /*70px;*/
+  background: -webkit-linear-gradient(0.2turn, #ceaa8e, #b2805f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 @media only screen and (max-width: 600px) {
   .coffee-icon {
     visibility: hidden;
+  }
+  .countdown-txt{
+      font-family: "DM Sans", sans-serif;
+      font-weight: bold;
+      letter-spacing: -2px;
+      font-size: 35px;
+      color: white;
+      text-align: center;
+
+      /*70px;*/
+      background: -webkit-linear-gradient(0.2turn, #ceaa8e, #b2805f);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
   }
 }

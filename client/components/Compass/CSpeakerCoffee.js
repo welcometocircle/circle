@@ -14,6 +14,7 @@ class CSpeakerCoffee extends Component {
         <h6 className="compass-h6 mt-5">{this.props.name}</h6>
         <p className="compass-desc mt-2">{this.props.title}</p>
         <p className="compass-desc mt-0">{this.props.company}</p>
+        <p className="compass-desc mt-0">{this.props.extraInfo}</p>
         <div className="row justify-content-center compass-speaker-btn">
           <a
             href={this.props.href}

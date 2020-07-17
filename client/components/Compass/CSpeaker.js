@@ -23,6 +23,8 @@ class CSpeaker extends Component {
             <p className="compass-speaker-btn-text">{this.props.btntxt}</p>
           </a>
         </div>
+        <p className="compass-desc mt-0">{this.props.extraInfo}</p>s
+
       </div>
     );
   }
