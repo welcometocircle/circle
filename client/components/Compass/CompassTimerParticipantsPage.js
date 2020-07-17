@@ -7,11 +7,22 @@ class CompassTimerParticipantsPage extends Component {
   constructor(props) {
     super(props);
     document.documentElement.setAttribute("data-theme", "dark");
+    this.state = {viewEventPage:false};
   }
 
   componentDidMount() {
     window.scrollTo(0, 0);
-    analytics.logEvent("Event Did Mount");
+    analytics.logEvent("Participants Did Mount");
+    if (this.state.viewEventPage == false) {
+      setInterval(function(){
+        // console.log("interval")
+        const eventDate = new Date("2020-07-18T09:00:00-04:00")
+          // console.log("FALSE")
+          if (Date.now()>eventDate){
+            window.location.reload(true)
+          }
+        },5000);
+    }
   }
 
   render() {
@@ -24,6 +35,7 @@ class CompassTimerParticipantsPage extends Component {
         <CompassEventHolderPage/>
       )
     }else{
+      this.state.viewEventPage = true;
       return(
         <CompassEventPage/>
       )
