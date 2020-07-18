@@ -25,7 +25,7 @@ class CompassParticipantsPage extends Component {
     if (this.state.crisis1 == false) {
       setInterval(function () {
         console.log("interval c1")
-        const c1 = new Date("2020-07-18T11:44:00-04:00")
+        const c1 = new Date("2020-07-18T17:00:00-04:00")
         // console.log("FALSE")
         if (Date.now() > c1) {
           window.location.reload(true)
@@ -36,7 +36,7 @@ class CompassParticipantsPage extends Component {
     if (this.state.crisis2 == false) {
       setInterval(function () {
         console.log("interval c2")
-        const c2 = new Date("2020-07-18T11:45:00-04:00")
+        const c2 = new Date("2020-07-18T21:00:00-04:00")
         // console.log("FALSE")
         if (Date.now() > c2) {
           window.location.reload(true)
@@ -53,21 +53,21 @@ class CompassParticipantsPage extends Component {
     var c2Title = ""
     var c2Txt = ""
 
-    const c1Date = new Date("2020-07-18T11:44:00-04:00");
+    const c1Date = new Date("2020-07-18T17:00:00-04:00");
     if (Date.now() > c1Date) {
       c1Title = "Crisis 1"
       c1Txt = "The teachers have decided to strike! Recent government mandates have forced schools to increase the number of students in each class. As a result, this would decrease the number of teachers hired and impact students’ learning. Your solution should address an accommodation for this issue or a method of dissolving the strike."
-      this.state.crisis1 = true
+      this.state.crisis1 = true;
     }else{
       c1Title = ""  
       c1Txt = ""
     }
     
-    const c2Date = new Date("2020-07-18T11:45:00-04:00");
+    const c2Date = new Date("2020-07-18T21:00:00-04:00");
     if (Date.now() > c2Date) {
       c2Title = "Crisis 2"
       c2Txt = "Due to the increased political tension around the rights of Indiginous peoples, your initiative must be accessible to Indigenous reserves and improve the status of their current education system as well."
-      this.state.crisis2 = true
+      this.state.crisis2 = true;
     }else{
       c2Title = ""  
       c2Txt = ""
