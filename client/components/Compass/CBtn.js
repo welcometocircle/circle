@@ -5,6 +5,9 @@ class CBtn extends Component{
   constructor(props){
     super(props);
   }
+
+  
+
   render() {
     var tg = "";
     if (this.props.newTab == true) {

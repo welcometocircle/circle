@@ -16,14 +16,63 @@ class CompassParticipantsPage extends Component {
   constructor(props) {
     super(props);
     document.documentElement.setAttribute("data-theme", "dark");
+    this.state = {crisis1:false,crisis2:false};
   }
 
   componentDidMount() {
     window.scrollTo(0, 0);
     analytics.logEvent("Participants Did Mount");
+    if (this.state.crisis1 == false) {
+      setInterval(function () {
+        console.log("interval c1")
+        const c1 = new Date("2020-07-18T11:37:00-04:00")
+        // console.log("FALSE")
+        if (Date.now() > c1) {
+          window.location.reload(true)
+        }
+      }, 5000);
+      if (this.state.crisis2 == false) {
+        setInterval(function () {
+          console.log("interval c2")
+          const c2 = new Date("2020-07-18T11:38:00-04:00")
+          // console.log("FALSE")
+          if (Date.now() > c2) {
+            window.location.reload(true)
+          }
+        }, 5000);
+      }
+    }
   }
 
   render() {
+
+    var c1Title = ""
+    var c1Txt = ""
+    var c2Title = ""
+    var c2Txt = ""
+
+    const c1Date = new Date("2020-07-18T11:37:00-04:00");
+    if (Date.now() > c1Date) {
+      c1Title = "Crisis 1"
+      c1Txt = "The teachers have decided to strike! Recent government mandates have forced schools to increase the number of students in each class. As a result, this would decrease the number of teachers hired and impact students’ learning. Your solution should address an accommodation for this issue or a method of dissolving the strike."
+      this.state.crisis1 = true
+    }else{
+      c1Title = ""  
+      c1Txt = ""
+    }
+    
+    const c2Date = new Date("2020-07-18T11:38:00-04:00");
+    if (Date.now() > c2Date) {
+      c2Title = "Crisis 2"
+      c2Txt = "Due to the increased political tension around the rights of Indiginous peoples, your initiative must be accessible to Indigenous reserves and improve the status of their current education system as well."
+      this.state.crisis2 = true
+    }else{
+      c2Title = ""  
+      c2Txt = ""
+    }
+
+
+
     return (
       <div>
         <div>
@@ -50,8 +99,17 @@ class CompassParticipantsPage extends Component {
             {/* your mission */}
             <img src="../../assets/gearhead.png" className="d-block mx-auto" style={{marginTop:"50px",width:"100px"}}/>
             <h3 className='compass-title'>Your Mission</h3>
-            <p className='compass-desc-big' style={{marginTop:"-10px"}}>Talk about Case themes. Mention that case is emailed to them or they can view it below</p>
-            <CBtn href="https://drive.google.com/file/d/1KEHbzAP-OUlDhJwzdR3U4MabDlGb7DSH/view?usp=sharing" txt="View Case" newTab={true} style={{marginTop:"5px"}}/>
+            {/* <p className='compass-desc-big' style={{marginTop:"-10px"}}>Talk about Case themes. Mention that case is emailed to them or they can view it below</p> */}
+            <CBtn href="https://drive.google.com/file/d/1KEHbzAP-OUlDhJwzdR3U4MabDlGb7DSH/view?usp=sharing" txt="View Case" newTab={true} style={{marginTop:"5px"}} analytics="Case Clicked"/>
+
+            {/* Crisis 1 */}
+            <h3 className='compass-crisis-title' style={{marginTop:"20px"}}>{c1Title}</h3>
+            <p className='compass-crisis-desc-small'>{c1Txt}</p>
+
+            {/* Crisis 2 */}
+            <h3 className='compass-crisis-title' style={{marginTop:"40px"}}>{c2Title}</h3>
+            <p className='compass-crisis-desc-small'>{c2Txt}</p>
+
 
             {/* solution submission */}
             <img src="../../assets/rocket.png" className="d-block mx-auto" style={{marginTop:"70px",width:"100px"}}/>
@@ -68,7 +126,7 @@ class CompassParticipantsPage extends Component {
               style={{marginTop:"-10px",marginBottom:"-10px"}}
             />
             <div >
-              <CBtn href="https://forms.gle/mMJBPtpmyswAq6Ga8" txt="Submit Solution" newTab={true} style={{marginTop:"15px"}}/>
+              <CBtn href="https://forms.gle/mMJBPtpmyswAq6Ga8" txt="Submit Solution" newTab={true} style={{marginTop:"15px"}} analytics="Submission Form"/>
             </div>
 
             {/* Help Desk */}

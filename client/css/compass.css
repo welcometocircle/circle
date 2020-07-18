@@ -394,6 +394,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+  .compass-crisis-title{
+    font-size: 35px !important;
+  }
 }
 
 .table-headers{
@@ -459,4 +463,36 @@ hr {
   padding-top: 3px;
   /* padding-bottom:2px; */
 
+}
+
+.compass-crisis-title{
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  letter-spacing: -2px;
+  font-size: 65px;
+  color: white;
+  text-align: center;
+
+  /*70px;*/
+  background: -webkit-linear-gradient(0.2turn, #ffb8a2, #cf0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.compass-crisis-desc-big {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.compass-crisis-desc-small {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  text-align: center;
 }

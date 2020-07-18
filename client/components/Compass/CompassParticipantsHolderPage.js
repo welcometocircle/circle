@@ -21,11 +21,11 @@ class CompassParticipantsHolderPage extends Component {
             <h3 className='compass-title'>Participants Dashboard</h3>
             
 
-            <CCountdown date="2020-07-18T09:30:00-04:00"
+            <CCountdown date="2020-07-18T09:00:00-04:00"
               styleDays="countdown-txt" 
               styleNoDays="countdown-txt" 
               styleFinished="countdown-txt" 
-              finishedTxt="Happening Now!"/>
+              finishedTxt="Stream Live!"/>
 
             <h3 className='compass-title'>Game Plan</h3>
             <CItineraryTable/>
