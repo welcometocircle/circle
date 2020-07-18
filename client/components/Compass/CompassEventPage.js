@@ -31,7 +31,7 @@ class CompassEventPage extends Component {
             {/* Opening */}
             <p className="compass-title" >Opening Ceremonies</p>
             <p className="compass-subheading">Keynote by Dr. Laura Jana</p>
-            <CYoutubeVid ytURL="https://www.youtube.com/embed/LouLJqrOdc0" />
+            <CYoutubeVid ytURL="https://www.youtube.com/embed/2UBo1weNpew" />
             
             
             <hr/>

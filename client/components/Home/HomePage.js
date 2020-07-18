@@ -32,7 +32,7 @@ class HomePage extends Component {
 
             <h2 className="compass-landing-title">Compass</h2>
             <h3 className="compass-subheading">A conference for the future</h3>
-            <CCountdown date="2020-07-18T08:45:00-04:00"
+            <CCountdown date="2020-07-18T09:00:00-04:00"
             styleDays="countdown-txt" 
             styleNoDays="countdown-txt" 
             styleFinished="countdown-txt" 

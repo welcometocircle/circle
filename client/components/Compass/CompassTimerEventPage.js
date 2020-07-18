@@ -18,7 +18,7 @@ class CompassTimerEventPage extends Component {
     if (this.state.viewEventPage == false) {
       setInterval(function(){
         console.log("interval")
-        const eventDate = new Date("2020-07-18T08:45:00-04:00")
+        const eventDate = new Date("2020-07-18T09:00:00-04:00")
           console.log("FALSE")
           if (Date.now()>eventDate){
             window.location.reload(true)
@@ -31,7 +31,7 @@ class CompassTimerEventPage extends Component {
 
 
   render() {
-    const eventDate = new Date("2020-07-18T08:45:00-04:00")
+    const eventDate = new Date("2020-07-18T09:00:00-04:00")
     // console.log(Date.now())
     // console.log(eventDate)
     // console.log(Date.now() > eventDate)
