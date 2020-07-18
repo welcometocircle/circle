@@ -19,7 +19,12 @@ class CompassEventHolderPage extends Component {
             <h2 className="compass-landing-title">Welcome to Compass</h2>
           </div>
           
-          <CCountdown/>
+          <CCountdown date="2020-07-18T08:45:00-04:00" 
+            styleDays="countdown-txt" 
+            styleNoDays="countdown-txt" 
+            styleFinished="countdown-txt" 
+            finishedTxt="Now!"
+            />
 
           <CSponsorFooter/>
         </div>

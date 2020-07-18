@@ -12,8 +12,8 @@ class CSpeaker extends Component {
           <img src={this.props.src} className="compass-speaker-img col-10" />
         </div>
         <h6 className="compass-h6 mt-5">{this.props.name}</h6>
-        <p className="compass-desc mt-2">{this.props.title}</p>
-        <p className="compass-desc mt-0">{this.props.company}</p>
+        <p className="compass-desc-small mt-2">{this.props.title}</p>
+        <p className="compass-desc-small mt-0">{this.props.company}</p>
         <div className="row justify-content-center">
           <a
             href={this.props.href}

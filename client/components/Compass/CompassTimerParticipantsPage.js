@@ -2,7 +2,8 @@ import React, { Component, createRef, useEffect } from "react";
 import "../../css/compass.css";
 import CompassEventHolderPage from "./CompassEventHolderPage";
 import CompassEventPage from "./CompassEventPage";
-
+import CompassParticipantsPage from "./CompassParticipantsPage";
+import CompassParticipantsHolderPage from "./CompassParticipantsHolderPage";
 class CompassTimerParticipantsPage extends Component {
   constructor(props) {
     super(props);
@@ -32,12 +33,12 @@ class CompassTimerParticipantsPage extends Component {
     // console.log(Date.now() > eventDate)
     if (Date.now() < eventDate){
       return(
-        <CompassEventHolderPage/>
+        <CompassParticipantsHolderPage/>
       )
     }else{
       this.state.viewEventPage = true;
       return(
-        <CompassEventPage/>
+        <CompassParticipantsPage/>
       )
     }
   }

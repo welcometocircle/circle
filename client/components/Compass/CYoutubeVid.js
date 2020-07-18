@@ -4,7 +4,7 @@ import "../../css/compass.css";
 class CYoutubeVid extends Component{
   render() {
     return (
-	  	<div className="row justify-content-center compass-video">
+	  	<div className="row justify-content-center compass-video" style={this.props.style}>
             <iframe
               width="720"
               height="405"

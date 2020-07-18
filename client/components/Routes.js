@@ -18,7 +18,7 @@ export default function Routes() {
       <Route path="/opportunities" exact component={Opportunities} />
       <Route path="/faqs" exact component={Faqs} />
       <Route path="/compass" exact component={CompassTimerEventPage} />
-      <Route path="/compass-participants-timer" exact component={CompassTimerParticipantsPage}/>
+      <Route path="/compass-participants" exact component={CompassTimerParticipantsPage}/>
       <Route path="/compass-event-not-live" exact component={CompassEventPage} />
       <Route path="/compass-participants-not-live" exact component={CompassParticipantsPage}/>
       <Route path="/compass-coffee-chats" exact component={CoffeeChatPage} />

@@ -66,7 +66,7 @@
 }
 
 .compass-btn {
-  margin-top: 40px;
+  margin-top: 30px;
   text-decoration: none !important;
   width: auto;
   padding-left: 20px;
@@ -76,6 +76,7 @@
 .compass-btn-text {
   font-family: "DM Sans", sans-serif;
   font-size: 17px;
+  font-weight: bold;
   color: #fafafa;
   text-align: center;
   margin-top: 5px;
@@ -83,6 +84,7 @@
   border-radius: 50px;
   height: 50px;
   padding-top: 12px;
+  vertical-align: middle;
 
   width: 200px;
   margin-bottom: 20px;
@@ -90,20 +92,27 @@
 }
 
 .compass-btn-text:hover {
+  color: rgb(97, 74, 43);
   background-color: #ceaa8e;
   text-decoration: none !important;
 }
 
 .compass-link {
+  font-family: "DM Sans",
+  sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+}
+.compass-link:hover {
+  color: rgb(97, 74, 43);
+  background-color: #ceaa8e;
   text-decoration: none !important;
 }
 
-.compass-link {
-  text-decoration: none !important;
-}
 
 .compass-video {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .compass-conv {
@@ -133,10 +142,17 @@
   text-align: center;
 }
 
-.compass-desc {
+.compass-desc-big {
   font-family: "DM Sans", sans-serif;
-  font-size: 17px;
-  font-weight: lighter;
+  font-size: 20px;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.compass-desc-small {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
   color: white;
   margin-top: 20px;
   margin-bottom: 0px;
@@ -254,8 +270,9 @@
 }
 
 .compass-speaker {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #af876d;
   border-radius: 25px;
+  
 }
 
 .compass-h6 {
@@ -286,6 +303,8 @@
 .compass-speaker-btn-text:hover {
   background-color: #ceaa8e;
   text-decoration: none !important;
+
+  
 }
 
 /* Sponsor Component */
@@ -355,4 +374,89 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
   }
+  td{
+    font-size: small!important;
+  }
+  th{
+    font-size: medium !important;
+  }
+
+  .compass-title {
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+    letter-spacing: -2px;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+
+    /*70px;*/
+    background: -webkit-linear-gradient(0.2turn, #ceaa8e, #b2805f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.table-headers{
+  background-color: rgb(44, 44, 44);
+  font-size: x-large;
+}
+
+td{
+
+  padding:5px;
+  font-size: large;
+  vertical-align: middle;
+  color: white;
+}
+th{
+  color:#ceaa8e;
+}
+tr{
+  border-bottom:solid 1px gray;
+}
+
+tr:hover {
+  background-color: #36281f;
+}
+
+table.table-itinerary{
+  border: solid black;
+  border-radius: 10px !important;
+  border-collapse: collapse;
+  background-color: black;
+}
+/* .table-rows :hover{
+  background-color: #b2805f;
+} */
+table.table-itinerary b{
+  color:#ceaa8e;
+}
+
+tr .noHover :hover {
+  background-color: black !important;
+}
+
+.compass-bg-big{
+  /* background-color: aqua;
+  border-radius: 50px; */
+}
+
+hr.compass-hr {
+  /* background-color: #ceaa8e;
+  border: dashed #ceaa8e 10px; */
+  width: 20%;
+  color:#ceaa8e;
+  height:10px;
+
+}
+
+hr {
+  background-color: #ceaa8e;
+  /* border: dashed #ceaa8e 10px; */
+  /* width: 20%;
+  color: #ceaa8e;
+  height: 10px; */
+  padding-top: 3px;
+  /* padding-bottom:2px; */
+
 }

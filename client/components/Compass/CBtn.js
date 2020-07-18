@@ -14,9 +14,9 @@ class CBtn extends Component{
     }
     
     return (
-        <div className="d-flex justify-content-center compass-btn">
-          <a href={this.props.href} className="compass-link" target={tg}>
-            <p className="compass-btn-text">{this.props.txt}</p>
+        <div className="d-flex justify-content-center compass-btn" style={this.props.style}>
+          <a href={this.props.href} className="compass-btn-text" target={tg} style={this.props.styleTxt}>
+            {this.props.icon} {this.props.txt}
           </a>
       </div>
     );

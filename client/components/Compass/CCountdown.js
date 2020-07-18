@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../../css/compass.css";
+import '../../css/Main.css';
 import Countdown from 'react-countdown';
 
 
@@ -11,7 +12,7 @@ class CCountdown extends Component {
 
 
     const Finished = ()=>(
-      <span className="compass-landing-title"></span>
+      <span className={this.props.styleFinished}>{this.props.finishedTxt}</span>
     );
 
     const renderer = ({total, days,hours, minutes, seconds})=>{
@@ -23,13 +24,13 @@ class CCountdown extends Component {
       if (total){
         if (days>0){
           return (
-            <span className="countdown-txt">
+            <span className={this.props.styleDays}>
               {days}d - {hours}h - {minutes}m - {seconds}s
             </span>
           )
         }else{
           return (
-            <span className="countdown-txt">
+            <span className={this.props.styleNoDays}>
               {hours}h - {minutes}m - {seconds}s
             </span>
           );
@@ -40,10 +41,17 @@ class CCountdown extends Component {
       }
     };
 
+    var divClass = "container "
+    if (this.props.divClassBol==true){
+      divClass = divClass+this.props.divClass
+    }else{
+      divClass = divClass+"countdown-container"
+    }
+    console.log(divClass)
     return (
-      <div className=" container countdown-container">
+      <div className={divClass} style={this.props.style}>
         <div className="row justify-content-center">
-          <Countdown date={"2020-07-18T08:45:00-04:00"} renderer={renderer}/>
+          <Countdown date={this.props.date} renderer={renderer}/>
          {/* <Countdown date={Date.now()+10000} renderer={renderer}/> */}
 
         </div>
