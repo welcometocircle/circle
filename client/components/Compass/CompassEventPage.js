@@ -57,7 +57,7 @@ class CompassEventPage extends Component {
                   // href="https://www.linkedin.com/in/devingolets"
                 />
             </div>
-            <CYoutubeVid ytURL="https://www.youtube.com/embed/LouLJqrOdc0" style={{marginTop:"-30px"}}/>
+            <CYoutubeVid ytURL="https://www.youtube.com/embed/1lp0hV65z8c" style={{marginTop:"-30px",marginBottom:"75px"}}/>
 
             <hr/>
 
@@ -97,7 +97,7 @@ class CompassEventPage extends Component {
                 company="Western University"
               />
             </div>
-            <CYoutubeVid ytURL="https://www.youtube.com/embed/LouLJqrOdc0"  style={{marginTop:"-30px"}}/>
+            <CYoutubeVid ytURL="https://www.youtube.com/embed/6CWdYw2bHeU"  style={{marginTop:"-30px",marginBottom:"75px"}}/>
 
             <hr/>
 
@@ -113,11 +113,11 @@ class CompassEventPage extends Component {
                 company="Western University"
               />
             </div>
-            <CYoutubeVid ytURL="https://www.youtube.com/embed/LouLJqrOdc0"  style={{marginTop:"-30px"}}/>
+            <CYoutubeVid ytURL="https://www.youtube.com/embed/7ySEVaa60to"  style={{marginTop:"-30px", marginBottom:"75px"}}/>
 
             <hr/>
 
-            {/* Workshop: Dr. Nigmendra Narain */ }
+            {/* Workshop: wonconsulting */ }
             <p className="compass-title" style={{marginTop:"50px",marginBottom:"-10px"}} >Workshop</p>
             {/* <p className="compass-subheading">Dr. Prasa Gopee-Ramanan</p> */}
             <div className="row justify-content-md-around justify-content-center compass-sponsor-row" style={{marginTop:"-10px"}}>
@@ -147,7 +147,14 @@ class CompassEventPage extends Component {
                 title="Pediatrician"
               />
             </div>
-            <CYoutubeVid ytURL="https://www.youtube.com/embed/LouLJqrOdc0"  style={{marginTop:"-30px"}}/>
+            <CYoutubeVid ytURL="https://www.youtube.com/embed/pybPS7-uTJw"  style={{marginTop:"-30px", marginBottom:"75px"}}/>
+
+            <hr/>
+
+            {/*Closing*/ }
+            <p className="compass-title" style={{marginTop:"50px",marginBottom:"-10px"}} >Closing Ceremonies and Winners</p>
+            {/* <p className="compass-subheading">Dr. Nigmendra Narain</p> */}h9JJqhkZfTI
+            <CYoutubeVid ytURL="https://www.youtube.com/embed/h9JJqhkZfTI"  style={{marginTop:"0px"}}/>
 
             <img
                 src="../assets/compass-innovation.png"

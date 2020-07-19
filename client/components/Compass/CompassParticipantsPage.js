@@ -66,7 +66,7 @@ class CompassParticipantsPage extends Component {
     const c2Date = new Date("2020-07-18T21:00:00-04:00");
     if (Date.now() > c2Date) {
       c2Title = "Crisis 2"
-      c2Txt = "Due to the increased political tension around the rights of Indiginous peoples, your initiative must be accessible to Indigenous reserves and improve the status of their current education system as well."
+      c2Txt = "Due to the increased political tension around the rights of Indigenous peoples, your initiative must be accessible to Indigenous reserves and improve the status of their current education system as well."
       this.state.crisis2 = true;
     }else{
       c2Title = ""  

@@ -12,6 +12,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import CLogoAnimation from "../Compass/CLogoAnimation";
 import CBtn from "../Compass/CBtn";
 import CCountdown from "../Compass/CCountdown";
+import CYoutubeVid from "../Compass/CYoutubeVid";
 
 class HomePage extends Component {
   constructor(props) {
@@ -32,11 +33,7 @@ class HomePage extends Component {
 
             <h2 className="compass-landing-title">Compass</h2>
             <h3 className="compass-subheading">A conference for the future</h3>
-            <CCountdown date="2020-07-18T09:00:00-04:00"
-            styleDays="countdown-txt" 
-            styleNoDays="countdown-txt" 
-            styleFinished="countdown-txt" 
-            finishedTxt="Happening Now!"/>
+            <CYoutubeVid ytURL="https://www.youtube.com/embed/h9JJqhkZfTI"  style={{marginTop:"0px",marginBottom:"30px"}}/>
             <div style={{marginTop: "-15px", marginBottom: "20px"}} className="d-flex justify-content-center">
               <CBtn txt="Learn More" href="/compass"/>
             </div>

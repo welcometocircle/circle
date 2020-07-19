@@ -51,7 +51,7 @@ class CItineraryTable extends Component {
             <td>Sat July 18</td>
             <td>14:45<br/>to<br/>15:45</td>
             <td><b>Workshop #2:</b><br/>Dr. Nigmendra Narain</td>
-            <td><CBtn href="https://westernuniversity.zoom.us/j/94652183788" txt="Zoom" newTab={true} style={{margin:0,padding:0}} styleTxt={{margin:0,paddingTop:'7px', height:'40px',width:'100px',fontSize:"large"}}/></td>
+            <td><CBtn href="https://westernuniversity.zoom.us/j/92628086180" txt="Zoom" newTab={true} style={{margin:0,padding:0}} styleTxt={{margin:0,paddingTop:'7px', height:'40px',width:'100px',fontSize:"large"}}/></td>
           </tr>
           <tr>
             <td>Sat July 18</td>
@@ -65,7 +65,7 @@ class CItineraryTable extends Component {
             <td><b>Workshop #4:</b><br/>Dr. Laura Jana</td>
             <td><CBtn href="https://westernuniversity.zoom.us/j/98473783224" txt="Zoom" newTab={true} style={{margin:0,padding:0}} styleTxt={{margin:0,paddingTop:'7px', height:'40px',width:'100px',fontSize:"large"}}/></td>
           </tr>
-          {/* <tr>
+          <tr>
             <td>Sat July 18</td>
             <td>17:00</td>
             <td><b>Crisis #1</b></td>
@@ -73,10 +73,16 @@ class CItineraryTable extends Component {
           </tr>
           <tr>
             <td>Sat July 18</td>
+            <td>20:00<br/>to<br/>21:00</td>
+            <td><b>Test Your Ideas</b><br/>Need feedback or want to test your idea?<br/>Join the call and let us play devil's adovcate</td>
+            <td><CBtn href="https://westernuniversity.zoom.us/j/91987485658" txt="Zoom" newTab={true} style={{margin:0,padding:0}} styleTxt={{margin:0,paddingTop:'7px', height:'40px',width:'100px',fontSize:"large"}}/></td>
+          </tr>
+          <tr>
+            <td>Sat July 18</td>
             <td>21:00</td>
-            <td><b>Crisis #2</b></td>
+            <td><b>Crisis #2</b><br/>Pay attention to our Instagram Story at 18:00 to get this crisis earlier</td>
             <td></td>
-          </tr> */}
+          </tr>
           <tr>
             <td>Sun July 19</td>
             <td>08:00</td>
