@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "../../css/App.css";
 import "../../css/Main.css";
 import "../../css/compass.css"
 import GradientLogo from "./GradientLogo.js";

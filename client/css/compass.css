@@ -18,9 +18,7 @@
 }
 
 .compass-landing-title {
-  font-family: "DM Sans", sans-serif;
   font-weight: bold;
-  letter-spacing: -2px;
   font-size: 90px;
   color: white;
   /*70px;*/
@@ -29,9 +27,7 @@
     -webkit-text-fill-color: transparent; */
 }
 .compass-subheading {
-  font-family: "DM Sans", sans-serif;
   font-weight: bold;
-  letter-spacing: -2px;
   font-size: 30px;
   color: white;
   text-align: center;
@@ -42,7 +38,6 @@
   -webkit-text-fill-color: transparent;
 }
 .compass-subtitle {
-  font-family: "DM Sans", sans-serif;
   font-size: 25px;
   color: #939393;
   margin-bottom: 20px;
@@ -74,7 +69,6 @@
 }
 
 .compass-btn-text {
-  font-family: "DM Sans", sans-serif;
   font-size: 17px;
   font-weight: bold;
   color: #fafafa;
@@ -98,8 +92,6 @@
 }
 
 .compass-link {
-  font-family: "DM Sans",
-  sans-serif;
   font-size: 17px;
   font-weight: bold;
   color: white;
@@ -120,9 +112,7 @@
 }
 
 .compass-title {
-  font-family: "DM Sans", sans-serif;
   font-weight: bold;
-  letter-spacing: -2px;
   font-size: 60px;
   color: white;
   text-align: center;
@@ -134,16 +124,13 @@
 }
 
 .compass-h5 {
-  font-family: "DM Sans", sans-serif;
   font-weight: bold;
   font-size: 33px;
-  letter-spacing: -1.5px;
   color: white;
   text-align: center;
 }
 
 .compass-desc-big {
-  font-family: "DM Sans", sans-serif;
   font-size: 20px;
   color: white;
   margin-top: 20px;
@@ -151,7 +138,6 @@
   text-align: center;
 }
 .compass-desc-small {
-  font-family: "DM Sans", sans-serif;
   font-size: 20px;
   color: white;
   margin-top: 20px;
@@ -168,10 +154,8 @@
 }
 
 .compass-perk-title {
-  font-family: "DM Sans", sans-serif;
   font-weight: bold;
   font-size: 35px;
-  letter-spacing: -1.5px;
   color: white;
   margin-bottom: 0px;
   text-align: center;
@@ -182,12 +166,10 @@
 }
 
 .compass-reg-text {
-  font-family: "DM Sans", sans-serif;
   font-weight: lighter;
   font-size: 25px;
   color: white;
   text-align: center;
-  letter-spacing: -0.5px;
   margin-top: 5px;
   background-color: #373737;
   border-radius: 50px;
@@ -276,16 +258,13 @@
 }
 
 .compass-h6 {
-  font-family: "DM Sans", sans-serif;
   font-weight: bold;
   font-size: 28px;
-  letter-spacing: -1.5px;
   color: white;
   text-align: center;
 }
 
 .compass-speaker-btn-text {
-  font-family: "DM Sans", sans-serif;
   font-size: 17px;
   color: #fafafa;
   text-align: center;
@@ -331,22 +310,16 @@
   margin-bottom: -60px;
 }
 
-.compass-speaker-btn{
-}
 .compass-coffee-btn{
   margin-top: -30px;
 }
-.coffee-top{
-  /* margin-bottom: -50px; */
-}
+
 .countdown-container{
   margin-top: 13vh;
   margin-bottom: 13vh;
 }
 .countdown-txt{
-    font-family: "DM Sans", sans-serif;
   font-weight: bold;
-  letter-spacing: -2px;
   font-size: 60px;
   color: white;
   text-align: center;
@@ -362,9 +335,7 @@
     visibility: hidden;
   }
   .countdown-txt{
-      font-family: "DM Sans", sans-serif;
       font-weight: bold;
-      letter-spacing: -2px;
       font-size: 35px;
       color: white;
       text-align: center;
@@ -382,9 +353,7 @@
   }
 
   .compass-title {
-    font-family: "DM Sans", sans-serif;
     font-weight: bold;
-    letter-spacing: -2px;
     font-size: 35px;
     color: white;
     text-align: center;
@@ -406,7 +375,6 @@
 }
 
 td{
-
   padding:5px;
   font-size: large;
   vertical-align: middle;
@@ -440,33 +408,18 @@ tr .noHover :hover {
   background-color: black !important;
 }
 
-.compass-bg-big{
-  /* background-color: aqua;
-  border-radius: 50px; */
-}
-
 hr.compass-hr {
-  /* background-color: #ceaa8e;
-  border: dashed #ceaa8e 10px; */
   width: 20%;
   color:#ceaa8e;
   height:10px;
-
 }
 
 hr {
   background-color: #ceaa8e;
-  /* border: dashed #ceaa8e 10px; */
-  /* width: 20%;
-  color: #ceaa8e;
-  height: 10px; */
   padding-top: 3px;
-  /* padding-bottom:2px; */
-
 }
 
 .compass-crisis-title{
-  font-family: "DM Sans", sans-serif;
   font-weight: bold;
   letter-spacing: -2px;
   font-size: 65px;
@@ -480,7 +433,6 @@ hr {
 }
 
 .compass-crisis-desc-big {
-  font-family: "DM Sans", sans-serif;
   font-size: 20px;
   color: white;
   margin-top: 20px;
@@ -489,7 +441,6 @@ hr {
 }
 
 .compass-crisis-desc-small {
-  font-family: "DM Sans", sans-serif;
   font-size: 20px;
   color: white;
   margin-top: 20px;

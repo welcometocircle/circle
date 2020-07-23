@@ -49,18 +49,6 @@
   background-color: var(--body-bg-color);
 }
 
-/* @font-face {
-  font-family: 'icomoon';
-  src: url('../assets/fonts/icomoon.eot?oxotde');
-  src: url('../assets/fonts/icomoon.eot?oxotde#iefix') format('embedded-opentype'),
-    url('../assets/fonts/icomoon.ttf?oxotde') format('truetype'),
-    url('../assets/fonts/icomoon.woff?oxotde') format('woff'),
-    url('../assets/fonts/icomoon.svg?oxotde#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-} */
-
 @media only screen and (max-width: 600px) {
   body .innovation-title {
     font-size: 50px;
@@ -260,6 +248,7 @@
 }
 
 body {
+  font-family: "DM Sans", sans-serif;
   background-color: var(--body-bg-color);
 }
 
@@ -278,9 +267,7 @@ body {
 }
 
 .navbar-toggler {
-  /* margin: 0 auto !important; */
   margin-left: auto !important;
-  /* background: var(--nav-collaspe-color);  */
   background-color: var(--nav-toggle-color) !important;
 }
 
@@ -303,12 +290,10 @@ body {
 }
 
 .mynav-txt {
-  font-family: "DM Sans", sans-serif;
   font-size: 20px;
   color: var(--nav-txt-color);
   margin-right: 40px;
   cursor: pointer;
-  letter-spacing: -1px;
 }
 
 .mynav-text-compass {
@@ -331,23 +316,11 @@ body {
 .mynav-txt:link .mynav-txt:visited .mynav-txt:active {
   text-decoration: none;
 }
-/* .gradient-container{
-    margin-top: 100%;
-} */
+
 .gradient-logo {
-  /* margin-top: -20px; */
-  /* margin-bottom: -50px; */
-  /* margin-top: auto;
-    margin-bottom: auto; */
   margin-top: -110px;
-  /* background: url("../assets/blackcircle.png") center;
-    background-repeat: no-repeat; */
-  /* transform: scale(1.3); */
   filter: saturate(140%);
   object-fit: contain;
-  /* display: block;
-    max-width: 100%;
-    max-height: auto; */
 }
 .gradient-text {
   margin-top: auto;
@@ -356,8 +329,6 @@ body {
 
 .ideas-title {
   font-size: 90px;
-  font-family: "DM Sans", sans-serif;
-  letter-spacing: -2px;
   text-align: center;
   font-weight: bold;
   line-height: 90%;
@@ -379,9 +350,7 @@ body {
 }
 
 .opportunities-title {
-  font-family: "DM Sans", sans-serif;
   font-weight: bold;
-  letter-spacing: -2px;
   font-size: 70px;
   /*70px;*/
   background: -webkit-linear-gradient(0.2turn, #ff5858, #e40097);
@@ -404,7 +373,6 @@ body {
 }
 
 .opportunities-link-txt {
-  font-family: "DM Sans", sans-serif;
   font-size: 17px;
   color: #fafafa;
   text-align: center;
@@ -412,7 +380,6 @@ body {
 }
 
 .opportunities-text {
-  font-family: "DM Sans", sans-serif;
   font-size: 25px;
   color: #939393;
   margin-top: 20px;
@@ -421,14 +388,12 @@ body {
 
 .welcome-title {
   font-size: 30px;
-  font-family: "DM Sans", sans-serif;
   letter-spacing: -2px;
   text-align: center;
   font-weight: bold;
   margin-top: 10%;
 }
 .innovation-title {
-  font-family: "DM Sans", sans-serif;
   font-weight: bold;
   letter-spacing: -2px;
   font-size: 70px;
@@ -440,9 +405,7 @@ body {
 }
 
 .brand-title {
-  font-family: "DM Sans", sans-serif;
   font-weight: bold;
-  letter-spacing: -2px;
   color: var(--nav-brand-title-color);
   font-size: 30px;
   margin-left: 40%;
@@ -457,16 +420,13 @@ body {
 }
 
 .subject-main-title {
-  font-family: "DM Sans", sans-serif;
   font-weight: bold;
-  letter-spacing: -2px;
   font-size: 70px;
   color: #272727;
   text-align: center;
 }
 
 .subject-title {
-  font-family: "DM Sans", sans-serif;
   /* font-size: 35px; */
   font-size: 2.25vw;
   color: black;
@@ -479,7 +439,6 @@ body {
 }
 
 .gen-text {
-  font-family: "DM Sans", sans-serif;
   font-size: 20px;
   text-align: center;
   color: #727272;
@@ -542,9 +501,7 @@ body {
 }
 
 .conference-title {
-  font-family: "DM Sans", sans-serif;
   font-weight: bold;
-  letter-spacing: -2px;
   font-size: 70px;
   text-align: center;
   background: -webkit-linear-gradient(0.2turn, #33f4e9, #1bf1ff);
@@ -578,7 +535,6 @@ body {
 }
 
 .conf-date-text {
-  font-family: "DM Sans", sans-serif;
   font-size: 20px;
   font-weight: medium;
   margin-top: -15px;
@@ -586,7 +542,6 @@ body {
 }
 
 .conf-text {
-  font-family: "DM Sans", sans-serif;
   font-size: 20px;
   margin-top: 20px;
   text-align: center;
@@ -622,7 +577,6 @@ body {
 }
 
 .process-text {
-  font-family: "DM Sans", sans-serif;
   font-size: 20px;
   margin-top: 15px;
   color: white;
@@ -636,9 +590,7 @@ body {
 }
 
 .conf2-title {
-  font-family: "DM Sans", sans-serif;
   font-weight: bold;
-  letter-spacing: -2px;
   font-size: 70px;
   text-align: center;
   background: -webkit-linear-gradient(0.2turn, #38fff3, #d04bff);
@@ -657,7 +609,6 @@ body {
 }
 
 .conf2-text {
-  font-family: "DM Sans", sans-serif;
   font-size: 20px;
   color: #d2d2d2;
 }
@@ -668,7 +619,6 @@ body {
 }
 
 .list-text {
-  font-family: "DM Sans", sans-serif;
   font-size: 20px;
   margin-top: 20px;
   color: white;
@@ -676,7 +626,6 @@ body {
 }
 
 .team-title {
-  font-family: "DM Sans", sans-serif;
   font-weight: bold;
   color: #000000;
   font-size: 50px;
@@ -715,7 +664,6 @@ body {
 }
 
 .team-txt {
-  font-family: "DM Sans", sans-serif;
   font-weight: bold;
   color: #000000;
   font-size: 20px;
@@ -728,7 +676,6 @@ body {
 }
 
 .toronto-title {
-  font-family: "DM Sans", sans-serif;
   font-weight: medium;
   color: #000000;
   font-size: 45px;
@@ -752,19 +699,15 @@ body {
 }
 
 .inquiries-title {
-  font-family: "DM Sans", sans-serif;
   font-weight: bold;
   color: #000000;
   font-size: 60px;
   text-align: center;
-  letter-spacing: -1px;
   margin-top: 100px;
 }
 
 .inquiries-subtitle {
-  font-family: "DM Sans", sans-serif;
   font-weight: medium;
-  letter-spacing: -1px;
   color: #b6b6b6;
   font-size: 30px;
   text-align: center;
@@ -808,7 +751,6 @@ body {
 }
 
 .link-text {
-  font-family: "DM Sans", sans-serif;
   font-weight: bold;
   color: #000000;
   font-size: 18px;
@@ -821,12 +763,10 @@ body {
 }
 
 .faqs-title {
-  font-family: "DM Sans", sans-serif;
   font-weight: bold;
   color: #000000;
   font-size: 60px;
   text-align: center;
-  letter-spacing: -1px;
   margin-bottom: 40px;
 }
 
@@ -837,16 +777,13 @@ body {
 }
 
 .faqs-question {
-  font-family: "DM Sans", sans-serif;
   font-weight: bold;
   color: #000000;
   font-size: 25px;
-  letter-spacing: -1px;
   margin-bottom: 20px;
 }
 
 .faqs-answer {
-  font-family: "DM Sans", sans-serif;
   color: #000000;
   font-size: 15px;
 }
@@ -882,11 +819,9 @@ body {
 }
 
 .footer-title {
-  font-family: "DM Sans", sans-serif;
   font-weight: bold;
   color: var(--footer-title-color);
   font-size: 30px;
-  letter-spacing: -2px;
   padding-top: 3px;
   margin-left: 60px;
 }
