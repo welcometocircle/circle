@@ -252,6 +252,27 @@ body {
   background-color: var(--body-bg-color);
 }
 
+h1{
+  font-size: 90px;
+}
+
+h2{
+  font-size: 70px;
+}
+h3{
+  font-size: 50px;
+}
+h4 {
+  font-size: 40px;
+}
+h5 {
+  font-size: 30px;
+}
+p{
+  font-size: 20px;
+}
+
+
 .navbar-brand > a:hover {
   text-decoration: none;
   color: var(--nav-brand-hover-color);

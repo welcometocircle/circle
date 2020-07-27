@@ -30,7 +30,7 @@ class HomePage extends Component {
           <div className="compass container">
             <CLogoAnimation/>
 
-            <h2 className="compass-landing-title">Compass</h2>
+            <h1 className="compass-landing-title">Compass</h1>
             <h3 className="compass-subheading">A conference for the future</h3>
             <CYoutubeVid ytURL="https://www.youtube.com/embed/h9JJqhkZfTI"  style={{marginTop:"0px",marginBottom:"30px"}}/>
             <div style={{marginTop: "-15px", marginBottom: "20px"}} className="d-flex justify-content-center">
