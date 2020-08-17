@@ -19,8 +19,8 @@ class PLanding extends Component {
     var y
 
     function transformAnimation (e) {
-      var xPos = (e.clientX - aniDiv.offsetWidth/2)/40
-      var yPos = (e.clientY - aniDiv.offsetHeight/2)/40
+      var xPos = (e.clientX - aniDiv.offsetWidth/2)/30
+      var yPos = (e.clientY - aniDiv.offsetHeight/2)/30
       var translate3dValue = "translate3d("+xPos+'px,'+yPos+'px,0)';
       aniDiv.style.transform = translate3dValue;
     }
