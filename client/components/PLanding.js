@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-
+import * as aniLinesData from '../assets/animations/LinesData.json';
+import LottieAnimation from "./global/LottieAnimation";
 
 class PLanding extends Component {
   constructor(props) {
@@ -22,6 +23,7 @@ class PLanding extends Component {
         <h6>h6 SECTORS</h6>
         <hr />
         <p>Test aaa asjdofajlfk alsdf alksdf </p>
+        <LottieAnimation aniData={aniLinesData}/>
       </div>
     );
   }

@@ -4,7 +4,7 @@ import Lottie from "react-lottie";
 class LottieAnimation extends Component{
   render() {
     const aniCompass = {
-      animationData: {this.props.animationData}.default,
+      animationData: {this.props.aniData}.default,
       loop: true,
       autoplay: true,
       renderer: "canvas",
@@ -18,7 +18,15 @@ class LottieAnimation extends Component{
     <div className="row justify-content-center">
               <Lottie
                 isClickToPauseDisabled
-                options={aniCompass}
+                options={
+                    animationData: this.props.aniData.default,
+                    loop: true,
+                    autoplay: true,
+                    renderer: "canvas",
+                    rendererSettings: {
+                      preserveAspectRatio: "xMidYMid meet",
+                    }
+                  }
                 height={200}
                 width={200}
               />
