@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
   --body-bg-color: white;
 }
@@ -6,6 +8,58 @@
 }
 
 [data-theme="dark"] {
-  --footer-logo: url("../assets/circle-white.png");
-  --body-bg-color: black;
+  /* --footer-logo: url("../assets/circle-white.png"); */
+  --body-bg-color: #1A1E24;
+  --med-gray: #969696;
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -0.05em;
+  font-style: normal;
+  background-color: var(--body-bg-color);
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+h1 {
+  font-size: 110px;
+  line-height: 130px;
+}
+
+h2{
+  font-size: 95px;
+  line-height: 110px;
+
+}
+h3{
+  font-size: 70px;
+  line-height: 95px;
+}
+h4{
+  font-size: 55px;
+  line-height: 70px;
+}
+h5{
+  font-size: 40px;
+  line-height: 55px;
+}
+h6{
+  font-size: 35px;
+  line-height: 40px;
+  color: #6F737B;
+  letter-spacing: 0.1em;
+}
+
+p{
+  font-size: 25px;
+  line-height: 35px;
+  color: #B9B9B9;
+}
+
+hr{
+  border: 1px solid #3F4247;
 }
