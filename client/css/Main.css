@@ -12,7 +12,10 @@
   --body-bg-color: #1A1E24;
   --med-gray: #969696;
 }
-
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body{
   font-family: 'Inter', sans-serif;
   letter-spacing: -0.05em;
@@ -23,11 +26,14 @@ body{
 h1,h2,h3,h4,h5,h6{
   font-weight: 700;
   color: #FFFFFF;
+  text-align: center;
 }
 
 h1 {
-  font-size: 110px;
-  line-height: 130px;
+  /* font-size: 110px; */
+  font-size: 8vw;
+  line-height: 10vw;
+  /* line-height: 130px; */
 }
 
 h2{
