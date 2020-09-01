@@ -23,7 +23,6 @@ const imgStyle = {
     borderRadius: 50,
     height: '50%',
     marginBottom: 15,
-
 }
 
 class CExperiences extends Component {

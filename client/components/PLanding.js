@@ -21,9 +21,6 @@ class PLanding extends Component {
 
     var aniDiv = document.getElementById('aniDivLanding');
     var aniDivText = document.getElementById('landingText')
-    var isMouseOver = false
-    var x;
-    var y
 
     function transformAnimation(e) {
       var xPos = (e.clientX - aniDiv.offsetWidth / 2) / 30
