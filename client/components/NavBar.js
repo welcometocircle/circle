@@ -2,8 +2,11 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem ,Container} from "react-bootstrap";
 
+// var styles
+var textColor;
 
-const styles = {
+
+const styles= {
   navBig: {
     // backgroundColor: "rgba(0, 0, 0, 0.3)",
     // opacity: 0.5
@@ -15,18 +18,15 @@ const styles = {
     // backdropFilter: "opacity(0.4)"
   },
   navBrand: {
-    color: "white",
     fontSize: 30,
     fontWeight: 700,
   },
   navLinks: {
-    color: "white",
     fontSize: 15,
     marginLeft:"10px",
     marginRight:"10px"
   },
 };
-
 
 class NavBar extends Component {
   constructor(props) {
@@ -57,17 +57,17 @@ class NavBar extends Component {
   render() {
     return (
       // <Navbar backgroundColor={navBackground ? 'white' : 'transparent'}fixed='top' style={styles.navBig} expand="md" collapseOnSelect={true}>
-      <Navbar fixed='top' style={styles.navBig} expand="md" collapseOnSelect={true}>
+      <Navbar fixed='top' className='navBar' style={styles.navBig} expand="md" collapseOnSelect={true}>
       <Container className="fixed-top">
 
-          <Navbar.Brand className="mr-auto" href="/" style={styles.navBrand}>
+          <Navbar.Brand className="mr-auto navBrand" href="/" style={styles.navBrand}>
             circle
           </Navbar.Brand>
 
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse>
             <Nav className="ml-auto">
-              <Nav.Link href="/about" style={styles.navLinks}>
+              <Nav.Link href="/about" className="navText" style={styles.navLinks}>
                 About
               </Nav.Link>
               <Nav.Link href="/open-circle" style={styles.navLinks}>

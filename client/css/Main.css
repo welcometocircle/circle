@@ -3,14 +3,19 @@
 :root {
   --body-bg-color: white;
 }
-[data-theme="home"]{
+[data-theme="light"]{
   --body-bg-color: white;
+  --nav-text-color: black;
+  --nav-brand-color: black;
+
 }
 
 [data-theme="dark"] {
   /* --footer-logo: url("../assets/circle-white.png"); */
   --body-bg-color: #131416;
   --med-gray: #969696;
+  --nav-text-color: white;
+  --nav-brand-color: white;
 }
 html, body {
     max-width: 100%;
@@ -72,4 +77,12 @@ hr{
 
 .test{
   color: cyan;
+}
+
+.navBar{
+  color: var(--nav-brand-color);
+}
+
+.navText, .navBrand{
+  color: var(--nav-text-color);
 }
