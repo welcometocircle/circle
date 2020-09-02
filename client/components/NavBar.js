@@ -1,11 +1,29 @@
 import React, { Component } from "react";
-import { MDBContainer, MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink, MDBIcon } from 'mdbreact';
-import { BrowserRouter as Router } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { Navbar, Nav, NavItem, NavDropdown, MenuItem ,Container} from "react-bootstrap";
+
 
 const styles = {
-  navBG: {
-    backgroundColor: "#1F2022",
-    opacity: "1",
+  navBig: {
+    // backgroundColor: "rgba(0, 0, 0, 0.3)",
+    // opacity: 0.5
+    // backgroundOpacity: "0",
+    // backdropFilter: "blur(10px)",
+    // filter: "blur(5px)"
+    transition: "1s ease"
+
+    // backdropFilter: "opacity(0.4)"
+  },
+  navBrand: {
+    color: "white",
+    fontSize: 30,
+    fontWeight: 700,
+  },
+  navLinks: {
+    color: "white",
+    fontSize: 15,
+    marginLeft:"10px",
+    marginRight:"10px"
   },
 };
 
@@ -13,51 +31,60 @@ const styles = {
 class NavBar extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      collapse: false,
-    };
-    this.onClick = this.onClick.bind(this);
+    // const [navBackground, setNavBackground] = useState(false)
+    // const navRef = useRef()
+    // navRef.current = navBackground
   }
 
-  onClick() {
-    this.setState({
-      collapse: !this.state.collapse,
-    });
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const show = window.scrollY > 670
+  //     if (navRef.current !== show) {
+  //       setNavBackground(show)
+  //     }
+  //   }
+  //   document.addEventListener('scroll', handleScroll)
+  //   return () => {
+  //     document.removeEventListener('scroll', handleScroll)
+  //   }
+  // })
+
+
+  componentDidMount(){
+
   }
 
   render() {
     return (
-      <div>
-        <Router>
-          <header>
-            <MDBNavbar style={styles.navBG} dark expand="lg" scrolling fixed="top">
-              <MDBNavbarBrand href="/">
-                <strong>circle</strong>
-              </MDBNavbarBrand>
-              <MDBNavbarToggler onClick={this.onClick} />
-              <MDBCollapse isOpen={this.state.collapse} navbar>
-                <MDBNavbarNav right>
-                  <MDBNavItem >
-                    <MDBNavLink to="#">About</MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink to="#">Open Circle</MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink to="#">Conferences</MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink to="#">Opportunities</MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink to="#">Contact</MDBNavLink>
-                  </MDBNavItem>
-                </MDBNavbarNav>
-              </MDBCollapse>
-            </MDBNavbar>
-          </header>
-        </Router>
-      </div>
+      <Navbar backgroundColor={navBackground ? 'white' : 'transparent'}fixed='top' style={styles.navBig} expand="md" collapseOnSelect={true}>
+      <Container className="fixed-top">
+
+          <Navbar.Brand className="mr-auto" href="/" style={styles.navBrand}>
+            circle
+          </Navbar.Brand>
+
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse>
+            <Nav className="ml-auto">
+              <Nav.Link href="/about" style={styles.navLinks}>
+                About
+              </Nav.Link>
+              <Nav.Link href="/open-circle" style={styles.navLinks}>
+                Open Circle
+              </Nav.Link>
+              <Nav.Link href="/conferences" style={styles.navLinks}>
+                Conferences
+              </Nav.Link>
+              <Nav.Link href="/opportunities" style={styles.navLinks}>
+                Opportunties
+              </Nav.Link>
+              <Nav.Link href="/contact" style={styles.navLinks}>
+                Contact
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+      </Container>
+        </Navbar>
     );
   }
 }
