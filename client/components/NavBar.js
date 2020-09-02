@@ -56,7 +56,8 @@ class NavBar extends Component {
 
   render() {
     return (
-      <Navbar backgroundColor={navBackground ? 'white' : 'transparent'}fixed='top' style={styles.navBig} expand="md" collapseOnSelect={true}>
+      // <Navbar backgroundColor={navBackground ? 'white' : 'transparent'}fixed='top' style={styles.navBig} expand="md" collapseOnSelect={true}>
+      <Navbar fixed='top' style={styles.navBig} expand="md" collapseOnSelect={true}>
       <Container className="fixed-top">
 
           <Navbar.Brand className="mr-auto" href="/" style={styles.navBrand}>
