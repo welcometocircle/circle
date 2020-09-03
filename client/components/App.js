@@ -1,6 +1,7 @@
 import React from "react";
 import Routes from "./Routes";
 import NavBar from "./NavBar.js";
+import Radium from 'radium';
 
 function App(props) {
   return (
@@ -11,5 +12,8 @@ function App(props) {
     </div>
   );
 }
+
+const StyleRoot = Radium.StyleRoot;
+App = Radium(App);
 
 export default App;

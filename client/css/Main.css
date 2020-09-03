@@ -73,3 +73,34 @@ hr{
 .test{
   color: cyan;
 }
+
+a{
+  border-radius: 50px;
+  height: 50px;
+  padding-top: 7px;
+  width: 150px;
+  margin-right: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+  display: inline-block;
+  background-color: #1E1E1E;
+}
+a:hover {
+  background-color: #fae1e1;
+  text-decoration: none;
+}
+a:link {
+  font-size: 15px;
+  line-height: 35px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+a:active {
+  color: white;
+  text-decoration: none;
+}

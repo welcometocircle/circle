@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem ,Container} from "react-bootstrap";
+import { Navbar, Nav, NavItem, NavDropdown, MenuItem, Container } from "react-bootstrap";
 
 
 const styles = {
@@ -22,8 +22,8 @@ const styles = {
   navLinks: {
     color: "white",
     fontSize: 15,
-    marginLeft:"10px",
-    marginRight:"10px"
+    marginLeft: "10px",
+    marginRight: "10px"
   },
 };
 
@@ -50,14 +50,14 @@ class NavBar extends Component {
   // })
 
 
-  componentDidMount(){
+  componentDidMount() {
 
   }
 
   render() {
     return (
-      <Navbar backgroundColor={navBackground ? 'white' : 'transparent'}fixed='top' style={styles.navBig} expand="md" collapseOnSelect={true}>
-      <Container className="fixed-top">
+      <Navbar backgroundColor={navBackground ? 'white' : 'transparent'} fixed='top' style={styles.navBig} expand="md" collapseOnSelect={true}>
+        <Container className="fixed-top">
 
           <Navbar.Brand className="mr-auto" href="/" style={styles.navBrand}>
             circle
@@ -83,8 +83,8 @@ class NavBar extends Component {
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
-      </Container>
-        </Navbar>
+        </Container>
+      </Navbar>
     );
   }
 }
