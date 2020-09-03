@@ -6,25 +6,27 @@ import { Navbar, Nav, NavItem, NavDropdown, MenuItem ,Container} from "react-boo
 var textColor;
 
 
-const styles= {
+const styles = {
   navBig: {
     // backgroundColor: "rgba(0, 0, 0, 0.3)",
     // opacity: 0.5
     // backgroundOpacity: "0",
     // backdropFilter: "blur(10px)",
     // filter: "blur(5px)"
-    transition: "1s ease"
+    transition: "1s ease",
 
     // backdropFilter: "opacity(0.4)"
   },
   navBrand: {
+    color: "white",
     fontSize: 30,
     fontWeight: 700,
   },
   navLinks: {
+    color: "white",
     fontSize: 15,
-    marginLeft:"10px",
-    marginRight:"10px"
+    marginLeft: "10px",
+    marginRight: "10px",
   },
 };
 
