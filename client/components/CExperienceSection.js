@@ -81,7 +81,7 @@ class CExperienceSection extends Component {
               <p style={{ color: '#969696' }}>JULY 18 - JULY 19, 2020</p>
               <h3 style={{ color: 'black', textAlign: 'left' }}>Compass</h3>
               <p>Students from 17 universities across North America came together virtually and created innovative solutions to the most pressing issues of the education system.</p>
-              <a href="">Learn More</a>
+              <a href="" className="aButton">Learn More</a>
             </Col>
           </Row>
           <Row className="justify-content-center" style={{marginTop: 50}}>
