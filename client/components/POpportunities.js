@@ -43,7 +43,7 @@ class POpportunities extends Component {
             team="Developer"
             img="../assets/teamDev.png"
             btnList={[
-              { title: "FRONT END DEVELOPER", link: "https://google.com" },
+              { title: "FRONT END DEVELOPER", link: "/" },
               { title: "BACK END DEVELOPER", link: "/" },
             ]}
           />
