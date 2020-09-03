@@ -72,13 +72,18 @@ p{
   font-size: 25px;
   line-height: 35px;
   color: #B9B9B9;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
+
 
 hr{
   border: 1px solid #3F4247;
 }
+
+opsButton {
+    font-size: 25px
+  }
 
 .test{
   color: cyan;
@@ -108,7 +113,7 @@ hr{
     line-height: 40px;
   }
   h4{
-    font-size: 30px;
+    font-size: 33px;
     line-height: 35px;
   }
   h5{
@@ -116,12 +121,16 @@ hr{
     line-height: 30px;
   }
   h6{
-    font-size: 20px;
+    font-size: 25px;
     line-height: 25px;
   } 
   p {
     font-size: 15px;
     line-height: 20px;
+  }
+
+  opsButton {
+    font-size: 20px
   }
 }
 /* @media screen and (max-width: 1000px) {

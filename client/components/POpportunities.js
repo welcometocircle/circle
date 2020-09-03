@@ -30,7 +30,6 @@ class POpportunities extends Component {
           <h4>Joining the dream team.</h4>
           <h5>Joining the dream team.</h5> */}
 
-
           <p style={{ textAlign: "center" }}>
             At Circle, we believe ideas come alive with collaboration.
             <br />
@@ -44,8 +43,28 @@ class POpportunities extends Component {
             team="Developer"
             img="../assets/teamDev.png"
             btnList={[
-              { title: "FRONT END DEVELOPER", link: "/" },
+              { title: "FRONT END DEVELOPER", link: "https://google.com" },
               { title: "BACK END DEVELOPER", link: "/" },
+            ]}
+          />
+        </Row>
+        <Row className="justify-content-center">
+          <COppTeam
+            team="Design"
+            img="../assets/teamDesign.png"
+            btnList={[
+              { title: "DIGITAL DESIGN LEAD", link: "/" },
+              // { title: "BACK END DEVELOPER", link: "/" },
+            ]}
+          />
+        </Row>
+        <Row className="justify-content-center">
+          <COppTeam
+            team="Events"
+            img="../assets/teamEvent.png"
+            btnList={[
+              { title: "EVENT LEAD", link: "/" },
+              { title: "SPONSORSHIP LEAD", link: "/" },
             ]}
           />
         </Row>
