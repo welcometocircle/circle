@@ -35,6 +35,9 @@ h1,h2,h3,h4,h5,h6{
   font-weight: 700;
   color: var(--body-text-color);
   text-align: center;
+  padding-left: 2vw;
+  padding-right: 2vw;
+
 }
 
 h1 {

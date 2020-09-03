@@ -38,7 +38,7 @@ class COppTeam extends Component {
 				borderStyle: 'hidden',
 
         color: "black",
-
+				
         // fontSize: "2vw",
         textAlign: "left",
 				// padding:"10px 20px",

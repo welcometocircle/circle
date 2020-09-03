@@ -1,31 +1,11 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem ,Container} from "react-bootstrap";
-
-// var styles
-var textColor;
-
+import { Navbar, Nav ,Container} from "react-bootstrap";
 
 class NavBar extends Component {
   constructor(props) {
     super(props);
-    // const [navBackground, setNavBackground] = useState(false)
-    // const navRef = useRef()
-    // navRef.current = navBackground
   }
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const show = window.scrollY > 670
-  //     if (navRef.current !== show) {
-  //       setNavBackground(show)
-  //     }
-  //   }
-  //   document.addEventListener('scroll', handleScroll)
-  //   return () => {
-  //     document.removeEventListener('scroll', handleScroll)
-  //   }
-  // })
 
 
   componentDidMount(){
@@ -33,14 +13,14 @@ class NavBar extends Component {
   }
 
   render() {
-    const darkPages = ['/']
+    const darkPages = ['/','/open-circle']
     const lightPages = ['/opportunities']
-
+    const bgColor = darkPages.includes(this.props.location.pathname)
+          ? "rgba(19, 20, 22, 0.96)"
+          : "rgba(255, 255, 255, 0.96)"
     const styles = {
       navBig: {
-        backgroundColor: darkPages.includes(this.props.location.pathname)
-          ? "rgba(0, 0, 0, 0.95)"
-          : "rgba(255, 255, 255, 0.95)",
+        backgroundColor: bgColor,
         // opacity: 0.5
         // backgroundOpacity: "0",
         // backdropFilter: "blur(10px)",
@@ -77,9 +57,7 @@ class NavBar extends Component {
         border: 'none'
       },
       navCollaspe: {
-        backgroundColor: darkPages.includes(this.props.location.pathname)
-          ? "rgba(0, 0, 0, 0.95)"
-          : "rgba(255, 255, 255, 0.95)",
+        // backgroundColor: bgColor,
         marginTop: "-1px",
         // backdropFilter: "blur(10px)",
       },
@@ -88,35 +66,47 @@ class NavBar extends Component {
     
     return (
       // <Navbar backgroundColor={navBackground ? 'white' : 'transparent'}fixed='top' style={styles.navBig} expand="md" collapseOnSelect={true}>
-      <Navbar fixed='top' style={styles.navBig} expand="md" collapseOnSelect={true}>
-      <Container className="fixed-top">
-
-          <Navbar.Brand className="mr-auto navBrand" href="/" style={styles.navBrand}>
-            circle
-          </Navbar.Brand>
-          {/* <Navbar.Toggle.Icon/> */}
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" style={styles.navToggle}/>
-          <Navbar.Collapse style={styles.navCollaspe}>
-            <Nav className="ml-auto">
-              <Nav.Link href="/about" className="navText" style={styles.navLinks}>
-                About
-              </Nav.Link>
-              <Nav.Link href="/open-circle" style={styles.navLinks}>
-                Open Circle
-              </Nav.Link>
-              <Nav.Link href="/conferences" style={styles.navLinks}>
-                Conferences
-              </Nav.Link>
-              <Nav.Link href="/opportunities" style={styles.navLinks}>
-                Opportunties
-              </Nav.Link>
-              <Nav.Link href="/contact" style={styles.navLinks}>
-                Contact
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-      </Container>
+      <Container className="fixed-top" >
+        <Navbar fixed="top" expand="md" collapseOnSelect={true}style={styles.navBig}>
+          <Container>
+            <Navbar.Brand
+              className="mr-auto navBrand"
+              href="/"
+              style={styles.navBrand}
+            >
+              circle
+            </Navbar.Brand>
+            {/* <Navbar.Toggle.Icon/> */}
+            <Navbar.Toggle
+              aria-controls="responsive-navbar-nav"
+              style={styles.navToggle}
+            />
+            <Navbar.Collapse>
+              <Nav className="ml-auto">
+                <Nav.Link
+                  href="/about"
+                  className="navText"
+                  style={styles.navLinks}
+                >
+                  About
+                </Nav.Link>
+                <Nav.Link href="/open-circle" style={styles.navLinks}>
+                  Open Circle
+                </Nav.Link>
+                <Nav.Link href="/conferences" style={styles.navLinks}>
+                  Conferences
+                </Nav.Link>
+                <Nav.Link href="/opportunities" style={styles.navLinks}>
+                  Opportunties
+                </Nav.Link>
+                <Nav.Link href="/contact" style={styles.navLinks}>
+                  Contact
+                </Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
         </Navbar>
+      </Container>
     );
   }
 }
