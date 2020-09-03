@@ -31,7 +31,7 @@ class POpportunities extends Component {
           <h5>Joining the dream team.</h5> */}
 
           <p style={{ textAlign: "center" }}>
-            At Circle, we believe ideas come alive with collaboration.
+            Ideas come alive with collaboration.
             <br />
             We hire members on a rolling basis throughout the year within three
             divisions: Circle Events, Circle Design, and Circle Developer.
