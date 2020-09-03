@@ -17,12 +17,14 @@ class COppTeam extends Component {
         // height: "30vh",
         width: "70vw",
         // textAlign: "center",
-        borderRadius: 50,
+        borderRadius: 20,
         marginTop: "5vh",
         backgroundImage: "url(" + this.props.img + ")",
         backgroundSize: "100% 100%",
 				display: "inline-block",
 				// paddingBottom:"5vh"
+				// marginLeft:20px
+				// margin
       },
       sTeam: {
         color: "white",

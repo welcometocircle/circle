@@ -85,18 +85,9 @@ opsButton {
     font-size: 25px
   }
 
-.test{
-  color: cyan;
+.navbar-light .navbar-toggler-icon{
+  background-image: none;
 }
-
-.navBar{
-  color: var(--nav-brand-color);
-}
-
-.navText, .navBrand{
-  color: var(--nav-text-color);
-}
-
 
 @media screen and (max-width: 768px) {
   h1{
