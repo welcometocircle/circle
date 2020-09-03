@@ -7,6 +7,7 @@ import PAbout from "./PAbout.js";
 import POpenCircle from './POpenCircle.js';
 import PError from './PError.js';
 import PConferences from './PConferences.js';
+import PContact from './PContact.js';
 
 export default function Routes() {
   return (
@@ -17,7 +18,10 @@ export default function Routes() {
       <Route path='/about' exact component={PAbout}/>
       <Route path='/open-circle' exact component={POpenCircle}/>
       <Route path='/conferences' exact component={PConferences}/>
+      <Route path='/contact' exact component={PContact}/>
+      
       <Route component={PError}/>
+
     </Switch>
   );
 }
