@@ -40,16 +40,6 @@ class POpportunities extends Component {
 
         <Row className="justify-content-center">
           <COppTeam
-            team="Developer"
-            img="../assets/teamDev.png"
-            btnList={[
-              { title: "FRONT END DEVELOPER", link: "/" },
-              { title: "BACK END DEVELOPER", link: "/" },
-            ]}
-          />
-        </Row>
-        <Row className="justify-content-center">
-          <COppTeam
             team="Design"
             img="../assets/teamDesign.png"
             btnList={[
@@ -65,6 +55,16 @@ class POpportunities extends Component {
             btnList={[
               { title: "EVENT LEAD", link: "/" },
               { title: "SPONSORSHIP LEAD", link: "/" },
+            ]}
+          />
+        </Row>
+        <Row className="justify-content-center">
+          <COppTeam
+            team="Developer"
+            img="../assets/teamDev.png"
+            btnList={[
+              { title: "FRONT END DEVELOPER", link: "/" },
+              { title: "BACK END DEVELOPER", link: "/" },
             ]}
           />
         </Row>

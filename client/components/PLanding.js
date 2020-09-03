@@ -83,7 +83,7 @@ class PLanding extends Component {
         <div>
           <Container>
             <Row style={{ position: "relative", zIndex: 0 }}>
-              <h1 id="landingText" style={{ zIndex: 2, position: "absolute", marginTop: txtMargin, overflowX: 'hidden' }} className=''>Innovation is just<br /> the beginning.</h1>
+              <h1 id="landingText" style={{ zIndex: 2, position: "absolute", marginTop: txtMargin, overflow: 'hidden' }} className=''>Innovation is just<br /> the beginning.</h1>
               {/* <animated.h1 style={animation}>Innovation is just<br/> the beginning</animated.h1> */}
 
               <LottieAnimation aniData={aniLinesData} id="aniDivLanding" height={aniHeight} width={aniWidth} style={{ zIndex: 1, position: "relative", marginTop: aniMargin }} />
