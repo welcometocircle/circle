@@ -4,13 +4,28 @@ import { Container, Row, Col, Card, Collapse } from "react-bootstrap";
 class CProjectCard extends Component {
   constructor(props) {
     super(props);
-    this.state = {open: false};
+    this.state = {open: false, scrollTo:false};
+    this.myRef = React.createRef();
+    this.handleClick = this.handleClick.bind(this);
+
   }
 
   componentDidMount() {
+    // var moveTo = this.myRef.current.offsetTop + this.myRef.current.offsetHeight;
+    // console.log(this.myRef.current.offsetTop + this.myRef.current.offsetHeigh);
+    // if (this.state.scrollTo){
+    //   console.log(this.myRef.current.offsetTop);
+    //   window.scrollTo(0, this.myRef.current.offsetTop);
+    //   this.setState({open: this.state.open, scrollTo: false});
+    // } 
   }
 
   componentWillUnmount() {}
+
+  handleClick(){
+      this.myRef.current.scrollIntoView({behavior:'smooth'});
+      this.setState({ open: !this.state.open, scrollTo:true });
+  };
 
   render() {
     const styles = {
@@ -23,7 +38,7 @@ class CProjectCard extends Component {
         marginBottom: 10,
         borderRadius: 40,
         overflow: "hidden",
-        transition: "1s ease"
+        transition: "1s ease",
       },
       headImg: {
         borderRadius: 30,
@@ -45,9 +60,8 @@ class CProjectCard extends Component {
       },
     };
     const cardKey = "card" + this.props.cardKey;
-
     return (
-      <div style={this.props.style}>
+      <div style={this.props.style} ref={this.myRef}>
         <Col sm={this.state.open ? 12 : 6}>
           <Card style={styles.card}>
             <Card.Img src={this.props.headImg} style={styles.headImg} />
@@ -63,7 +77,7 @@ class CProjectCard extends Component {
                   aria-controls={cardKey}
                   type="button"
                   role="button"
-                  onClick={() => this.setState({open: !this.state.open})}
+                  onClick={this.handleClick}
                 >
                   {/* <h5>+</h5> */}
                   <img
@@ -75,11 +89,13 @@ class CProjectCard extends Component {
               </Row>
             </Card.Title>
             {/* <div id={cardKey} aria-labelledby={cardKey} className="collapse"> */}
-            <Collapse in={this.state.open}>
+            {/* <Collapse in={this.state.open}> */}
+            <div style={{ display: this.state.open ? "inline" : "none" }}>
               <Card.Body>
                 <p>{this.props.desc}</p>
               </Card.Body>
-            </Collapse>
+            </div>
+            {/* </Collapse> */}
             {/* </div> */}
           </Card>
         </Col>
