@@ -90,40 +90,61 @@ class POpenCircle extends Component {
             <CProjectCard
               cardKey="1"
               headImg="../assets/teamDesign.png"
-              title="Project Title"
+              title="Project Design"
               desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Vestibulum facilisis purus ac arcu malesuada, nec egestas dolor
                 sollicitudin.Description of the project goes here. Lorem ipsum
                 dolor sit amet, consectetur adipiscing elit. Vestibulum
                 facilisis purus ac arcu malesuada, nec egestas dolor
                 sollicitudin."
-              sectors={["Busi", "Tech", "SSci", "Sci"]}
-              elegibility={[
+              sectorList={["Biz", "Tech", "SSci", "Sci"]}
+              elegList={[
                 "Eligibility 1",
                 "Eligibility 2",
                 "Eligibility 3",
                 "Eligibility 4",
               ]}
+              currHiring={true}
+              hireLink="http://google.com"
+              extraText="Applications close on October 10"
             />
             {/* </Col> */}
             {/* <Col sm={6} > */}
             <CProjectCard
               cardKey="2"
               headImg="../assets/teamEvent.png"
-              title="Project Title2"
+              title="Project Events"
               desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Vestibulum facilisis purus ac arcu malesuada, nec egestas dolor
                 sollicitudin.Description of the project goes here. Lorem ipsum
                 dolor sit amet, consectetur adipiscing elit. Vestibulum
                 facilisis purus ac arcu malesuada, nec egestas dolor
                 sollicitudin."
-              sectors={["Busi", "Tech", "SSci", "Sci"]}
-              elegibility={[
+              sectorList={["Biz", "Tech", "Sci"]}
+              elegList={[
                 "Eligibility 1",
                 "Eligibility 2",
                 "Eligibility 3",
                 "Eligibility 4",
               ]}
+              currHiring={false}
+            />
+            <CProjectCard
+              cardKey="3"
+              headImg="../assets/teamDev.png"
+              title="Project Dev"
+              desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum facilisis purus ac arcu malesuada, nec egestas dolor
+                sollicitudin.Description of the project goes here. Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit. Vestibulum
+                facilisis purus ac arcu malesuada, nec egestas dolor
+                sollicitudin."
+              sectorList={["Biz", "Tech"]}
+              elegList={[
+                "Eligibility 1",
+                "Eligibility 2",
+              ]}
+              currHiring={true}
             />
             {/* </Col> */}
             {/* </Row> */}
