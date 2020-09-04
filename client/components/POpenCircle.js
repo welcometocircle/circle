@@ -81,49 +81,51 @@ class POpenCircle extends Component {
             </Row>
           </div>
 
-          <div style={styles.AP} >
+          <div style={styles.AP}>
             <Row>
               <h4 className="pull-left">Available Projects</h4>
             </Row>
             {/* <Row> */}
-              {/* <Col sm={6}> */}
-              <CProjectCard
-                headImg = '../assets/teamDesign.png'
-                title="Project Title"
-                desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            {/* <Col sm={6}> */}
+            <CProjectCard
+              cardKey="1"
+              headImg="../assets/teamDesign.png"
+              title="Project Title"
+              desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Vestibulum facilisis purus ac arcu malesuada, nec egestas dolor
                 sollicitudin.Description of the project goes here. Lorem ipsum
                 dolor sit amet, consectetur adipiscing elit. Vestibulum
                 facilisis purus ac arcu malesuada, nec egestas dolor
                 sollicitudin."
-                sectors={["Busi", "Tech", "SSci", "Sci"]}
-                elegibility={[
-                  "Eligibility 1",
-                  "Eligibility 2",
-                  "Eligibility 3",
-                  "Eligibility 4",
-                ]}
-              />
-              {/* </Col> */}
-              {/* <Col sm={6} > */}
-              <CProjectCard
-                headImg = '../assets/teamEvent.png'
-                title="Project Title2"
-                desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              sectors={["Busi", "Tech", "SSci", "Sci"]}
+              elegibility={[
+                "Eligibility 1",
+                "Eligibility 2",
+                "Eligibility 3",
+                "Eligibility 4",
+              ]}
+            />
+            {/* </Col> */}
+            {/* <Col sm={6} > */}
+            <CProjectCard
+              cardKey="2"
+              headImg="../assets/teamEvent.png"
+              title="Project Title2"
+              desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Vestibulum facilisis purus ac arcu malesuada, nec egestas dolor
                 sollicitudin.Description of the project goes here. Lorem ipsum
                 dolor sit amet, consectetur adipiscing elit. Vestibulum
                 facilisis purus ac arcu malesuada, nec egestas dolor
                 sollicitudin."
-                sectors={["Busi", "Tech", "SSci", "Sci"]}
-                elegibility={[
-                  "Eligibility 1",
-                  "Eligibility 2",
-                  "Eligibility 3",
-                  "Eligibility 4",
-                ]}
-              />
-              {/* </Col> */}
+              sectors={["Busi", "Tech", "SSci", "Sci"]}
+              elegibility={[
+                "Eligibility 1",
+                "Eligibility 2",
+                "Eligibility 3",
+                "Eligibility 4",
+              ]}
+            />
+            {/* </Col> */}
             {/* </Row> */}
           </div>
         </Container>
