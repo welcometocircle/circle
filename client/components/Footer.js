@@ -77,27 +77,36 @@ class Footer extends Component {
       // <Navbar backgroundColor={navBackground ? 'white' : 'transparent'}fixed='top' style={styles.navBig} expand="md" collapseOnSelect={true}>
       <div style={styles.footBig}>
         <Container style={styles.footBig}>
-          <hr style={{ marginTop: 30 }} />
+          <hr style={{ marginTop: 30, borderColor: "#e3e5e7"}} />
           <Row
             style={styles.footRow}
             className="align-items-center justify-content-center text-align-center"
           >
             <Col md={4}>
-              <div className="d-flex justify-content-md-start justify-content-center" style={styles.sections}>
-              <a className="navBrand" href="/" style={styles.navBrand}>
-                circle
-              </a>
+              <div
+                className="d-flex justify-content-md-start justify-content-center"
+                style={styles.sections}
+              >
+                <a className="navBrand" href="/" style={styles.navBrand}>
+                  circle
+                </a>
               </div>
             </Col>
             <Col md={4}>
-              <div className="d-flex justify-content-center" style={styles.sections}>
+              <div
+                className="d-flex justify-content-center"
+                style={styles.sections}
+              >
                 <Nav.Link href="/open-circle" style={styles.navLinks}>
                   Open Circle
                 </Nav.Link>
               </div>
             </Col>
             <Col md={4}>
-              <div className="d-flex justify-content-md-end justify-content-center" style={styles.sections}>
+              <div
+                className="d-flex justify-content-md-end justify-content-center"
+                style={styles.sections}
+              >
                 <img src={"../assets/filler.png"} style={styles.socialIcon} />
                 <img src={"../assets/filler.png"} style={styles.socialIcon} />
                 <img src={"../assets/filler.png"} style={styles.socialIcon} />

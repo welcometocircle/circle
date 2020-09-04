@@ -8,6 +8,7 @@ html {
 [data-theme="light"]{
   --body-bg-color: white;
   --body-text-clor: black;
+  --hr-color: #e3e5e7;
 
 
 }
@@ -17,6 +18,7 @@ html {
   --body-bg-color: #131416;
   --body-text-color: white;
   --med-gray: #969696;
+  --hr-color: #3F4247;
 }
 html, body {
     max-width: 100%;
@@ -80,7 +82,8 @@ p{
 
 
 hr{
-  border: 1px solid #3F4247;
+  border: 1px solid ;
+  border-color: var(--hr-color); 
 }
 
 .test{
