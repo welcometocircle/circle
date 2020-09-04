@@ -49,8 +49,18 @@ class POpenCircle extends Component {
 
       },
       AP: {
-        marginTop:100
+        marginTop:50
       },
+      submit: {
+        marginTop:25
+      },
+      btnSubmit: {
+        background: "linear-gradient(90.65deg, #3C9FFA -25.2%, #DB00FF 189.89%), #FFFFFF",
+        borderRadius: 10,
+        border: 'none',
+        marginLeft: "2vw",
+        marginTop: 10
+      }
     };
     return (
       <div style={styles.BG}>
@@ -85,8 +95,6 @@ class POpenCircle extends Component {
             <Row>
               <h4 className="pull-left">Available Projects</h4>
             </Row>
-            {/* <Row> */}
-            {/* <Col sm={6}> */}
             <CProjectCard
               cardKey="1"
               headImg="../assets/teamDesign.png"
@@ -97,7 +105,7 @@ class POpenCircle extends Component {
                 dolor sit amet, consectetur adipiscing elit. Vestibulum
                 facilisis purus ac arcu malesuada, nec egestas dolor
                 sollicitudin."
-              sectorList={["Biz", "SSci", "Sci","Tech"]}
+              sectorList={["Biz", "SSci", "Sci", "Tech"]}
               elegList={[
                 "Eligibility 1",
                 "Eligibility 2",
@@ -108,8 +116,6 @@ class POpenCircle extends Component {
               hireLink="http://google.com"
               extraText="Applications close on October 10"
             />
-            {/* </Col> */}
-            {/* <Col sm={6} > */}
             <CProjectCard
               cardKey="2"
               headImg="../assets/teamEvent.png"
@@ -140,15 +146,39 @@ class POpenCircle extends Component {
                 facilisis purus ac arcu malesuada, nec egestas dolor
                 sollicitudin."
               sectorList={["Biz", "Tech"]}
-              elegList={[
-                "Eligibility 1",
-                "Eligibility 2",
-              ]}
+              elegList={["Eligibility 1", "Eligibility 2"]}
               currHiring={true}
             />
-            {/* </Col> */}
-            {/* </Row> */}
           </div>
+          <Row style={{marginBottom:-50}}>
+
+          </Row>
+          <div style={styles.HIW}>
+            <Row>
+              <h5 style={styles.HIWTitle}>Submit your own idea!</h5>
+            </Row>
+            <Row>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum facilisis purus ac arcu malesuada, nec egestas dolor
+                sollicitudin.Description of the project goes here. Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit. Vestibulum
+                facilisis purus ac arcu malesuada, nec egestas dolor
+                sollicitudin.
+              </p>
+            </Row>
+            <Row className="justify-content-center justify-content-lg-start">
+              <a
+                href="http://www.google.com"
+                style={styles.btnSubmit}
+                target="_blank"
+              >
+                <p style={{ marginTop: 10, color: "white" }}>
+                  Submit Idea!
+                </p>
+                </a>
+            </Row>
+            </div>
         </Container>
       </div>
     );
