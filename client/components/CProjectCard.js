@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Card, Collapse } from "react-bootstrap";
 
 class CProjectCard extends Component {
   constructor(props) {
@@ -62,11 +62,10 @@ class CProjectCard extends Component {
             </Row>
           </Card.Title>
           <Collapse>
-            
+            <Card.Body>
+              <p>{this.props.desc}</p>
+            </Card.Body>
           </Collapse>
-          <Card.Body>
-            <p>{this.props.desc}</p>
-          </Card.Body>
         </Card>
         </Col>
       </div>
