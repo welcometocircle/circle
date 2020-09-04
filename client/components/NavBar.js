@@ -13,7 +13,7 @@ class NavBar extends Component {
   }
 
   render() {
-    const darkPages = ['/','/open-circle']
+    const darkPages = ['/','/open-circle','/about']
     const lightPages = ['/opportunities']
     const bgColor = darkPages.includes(this.props.location.pathname)
           ? "rgba(19, 20, 22, 0.96)"
