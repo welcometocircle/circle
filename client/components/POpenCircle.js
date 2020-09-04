@@ -97,7 +97,7 @@ class POpenCircle extends Component {
                 dolor sit amet, consectetur adipiscing elit. Vestibulum
                 facilisis purus ac arcu malesuada, nec egestas dolor
                 sollicitudin."
-              sectorList={["Biz", "Tech", "SSci", "Sci"]}
+              sectorList={["Biz", "SSci", "Sci","Tech"]}
               elegList={[
                 "Eligibility 1",
                 "Eligibility 2",
@@ -120,7 +120,7 @@ class POpenCircle extends Component {
                 dolor sit amet, consectetur adipiscing elit. Vestibulum
                 facilisis purus ac arcu malesuada, nec egestas dolor
                 sollicitudin."
-              sectorList={["Biz", "Tech", "Sci"]}
+              sectorList={["Biz", "Sci", "Tech"]}
               elegList={[
                 "Eligibility 1",
                 "Eligibility 2",

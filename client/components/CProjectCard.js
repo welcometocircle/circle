@@ -1,5 +1,6 @@
 import React, { Component, useState } from "react";
 import { Container, Row, Col, Card, Collapse } from "react-bootstrap";
+import CSectorAnimation from "./global/CSectorAnimation";
 
 class CProjectCard extends Component {
   constructor(props) {
@@ -32,10 +33,10 @@ class CProjectCard extends Component {
       card: {
         backgroundColor: "#1F2022",
         padding: 20,
-        marginLeft: 20,
-        marginRight: 20,
+        marginLeft: 0,
+        marginRight: 0,
         marginTop: 10,
-        marginBottom: 10,
+        marginBottom: 20,
         borderRadius: 40,
         overflow: "hidden",
         transition: "1s ease",
@@ -93,19 +94,34 @@ class CProjectCard extends Component {
 
     var sectorSrcList = []
     var sectorList = this.props.sectorList
-    for (var i=0;i<sectorList.length;i++) {
-      var sec = sectorList[i]
-      if (sec =='Biz'){
-        sectorSrcList.push({k:i,src:"../assets/filler.png"})
+    // for (var i=0;i<sectorList.length;i++) {
+    //   var sec = sectorList[i]
+    //   if (sec =='Biz'){
+    //     sectorSrcList.push({k:i,src:"../assets/filler.png"})
+    //   }
+    //   if (sec == "Tech") {
+    //     sectorSrcList.push({ k: i, src: "../assets/filler.png" });
+    //   }
+    //   if (sec == "SSci") {
+    //     sectorSrcList.push({ k: i, src: "../assets/filler.png" });
+    //   }
+    //   if (sec == "Sci") {
+    //     sectorSrcList.push({ k: i, src: "../assets/filler.png" });
+    //   }
+    // }
+    for (var i = 0; i < sectorList.length; i++) {
+      var sec = sectorList[i];
+      if (sec == "Biz") {
+        sectorSrcList.push({ k: i, s:'Biz' });
       }
       if (sec == "Tech") {
-        sectorSrcList.push({ k: i, src: "../assets/filler.png" });
+        sectorSrcList.push({ k: i, s: "Tech" });
       }
       if (sec == "SSci") {
-        sectorSrcList.push({ k: i, src: "../assets/filler.png" });
+        sectorSrcList.push({ k: i, s: "SSci" });
       }
       if (sec == "Sci") {
-        sectorSrcList.push({ k: i, src: "../assets/filler.png" });
+        sectorSrcList.push({ k: i, s: "Sci" });
       }
     }
     const textAlign = "text-xs-center text-sm-center text-lg-left"
@@ -192,10 +208,13 @@ class CProjectCard extends Component {
                 {/* <Row> */}
                 <h6 className={textAlign + " col"}>SECTORS</h6>
                 {/* </Row> */}
-                <Row className={'justify-content-around justify-content-lg-start'}>
+                <Row
+                  className={"justify-content-around justify-content-lg-start"}
+                >
                   {sectorSrcList.map((sec) => (
-                    <Col xs={6} sm={2} >
-                      <img src={sec.src} key={sec.k} style={styles.sectorImg} />
+                    <Col xs={6} sm={2}>
+                      <CSectorAnimation sector={sec.s} key={sec.k} height={50} width={50} style={{padding: 10}} />
+                      {/* <img src={sec.src} key={sec.k} style={styles.sectorImg} /> */}
                     </Col>
                   ))}
                 </Row>

@@ -3,20 +3,6 @@ import Lottie from "react-lottie";
 
 class LottieAnimation extends Component{
   render() {
-    // const aniCompass = {
-    //   animationData: {this.props.aniData}.default,
-    //   loop: true,
-    //   autoplay: true,
-    //   renderer: "canvas",
-    //   rendererSettings: {
-    //     preserveAspectRatio: "xMidYMid meet",
-    //     // progressiveLoad:true,
-    //     // clearCanvas:true,
-    //   },
-    // };
-
-
-
     if (this.props.loop === undefined) {
       var loop = true;
     } else {
@@ -61,9 +47,9 @@ class LottieAnimation extends Component{
         <Lottie
           isClickToPauseDisabled={isClickToPauseDisabled}
           options={{
-            animationData: this.props.aniData.default,
-            loop: loop,
-            autoplay: autoplay ,
+            animationData: this.props.aniData,
+            loop: true,
+            autoplay: true ,
             renderer: renderer,
             rendererSettings: {
               preserveAspectRatio: preserveAspectRatio,
