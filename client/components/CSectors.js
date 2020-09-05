@@ -4,11 +4,12 @@ const styles = {
     sectorStyle: {
         backgroundColor: '#1F2022',
         borderRadius: 25,
-        height: 240,
+        height: 300,
+        width: 300,
     },
     titleStyle: {
-        marginTop: 80,
-        marginLeft: 20,
+        marginTop: 140,
+        // marginLeft: 20,
         fontWeight: 300,
         textAlign: 'left',
     } 

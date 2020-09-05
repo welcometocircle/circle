@@ -69,7 +69,7 @@ h6{
   font-size: 25px;
   line-height: 30px;
   color: #6F737B;
-  letter-spacing: 0.1em;
+  /* letter-spacing: 0.1em; */
 }
 
 p{
@@ -130,6 +130,9 @@ opsButton {
 .row:before, row:after{
   display: inline-block;  
 }
+
+
+
 
 @media screen and (max-width: 768px) {
   h1{

@@ -82,7 +82,7 @@ class PLanding extends Component {
       <div>
         <div>
           <Container>
-            <Row style={{ position: "relative", zIndex: 0 }}>
+            <Row className="justify-content-center" style={{ position: "relative", zIndex: 0 }}>
               <h1 id="landingText" style={{ zIndex: 2, position: "absolute", marginTop: txtMargin, overflow: 'hidden' }} className=''>Innovation is just<br /> the beginning.</h1>
               {/* <animated.h1 style={animation}>Innovation is just<br/> the beginning</animated.h1> */}
 
@@ -102,18 +102,18 @@ class PLanding extends Component {
               <p style={{ textAlign: 'center' }}>Designed with core sectors in mind, Circle integrates science, technology, business, and social science to bring solutions to the issues we face today.</p>
             </div>
             <Row className="justify-content-center" style={{ marginTop: 30 }}>
-              <Col lg="4">
+              <Col lg="3">
                 <CSectors img="https://hellocircle.ca/assets/business.png" title="Business"></CSectors>
               </Col>
-              <Col lg="4">
+              <Col lg="3">
                 <CSectors img="https://hellocircle.ca/assets/tech.png" title="Technology"></CSectors>
               </Col>
             </Row>
             <Row className="justify-content-center" style={{ marginTop: 30 }}>
-              <Col lg="4"> 
+              <Col lg="3"> 
                 <CSectors img="https://hellocircle.ca/assets/socialsci.png" title="Social Science"></CSectors>
               </Col>
-              <Col lg="4">
+              <Col lg="3">
                 <CSectors img="https://hellocircle.ca/assets/science.png" title="Science"></CSectors>
               </Col>
             </Row>

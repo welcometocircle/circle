@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Radium from 'radium'
 import CExperiences from "./CExperiences.js"
 import { Container, Row, Col } from 'react-bootstrap';
-
+import CEmailForm from "./CEmailForm.js"
 
 
 const styles = {
@@ -12,11 +12,11 @@ const styles = {
     height: 20,
     width: 100,
     display: 'inline-block',
-    'hover':{
+    'hover': {
       backgroundColor: '#fae1e1',
       textDecoration: 'none'
     },
-    'link':{
+    'link': {
       color: 'black',
       textDecoration: 'none',
       textAlign: 'center'
@@ -35,7 +35,15 @@ const styles = {
   linkText: {
     font: 50,
     textAlign: 'center'
-  }
+  },
+  emailForm: {
+    fontSize: 90,
+    lineHeight: 30,
+    color: 'green',
+    paddingLeft: '2vw',
+    paddingRight: '2vw'
+  },
+
 }
 
 class CExperienceSection extends Component {
@@ -84,11 +92,9 @@ class CExperienceSection extends Component {
               <a href="" className="aButton">Learn More</a>
             </Col>
           </Row>
-          <Row className="justify-content-center" style={{marginTop: 50}}>
-            <h4 style={{ color: 'black' }}>Never miss a Circle event</h4>
-            <p>Get the latest updates from Circle right to your inbox.</p>
-            
-          </Row>
+          <h5 style={{ color: 'black', marginTop: 20, marginBottom: 20 }}>Never miss a Circle event</h5>
+          <p style={{ textAlign: 'center', marginBottom: 20 }}>Get the latest updates from Circle<br /> right to your inbox.</p>
+          <CEmailForm/>
         </Container >
       </div >
     )
