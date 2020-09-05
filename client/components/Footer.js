@@ -28,9 +28,9 @@ class Footer extends Component {
         transition: "1s ease",
         // backdropFilter: "opacity(0.4)"
       },
-      footRow:{
+      footRow: {
         marginTop: "6vh",
-        marginBottom: "7vh"
+        marginBottom: "7vh",
       },
       navBrand: {
         color: darkPages.includes(this.props.location.pathname)
@@ -49,15 +49,12 @@ class Footer extends Component {
         marginLeft: "10px",
         marginRight: "10px",
       },
-      navToggle: {
-        // backgroundImage: 
-        backgroundImage: darkPages.includes(this.props.location.pathname)
-          ? "url(../assets/navToggleLight.svg)"
-          : "url(../assets/navToggleDark.svg)",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-        marginRight: 20,
-        border: 'none'
+      footDivider: {
+        // backgroundImage:
+        marginTop: 30,
+        borderColor: darkPages.includes(this.props.location.pathname)
+          ? "#333333"
+          : "#e3e5e7",
       },
       sections: {
         // backgroundColor: bgColor,
@@ -67,8 +64,8 @@ class Footer extends Component {
       socialIcon: {
         height: 40,
         width: 40,
-        marginLeft:10,
-        marginRight:10,
+        marginLeft: 10,
+        marginRight: 10,
       },
     };
     console.log(this.props.location.pathname)
@@ -77,7 +74,7 @@ class Footer extends Component {
       // <Navbar backgroundColor={navBackground ? 'white' : 'transparent'}fixed='top' style={styles.navBig} expand="md" collapseOnSelect={true}>
       <div style={styles.footBig}>
         <Container style={styles.footBig}>
-          <hr style={{ marginTop: 30, borderColor: "#e3e5e7"}} />
+          <hr style={styles.footDivider} />
           <Row
             style={styles.footRow}
             className="align-items-center justify-content-center text-align-center"

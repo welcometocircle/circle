@@ -18,7 +18,7 @@ html {
   --body-bg-color: #131416;
   --body-text-color: white;
   --med-gray: #969696;
-  --hr-color: #3F4247;
+  --hr-color: #333333;
 }
 html, body {
     max-width: 100%;
