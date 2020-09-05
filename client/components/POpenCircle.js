@@ -18,7 +18,7 @@ class POpenCircle extends Component {
   render() {
 		const styles = {
       header: {
-        marginTop: "25vh",
+        // marginTop: "25vh",
         textAlign: "center",
       },
       headTxt: {
@@ -27,43 +27,62 @@ class POpenCircle extends Component {
         marginTop: 30,
       },
       BGRight: {
+        // position: "absolute",
+        // zIndex:0,
+        backgroundHeight: "40vh",
+        backgroundImage: "../assets/openBGRight.png",
+        backgroundAttachment: "fixed",
+        backgroundPosition: "right",
+        backgroundRepeat: "no-repeat",
+      },
+      BGLeft: {
         position: "absolute",
-        float: "right",
+        zIndex: 0,
+        height: "40vh",
       },
       BG: {
         // backgroundImage: 'url("../assets/openBGRight.png")',
-        backgroungPosition: "right center",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "",
+        // backgroungPosition: "right center",
+        // backgroundRepeat: "no-repeat",
+        // backgroundSize: "",
 
         // position: 'absolute',
+        backgroundImage: "url('../assets/openBGLeft.png'), url('../assets/openBGRight.png')",
+        backgroundAttachment: "fixed, fixed",
+        backgroundPosition: "top left, bottom right",
+        backgroundRepeat: "no-repeat, no-repeat",
+        backgroundSize: "30vh, 30vh",
+        paddingTop: '25vh',
       },
       HIW: {
         backgroundColor: "#1F1F1F",
         padding: 30,
         borderRadius: 40,
-        marginTop:100,
-        textAlign: 'left',
+        marginTop: 100,
+        textAlign: "left",
       },
-      HIWTitle: {
-
-      },
+      HIWTitle: {},
       AP: {
-        marginTop:50
+        marginTop: 50,
       },
       submit: {
-        marginTop:25
+        marginTop: 25,
       },
       btnSubmit: {
-        background: "linear-gradient(90.65deg, #3C9FFA -25.2%, #DB00FF 189.89%), #FFFFFF",
+        background:
+          "linear-gradient(90.65deg, #3C9FFA -25.2%, #DB00FF 189.89%), #FFFFFF",
         borderRadius: 10,
-        border: 'none',
+        border: "none",
         marginLeft: "2vw",
-        marginTop: 10
-      }
+        marginTop: 10,
+      },
     };
     return (
       <div style={styles.BG}>
+        {/* <img src={'../assets/openBGRight.png'} style={styles.BGRight}/>
+        <img src={'../assets/openBGLeft.png'} style={styles.BGLeft}/> */}
+        {/* <div style={{marginBottom:'25vh'}}></div> */}
+        {/* <div style={styles.BGRight}></div> */}
         <Container style={styles.header}>
           <h6>PROJECT HUB</h6>
           <h1>Open Circle</h1>
@@ -150,9 +169,7 @@ class POpenCircle extends Component {
               currHiring={true}
             />
           </div>
-          <Row style={{marginBottom:-50}}>
-
-          </Row>
+          <Row style={{ marginBottom: -50 }}></Row>
           <div style={styles.HIW}>
             <Row>
               <h5 style={styles.HIWTitle}>Submit your own idea!</h5>
@@ -173,12 +190,10 @@ class POpenCircle extends Component {
                 style={styles.btnSubmit}
                 target="_blank"
               >
-                <p style={{ marginTop: 10, color: "white" }}>
-                  Submit Idea!
-                </p>
-                </a>
+                <p style={{ marginTop: 10, color: "white" }}>Submit Idea!</p>
+              </a>
             </Row>
-            </div>
+          </div>
         </Container>
       </div>
     );
