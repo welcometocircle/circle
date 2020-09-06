@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Container, Row } from "react-bootstrap";
 import CButton from "./CButton";
 import CSpeaker from "./CSpeaker";
+import CEmailForm from "./CEmailForm";
 
 class PConferences extends Component {
   constructor(props) {
@@ -173,7 +174,7 @@ class PConferences extends Component {
                   Get the latest updates from Circle right to your inbox.
                 </p>
               </Row>
-              <h5>form placeholder</h5>
+              <CEmailForm className="mt-4" colLg="10" />
               <p style={{ fontSize: "10px" }}>We respect your privacy.</p>
             </div>
           </Row>
