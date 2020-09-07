@@ -93,7 +93,7 @@ hr{
 .aButton {
   border-radius: 50px;
   height: 50px;
-  padding-top: 7px;
+  padding-top: 10px;
   width: 150px;
   margin-right: 10px;
   margin-top: 5px;
@@ -102,12 +102,10 @@ hr{
   background-color: #1E1E1E;
 }
 .aButton:hover {
-  background-color: #fae1e1;
+  background: #C4C4C4;
   text-decoration: none;
 }
 .aButton:link {
-  font-size: 15px;
-  line-height: 35px;
   color: white;
   text-decoration: none;
   text-align: center;
@@ -120,6 +118,67 @@ hr{
   color: white;
   text-decoration: none;
 }
+
+.openButton {
+  border-radius: 50px;
+  height: 50px;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: auto;
+  cursor: pointer;
+  display: inline-block;
+  background-color: white;
+  
+}
+.openButton:hover {
+  background-color:  #C4C4C4;
+  text-decoration: none;
+}
+.openButton:link {
+  color: #1B1B1B;
+  text-decoration: none;
+  text-align: center;
+}
+.openButton:visited {
+  color: white;
+  text-decoration: none;
+}
+.openButton:active {
+  color: white;
+  text-decoration: none;
+}
+
+.joinButton {
+  border-radius: 50px;
+  height: 50px;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: auto;
+  cursor: pointer;
+  display: inline-block;
+  background-color: #1E1E1E;
+  
+}
+.joinButton:hover {
+  background-color:  #C4C4C4;
+  text-decoration: none;
+}
+.joinButton:link {
+  color: #1B1B1B;
+  text-decoration: none;
+  text-align: center;
+}
+.joinButton:visited {
+  color: white;
+  text-decoration: none;
+}
+.joinButton:active {
+  color: white;
+  text-decoration: none;
+}
+
 opsButton {
     font-size: 25px
   }

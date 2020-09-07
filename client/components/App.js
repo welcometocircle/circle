@@ -14,7 +14,7 @@ function App(props) {
   );
 }
 
-const StyleRoot = Radium.StyleRoot;
-App = Radium(App);
+// const StyleRoot = Radium.StyleRoot;
+// App = Radium(App);
 
 export default App;

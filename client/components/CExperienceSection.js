@@ -49,15 +49,31 @@ const styles = {
 class CExperienceSection extends Component {
   constructor(props) {
     super(props)
+    this.state = { width: window.innerWidth };
   }
 
   render() {
+
+    var compassHeight;
+    var compassTopMargin;
+    var compassBottomMargin;
+    if (this.state.width < 576) {
+      compassHeight = '150px'
+      compassBottomMargin = "20px"
+    } else if (this.state.width < 1100) {
+      compassHeight = '150px'
+    } else {
+      compassHeight = '200px'
+      compassTopMargin = "30px"
+    }
+
+
     return (
       <div style={{ backgroundColor: 'white', marginTop: 50 }}>
         <Container>
           <Row style={{ marginTop: 50 }}>
-            <Col lg="8">
-              <h3 style={{ color: 'black', textAlign: "left" }}>Experiences like never before.</h3>
+            <Col lg="10">
+              <h2 style={{ color: 'black', textAlign: "left" }}>Experiences like never before.</h2>
             </Col>
           </Row>
           <Row style={{ marginTop: 20 }}>
@@ -81,20 +97,25 @@ class CExperienceSection extends Component {
               <CExperiences img="../assets/filler.png" title="Versatile Experiences" desc="description"></CExperiences>
             </Col>
           </Row>
-          <Row style={{ backgroundColor: '#F5F5F5', borderRadius: 70, padding: 20 }}>
-            <div className="col-lg-4 my-auto">
-              <img src="../assets/compass.png" style={{ height: '50%' }} />
-            </div>
-            <Col lg="8">
+          <Row className="justify-content-center" style={{ backgroundColor: '#F5F5F5', borderRadius: 70, padding: 20 }}>
+            <Col lg="3" sm="12">
+
+              <img src="../assets/compass.png" style={{ height: compassHeight, margin: 'auto', marginTop: compassTopMargin, marginBottom: compassBottomMargin, display: 'block', }} />
+
+            </Col>
+            <Col lg="9">
               <p style={{ color: '#969696' }}>JULY 18 - JULY 19, 2020</p>
               <h3 style={{ color: 'black', textAlign: 'left' }}>Compass</h3>
               <p>Students from 17 universities across North America came together virtually and created innovative solutions to the most pressing issues of the education system.</p>
-              <a href="" className="aButton">Learn More</a>
+              <p>
+                <a href="/conferences" className="aButton">Learn More</a>
+              </p>
             </Col>
           </Row>
-          <h5 style={{ color: 'black', marginTop: 20, marginBottom: 20 }}>Never miss a Circle event</h5>
+          <h5 style={{ color: 'black', marginTop: 30, marginBottom: 20 }}>Never miss a Circle event</h5>
           <p style={{ textAlign: 'center', marginBottom: 20 }}>Get the latest updates from Circle<br /> right to your inbox.</p>
-          <CEmailForm/>
+          <CEmailForm />
+          <p style={{ textAlign: 'center', fontSize: "10px", marginBottom: 50 }}>We respect your privacy.</p>
         </Container >
       </div >
     )

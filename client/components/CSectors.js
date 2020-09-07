@@ -1,18 +1,30 @@
 import React, { Component } from 'react';
+import CSectorAnimation from './global/CSectorAnimation.js'
+import CSectorSection from './CSectorSection.js';
 
 const styles = {
-    sectorStyle: {
+    sector: {
         backgroundColor: '#1F2022',
         borderRadius: 25,
-        height: 300,
-        width: 300,
+        height: 250,
+        width: 250,
+        marginBottom: 30,
+        padding: 20
     },
-    titleStyle: {
-        marginTop: 140,
+    title: {
         // marginLeft: 20,
-        fontWeight: 300,
+        background: 'linear-gradient(45deg, #939393, #6C6C6C)',
+        webkitBackgroundClip: 'text',
+        webkitTextFillColor: 'transparent',
+        fontWeight: 400,
+        position: 'absolute',
+        bottom: 0,
         textAlign: 'left',
-    } 
+        marginBottom: 45,
+        paddingLeft: 0
+    },
+    
+
 }
 
 class CSectors extends Component {
@@ -22,9 +34,12 @@ class CSectors extends Component {
 
     render() {
         return (
-            <div style={styles.sectorStyle}>
-                <img src={this.props.img}/>
-                <h5 style={styles.titleStyle}>{this.props.title}</h5>
+            <div style={styles.sector}>
+                {/* <img src={this.props.img} /> */}
+                <CSectorAnimation height="50" sector={this.props.sector} styleAnimation={this.props.styleAnimation} height={this.props.height}/>
+                <span style={styles.spans}>
+                    <h4 style={styles.title}>{this.props.title}</h4>
+                </span>
             </div>
         )
     }
