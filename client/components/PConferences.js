@@ -5,6 +5,14 @@ import CSpeaker from "./CSpeaker";
 import CEmailForm from "./CEmailForm";
 import { Controller, Scene } from "react-scrollmagic";
 
+// Function to return a div that has background color property in CSS
+// The CSS has a transtion effect that makes the transition fade
+// Check main.css line 202
+// When ChangePageColour is called, the "progress" starts, starting at 1%
+// and goes to how ever long you set it. And at distinct breakpoints,
+// like "0.5" as you see below, it means at half the total duration(which is 400%),
+// Switch the div to another one that has anothe color in its CSS
+// Play around with it and youll get the hang of it.
 const ChangePageColour = (props) => {
   const progress = props.progress;
   if (progress < 0.5)
