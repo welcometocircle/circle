@@ -1,15 +1,15 @@
 import React, { Component } from "react";
+import { Controller, Scene } from 'react-scrollmagic';
 import * as aniLinesData from '../assets/animations/LinesData.json';
 import LottieAnimation from "./global/LottieAnimation";
-import { useSpring, animated } from 'react-spring';
+import { useTransition, useSpring, animated } from 'react-spring';
 import { Container, Row, Col } from 'react-bootstrap';
-import CSectorSection from './CSectorSection.js'
-import CSectors from "./CSectors.js"
-import CExperienceSection from './CExperienceSection.js'
-import COpenCircle from './COpenCircle.js'
-import CToronto from './CToronto.js'
-
-
+import CSectorSection from './CSectorSection.js';
+import LandingPageAnimation from './global/LandingPageAnimation.js';
+import CSectors from "./CSectors.js";
+import CExperienceSection from './CExperienceSection.js';
+import COpenCircle from './COpenCircle.js';
+import CToronto from './CToronto.js';
 
 
 class PLanding extends Component {
@@ -21,22 +21,22 @@ class PLanding extends Component {
 
 
   componentDidMount() {
-    window.scrollTo(0, 0);
-    analytics.logEvent("Landing Did Mount");
+    // window.scrollTo(0, 0);
+    // analytics.logEvent("Landing Did Mount");
 
-    var aniDiv = document.getElementById('aniDivLanding');
-    var aniDivText = document.getElementById('landingText')
+    // var aniDiv = document.getElementById('aniDivLanding');
+    // var aniDivText = document.getElementById('landingText')
 
-    function transformAnimation(e) {
-      var xPos = (e.clientX - aniDiv.offsetWidth / 2) / 30
-      var yPos = (e.clientY - aniDiv.offsetHeight / 2) / 30
-      var translate3dValue = "translate3d(" + xPos + 'px,' + yPos + 'px,0)';
-      aniDiv.style.transform = translate3dValue;
-    }
+    // function transformAnimation(e) {
+    //   var xPos = (e.clientX - aniDiv.offsetWidth / 2) / 30
+    //   var yPos = (e.clientY - aniDiv.offsetHeight / 2) / 30
+    //   var translate3dValue = "translate3d(" + xPos + 'px,' + yPos + 'px,0)';
+    //   aniDiv.style.transform = translate3dValue;
+    // }
 
-    aniDivText.addEventListener("mousemove", transformAnimation, true);
-    aniDiv.addEventListener("mousemove", transformAnimation, true);
-    window.addEventListener("resize", this.handleResize.bind(this));
+    // aniDivText.addEventListener("mousemove", transformAnimation, true);
+    // aniDiv.addEventListener("mousemove", transformAnimation, true);
+    // window.addEventListener("resize", this.handleResize.bind(this));
   }
 
 
@@ -59,28 +59,28 @@ class PLanding extends Component {
 
     if (this.state.width < 576) {
       console.log("576")
-      aniHeight = "100vh"
+      aniHeight = "55vh"
       aniWidth = "130vw"
       aniMargin = "-40vh"
       txtMargin = "12vh"
-      paraMargin = "40vh"
+      paraMargin = "35vh"
     } else if (this.state.width < 1000) {
       console.log('768')
-      aniHeight = "80vh";
+      aniHeight = "50vh";
       aniWidth = "130vw";
       aniMargin = "-40vh";
       txtMargin = "15vh"
       paraMargin = "30vh"
     } else if (this.state.width < 1100) {
       console.log('768')
-      aniHeight = "90vh";
+      aniHeight = "50vh";
       aniWidth = "130vw";
       aniMargin = "-40vh";
       txtMargin = "10vh"
       paraMargin = "35vh"
     } else {
       console.log('large')
-      aniHeight = "100vh"
+      aniHeight = "95vh"
       aniWidth = "130vw"
       aniMargin = "-20vh"
       txtMargin = "15vh"
@@ -89,27 +89,41 @@ class PLanding extends Component {
 
 
 
+
     return (
+
+
+
       <div>
+        <Controller>
+          <Scene duration={200} classToggle="zap" triggerElement="#trigger" indicators={true}>
+            {(progress, event) => (
+              <div className="test">Pin Test {event.type} {progress}</div>
+            )}
+          </Scene>
+        </Controller>
         <Container>
           <Row className="justify-content-center" style={{ position: "relative", zIndex: 0 }}>
-            <h1 id="landingText" style={{ zIndex: 2, position: "absolute", marginTop: txtMargin, overflow: 'hidden' }} className=''>Innovation is just<br /> the beginning.</h1>
-            {/* <animated.h1 style={animation}>Innovation is just<br/> the beginning</animated.h1> */}
 
-            <LottieAnimation aniData={aniLinesData} id="aniDivLanding" height={aniHeight} width={aniWidth} style={{ zIndex: 1, position: "relative", marginTop: aniMargin }} />
+            <h1 id="landingText" style={{ zIndex: 2, position: "absolute", marginTop: txtMargin, overflow: 'hidden' }} className=''>Innovation is just<br /> the beginning.</h1>
+
+            {/* <animated.h1 style={animation}>Innovation is just<br/> the beginning</animated.h1> */}
+            {/* <LottieAnimation aniData={aniLinesData} id="aniDivLanding" height={aniHeight} width={aniWidth} style={{ zIndex: 1, position: "relative", marginTop: aniMargin }} /> */}
+            <LandingPageAnimation height={aniHeight} width={aniWidth} />
             <p style={{ zIndex: 2, position: "absolute", marginTop: paraMargin, overflowX: 'hidden', textAlign: "center" }} >Circle is a new-age innovation company dedicated to bringing opportunities for students and empowering them to become the leaders of tomorrow. With an interdisicplinary focus, we aspire for students of multiple sectors to come together and create for the future.</p>
 
 
           </Row>
           <hr />
         </Container>
-
         <Container>
           <div style={{ marginTop: 30 }}>
 
             <div className="justify-content-center">
               <p style={{ textAlign: 'center' }}>SECTOR</p>
-              <h2>All 4 One.</h2>
+              <MDBAnimation type="bounce" infinite>
+                <h2>All 4 One.</h2>
+              </MDBAnimation>
               <Row className="justify-content-center">
                 <Col lg="8">
                   <p style={{ textAlign: 'center' }}>Designed with core sectors in mind, Circle integrates science, technology, business, and social science to bring solutions to the issues we face today.</p>

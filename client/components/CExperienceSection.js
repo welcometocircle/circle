@@ -82,18 +82,18 @@ class CExperienceSection extends Component {
             </Col>
           </Row>
           <Row className="justify-content-center" style={{ marginTop: 30 }}>
-            <Col lg="4">
+            <Col lg="4" md="6" sm="12">
               <CExperiences img="../assets/filler.png" title="Versatile Experiences" desc="description"></CExperiences>
             </Col>
-            <Col lg="4">
+            <Col lg="4" md="6" sm="12">
               <CExperiences img="../assets/filler.png" title="Versatile Experiences" desc="description"></CExperiences>
             </Col>
           </Row>
           <Row className="justify-content-center" style={{ marginTop: 30 }}>
-            <Col lg="4">
+            <Col lg="4" md="6" sm="12">
               <CExperiences img="../assets/filler.png" title="Versatile Experiences" desc="description"></CExperiences>
             </Col>
-            <Col lg="4">
+            <Col lg="4" md="6" sm="12">
               <CExperiences img="../assets/filler.png" title="Versatile Experiences" desc="description"></CExperiences>
             </Col>
           </Row>
