@@ -3,6 +3,22 @@ import { Container, Row } from "react-bootstrap";
 import CButton from "./CButton";
 import CSpeaker from "./CSpeaker";
 import CEmailForm from "./CEmailForm";
+import { Controller, Scene } from "react-scrollmagic";
+
+// Function to return a div that has background color property in CSS
+// The CSS has a transtion effect that makes the transition fade
+// Check main.css line 202
+// When ChangePageColour is called, the "progress" starts, starting at 1%
+// and goes to how ever long you set it. And at distinct breakpoints,
+// like "0.5" as you see below, it means at half the total duration(which is 400%),
+// Switch the div to another one that has anothe color in its CSS
+// Play around with it and youll get the hang of it.
+const ChangePageColour = (props) => {
+  const progress = props.progress;
+  if (progress < 0.5)
+    return <div className="color-first">{props.children}</div>;
+  else return <div className="color-second">{props.children}</div>;
+};
 
 class PConferences extends Component {
   constructor(props) {
@@ -20,56 +36,83 @@ class PConferences extends Component {
   render() {
     const styles = {};
     return (
-      <div style={{ backgroundColor: "#E5E5E5" }}>
-        <div style={{ height: "100vh" }}>
-          <Row className="h-100 justify-content-center align-items-center">
-            <div className="text-center">
-              <h1>
-                A new ideation <br /> challenge.
-              </h1>
-              <div className="row justify-content-center mt-5">
-                <p className="col-md-5 col-10">
-                  Circle conferences encompass its vision by allowing students
-                  from multiple sectors to get together and solve global
-                  challenges. Our ideation challenges are unlike another. Each
-                  conference is different from the previous one.
-                </p>
+      <div /* style={{ backgroundColor: "#E5E5E5" }} */>
+        <Controller>
+          <Scene duration={"400%"} triggerHook={0.5}>
+            {(progress) => (
+              <div>
+                <ChangePageColour progress={progress}>
+                  <div style={{ height: "100vh" }}>
+                    <Row className="h-100 justify-content-center align-items-center">
+                      <div className="text-center">
+                        <h1>
+                          A new ideation <br /> challenge.
+                        </h1>
+                        <div className="row justify-content-center mt-5">
+                          <p className="col-md-5 col-10">
+                            Circle conferences encompass its vision by allowing
+                            students from multiple sectors to get together and
+                            solve global challenges. Our ideation challenges are
+                            unlike another. Each conference is different from
+                            the previous one.
+                          </p>
+                        </div>
+                      </div>
+                    </Row>
+                  </div>
+                  <Container>
+                    <h3 className="text-left p-0">Past events</h3>
+                    <hr style={{ borderColor: "#8C8C8C" }} />
+                  </Container>
+                  <Container style={{ marginTop: "70px" }}>
+                    <Row className="justify-content-between align-items-center">
+                      <div className="col-md-6 col-12">
+                        <h6
+                          className="text-left p-0"
+                          style={{
+                            fontWeight: "500",
+                            textTransform: "uppercase",
+                          }}
+                        >
+                          July 18 - July 19, 2020
+                        </h6>
+                        <h3
+                          className="text-left p-0 mt-3"
+                          style={{ fontWeight: "400" }}
+                        >
+                          Compass
+                        </h3>
+                        <p className="text-left p-0 mt-3">
+                          Students from 17 universities across North America
+                          came together virtually and created innovative
+                          solutions to the most pressing issues of the education
+                          system.
+                        </p>
+                        <CButton
+                          text="&#9658; Watch Opening Keynote"
+                          className="mt-5"
+                        />
+                        <CButton
+                          text="&#9658; Watch Closing Recap"
+                          className="mt-3"
+                        />
+                      </div>
+                      <div className="col"></div>
+                    </Row>
+                  </Container>
+                  <Container style={{ marginTop: "50px" }}>
+                    <Row className="justify-content-center">
+                      <img
+                        className="col-12"
+                        src="../assets/compass-mind.png"
+                      />
+                    </Row>
+                  </Container>
+                </ChangePageColour>
               </div>
-            </div>
-          </Row>
-        </div>
-        <Container>
-          <h3 className="text-left p-0">Past events</h3>
-          <hr style={{ borderColor: "#8C8C8C" }} />
-        </Container>
-        <Container style={{ marginTop: "70px" }}>
-          <Row className="justify-content-between align-items-center">
-            <div className="col-md-6 col-12">
-              <h6
-                className="text-left p-0"
-                style={{ fontWeight: "500", textTransform: "uppercase" }}
-              >
-                July 18 - July 19, 2020
-              </h6>
-              <h3 className="text-left p-0 mt-3" style={{ fontWeight: "400" }}>
-                Compass
-              </h3>
-              <p className="text-left p-0 mt-3">
-                Students from 17 universities across North America came together
-                virtually and created innovative solutions to the most pressing
-                issues of the education system.
-              </p>
-              <CButton text="&#9658; Watch Opening Keynote" className="mt-5" />
-              <CButton text="&#9658; Watch Closing Recap" className="mt-3" />
-            </div>
-            <div className="col"></div>
-          </Row>
-        </Container>
-        <Container style={{ marginTop: "50px" }}>
-          <Row className="justify-content-center">
-            <img className="col-12" src="../assets/compass-mind.png" />
-          </Row>
-        </Container>
+            )}
+          </Scene>
+        </Controller>
         <Container className="mt-1">
           <h3 className="text-left p-0">Speakers</h3>
           <Row className="justify-content-between mt-md-5">

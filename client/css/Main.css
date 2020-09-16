@@ -1,16 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Andika&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-html {
-    scroll-behavior: smooth;
-}
+@import url("https://fonts.googleapis.com/css2?family=Andika&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 :root {
   --body-bg-color: white;
 }
-[data-theme="light"]{
+[data-theme="light"] {
   --body-bg-color: white;
   --body-text-clor: black;
-  --hr-color: #e3e5e7;
-
-
+  --nav-text-color: black;
+  --nav-brand-color: black;
 }
 
 [data-theme="dark"] {
@@ -20,25 +17,30 @@ html {
   --med-gray: #969696;
   --hr-color: #333333;
 }
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
-body{
-  font-family: 'Inter', sans-serif;
+body {
+  font-family: "Inter", sans-serif;
   letter-spacing: -0.05em;
   font-style: normal;
   background-color: var(--body-bg-color);
   color: var(--body-text-color);
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   color: var(--body-text-color);
   text-align: center;
   padding-left: 2vw;
   padding-right: 2vw;
-
 }
 
 h1 {
@@ -48,34 +50,33 @@ h1 {
   /* line-height: 130px; */
 }
 
-h2{
+h2 {
   font-size: 95px;
   line-height: 110px;
-
 }
-h3{
+h3 {
   font-size: 50px;
   line-height: 75px;
 }
-h4{
+h4 {
   font-size: 40px;
   line-height: 55px;
 }
-h5{
+h5 {
   font-size: 30px;
   line-height: 40px;
 }
-h6{
+h6 {
   font-size: 25px;
   line-height: 30px;
   color: #6F737B;
   /* letter-spacing: 0.1em; */
 }
 
-p{
+p {
   font-size: 20px;
   line-height: 30px;
-  color: #B9B9B9;
+  color: #b9b9b9;
   padding-left: 2vw;
   padding-right: 2vw;
 }
@@ -86,7 +87,7 @@ hr{
   border-color: var(--hr-color); 
 }
 
-.test{
+.test {
   color: cyan;
 }
 
@@ -99,7 +100,7 @@ hr{
   margin-top: 5px;
   cursor: pointer;
   display: inline-block;
-  background-color: #1E1E1E;
+  background-color: #1e1e1e;
 }
 .aButton:hover {
   background: #C4C4C4;
@@ -180,52 +181,52 @@ hr{
 }
 
 opsButton {
-    font-size: 25px
-  }
+  font-size: 25px;
+}
 
-.navbar-light .navbar-toggler-icon{
+.navbar-light .navbar-toggler-icon {
   background-image: none;
 }
-.row:before, row:after{
-  display: inline-block;  
+.row:before,
+row:after {
+  display: inline-block;
 }
 
 
 
 
 @media screen and (max-width: 768px) {
-  h1{
+  h1 {
     font-size: 50px;
-    line-height:55px
+    line-height: 55px;
   }
-  h2{
+  h2 {
     font-size: 40px;
     line-height: 45px;
-
   }
-  h3{
+  h3 {
     font-size: 35px;
     line-height: 40px;
   }
-  h4{
+  h4 {
     font-size: 33px;
     line-height: 35px;
   }
-  h5{
+  h5 {
     font-size: 25px;
     line-height: 25px;
   }
-  h6{
+  h6 {
     font-size: 20px;
     line-height: 25px;
-  } 
+  }
   p {
     font-size: 15px;
     line-height: 20px;
   }
 
   opsButton {
-    font-size: 20px
+    font-size: 20px;
   }
 }
 /* @media screen and (max-width: 1000px) {
@@ -260,3 +261,12 @@ opsButton {
   }
 
 } */
+
+.color-first {
+  transition: background-color 1.2s ease;
+  background-color: #404b69;
+}
+.color-second {
+  transition: background-color 1.2s ease;
+  background-color: #f73859;
+}
