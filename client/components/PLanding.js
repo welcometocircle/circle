@@ -121,9 +121,7 @@ class PLanding extends Component {
 
             <div className="justify-content-center">
               <p style={{ textAlign: 'center' }}>SECTOR</p>
-              <MDBAnimation type="bounce" infinite>
                 <h2>All 4 One.</h2>
-              </MDBAnimation>
               <Row className="justify-content-center">
                 <Col lg="8">
                   <p style={{ textAlign: 'center' }}>Designed with core sectors in mind, Circle integrates science, technology, business, and social science to bring solutions to the issues we face today.</p>

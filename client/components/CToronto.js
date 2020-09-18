@@ -16,6 +16,9 @@ const styles = {
         color: "#4B4B4B",
         marginTop: 20,
         textAlign: 'center'
+    },
+    joinButton: {
+
     }
 }
 
@@ -60,7 +63,7 @@ class CToronto extends Component {
                         <Col lg="6" style={{ marginTop: 20, marginBottom: 100 }}>
                             {/* <a href="" className="openButton" style={{color: '#1B1B1B'}}>EXPLORE OPEN CIRCLE</a> */}
                             <p style={{ textAlign: 'center' }}>
-                                <a href="/opportunities" className="joinButton">Opportunities</a>
+                                <a href="/opportunities" style={styles.joinButton} className="btnDark"><p style={{color: 'white'}}>Opportunities </p></a>
                             </p>
                         </Col>
                     </Row>

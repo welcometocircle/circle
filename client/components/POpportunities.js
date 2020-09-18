@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import * as aniLinesData from '../assets/animations/LinesData.json';
 import LottieAnimation from "./global/LottieAnimation";
 import { useSpring, animated } from 'react-spring';
-import {Container,Row} from 'react-bootstrap';
+import {Container,Row, Col} from 'react-bootstrap';
 import COppTeam from './COppTeam.js';
 
 
@@ -23,6 +23,7 @@ class POpportunities extends Component {
     return (
       <Container>
         <Row className="justify-content-center" style={{ marginTop: "20vh" }}>
+        <Col md={10} lg={8}>
           <h6>CURRENT OPPORTUNITIES</h6>
           <h1>Joining the dream team.</h1>
           {/* <h2>Joining the dream team.</h2>
@@ -36,9 +37,8 @@ class POpportunities extends Component {
             We hire members on a rolling basis throughout the year within three
             divisions: Circle Events, Circle Design, and Circle Developer.
           </p>
+        </Col>
         </Row>
-
-        <Row className="justify-content-center">
           <COppTeam
             team="Design"
             img="../assets/teamDesign.png"
@@ -47,8 +47,6 @@ class POpportunities extends Component {
               // { title: "BACK END DEVELOPER", link: "/" },
             ]}
           />
-        </Row>
-        <Row className="justify-content-center">
           <COppTeam
             team="Events"
             img="../assets/teamEvent.png"
@@ -57,8 +55,6 @@ class POpportunities extends Component {
               { title: "SPONSORSHIP LEAD", link: "/" },
             ]}
           />
-        </Row>
-        <Row className="justify-content-center">
           <COppTeam
             team="Developer"
             img="../assets/teamDev.png"
@@ -67,7 +63,6 @@ class POpportunities extends Component {
               { title: "BACK END DEVELOPER", link: "/" },
             ]}
           />
-        </Row>
       </Container>
     );
   }
