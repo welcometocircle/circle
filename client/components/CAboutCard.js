@@ -14,7 +14,7 @@ class CAboutCard extends Component {
   render() {
     const styles = {
       cardMain: {
-        backgroundColor: "#1F1F1F",
+        backgroundColor: "#070707",
         // height: '25vh',
         // width: '50vw',
         // marginLeft: 20,
@@ -22,7 +22,7 @@ class CAboutCard extends Component {
         padding: 20,
         // margin: 20,
         borderRadius: 50,
-        margin: 20
+        margin: 20,
       },
       cardTitle: {
         marginBottom: 30,
