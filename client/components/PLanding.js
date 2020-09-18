@@ -21,22 +21,22 @@ class PLanding extends Component {
 
 
   componentDidMount() {
-    // window.scrollTo(0, 0);
-    // analytics.logEvent("Landing Did Mount");
+    window.scrollTo(0, 0);
+    analytics.logEvent("Landing Did Mount");
 
-    // var aniDiv = document.getElementById('aniDivLanding');
-    // var aniDivText = document.getElementById('landingText')
+    var aniDiv = document.getElementById('aniDivLanding');
+    var aniDivText = document.getElementById('landingText')
 
-    // function transformAnimation(e) {
-    //   var xPos = (e.clientX - aniDiv.offsetWidth / 2) / 30
-    //   var yPos = (e.clientY - aniDiv.offsetHeight / 2) / 30
-    //   var translate3dValue = "translate3d(" + xPos + 'px,' + yPos + 'px,0)';
-    //   aniDiv.style.transform = translate3dValue;
-    // }
+    function transformAnimation(e) {
+      var xPos = (e.clientX - aniDiv.offsetWidth / 2) / 30
+      var yPos = (e.clientY - aniDiv.offsetHeight / 2) / 30
+      var translate3dValue = "translate3d(" + xPos + 'px,' + yPos + 'px,0)';
+      aniDiv.style.transform = translate3dValue;
+    }
 
-    // aniDivText.addEventListener("mousemove", transformAnimation, true);
-    // aniDiv.addEventListener("mousemove", transformAnimation, true);
-    // window.addEventListener("resize", this.handleResize.bind(this));
+    aniDivText.addEventListener("mousemove", transformAnimation, true);
+    aniDiv.addEventListener("mousemove", transformAnimation, true);
+    window.addEventListener("resize", this.handleResize.bind(this));
   }
 
 
@@ -83,7 +83,7 @@ class PLanding extends Component {
       aniHeight = "95vh"
       aniWidth = "130vw"
       aniMargin = "-20vh"
-      txtMargin = "15vh"
+      txtMargin = "25vh"
       paraMargin = "55vh"
     }
 
@@ -108,9 +108,10 @@ class PLanding extends Component {
             <h1 id="landingText" style={{ zIndex: 2, position: "absolute", marginTop: txtMargin, overflow: 'hidden' }} className=''>Innovation is just<br /> the beginning.</h1>
 
             {/* <animated.h1 style={animation}>Innovation is just<br/> the beginning</animated.h1> */}
-            {/* <LottieAnimation aniData={aniLinesData} id="aniDivLanding" height={aniHeight} width={aniWidth} style={{ zIndex: 1, position: "relative", marginTop: aniMargin }} /> */}
-            <LandingPageAnimation height={aniHeight} width={aniWidth} />
-            <p style={{ zIndex: 2, position: "absolute", marginTop: paraMargin, overflowX: 'hidden', textAlign: "center" }} >Circle is a new-age innovation company dedicated to bringing opportunities for students and empowering them to become the leaders of tomorrow. With an interdisicplinary focus, we aspire for students of multiple sectors to come together and create for the future.</p>
+            <LandingPageAnimation height={aniHeight} width={aniWidth} id='aniDivLanding'/>
+            {/* <Col md={8}> */}
+              <p style={{ zIndex: 2, position: "absolute", marginTop: paraMargin, overflowX: 'hidden', textAlign: "center" }} >Circle is a new-age innovation company dedicated to bringing opportunities for students and empowering them to become the leaders of tomorrow. With an interdisicplinary focus, we aspire for students of multiple sectors to come together and create for the future.</p>
+            {/* </Col> */}
 
 
           </Row>
