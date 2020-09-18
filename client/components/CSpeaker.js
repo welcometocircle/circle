@@ -15,7 +15,11 @@ class CSpeaker extends Component {
     return (
       <div className="col-md-3 col-12 mt-4 mt-md-0" style={this.props.style}>
         <div className="row justify-content-center">
-          <img className="col-10" src={this.props.src} />
+          <img
+            className="col-10"
+            src={this.props.src}
+            style={{ height: "50%" }}
+          />
         </div>
         <h5
           className="mt-4 mb-0"
