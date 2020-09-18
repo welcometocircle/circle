@@ -14,7 +14,7 @@ class NavBar extends Component {
 
   render() {
     const darkPages = ['/','/open-circle','/about']
-    const lightPages = ['/opportunities']
+    const lightPages = ['/opportunities','contact']
     const bgColor = darkPages.includes(this.props.location.pathname)
           ? "rgba(19, 20, 22, 0.96)"
           : "rgba(255, 255, 255, 0.96)"
@@ -40,41 +40,59 @@ class NavBar extends Component {
       navLinks: {
         // color: "white",
         color: darkPages.includes(this.props.location.pathname)
-          ? "white"
-          : "black",
+          ? "#7D7D7D"
+          : "#777B82",
         fontSize: 15,
         marginLeft: "10px",
         marginRight: "10px",
       },
       navToggle: {
-        // backgroundImage: 
+        // backgroundImage:
         backgroundImage: darkPages.includes(this.props.location.pathname)
           ? "url(../assets/navToggleLight.svg)"
           : "url(../assets/navToggleDark.svg)",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         marginRight: 20,
-        border: 'none'
+        border: "none",
       },
       navCollaspe: {
         // backgroundColor: bgColor,
         marginTop: "-1px",
         // backdropFilter: "blur(10px)",
       },
+      logo: {
+        height: 22,
+        marginTop: 10,
+      },
     };
     console.log(this.props.location.pathname)
-    
+    var logo;
+    if (darkPages.includes(this.props.location.pathname)){
+      logo ="../assets/logoWhite.png"
+    }else{
+      logo = "../assets/logoBlack.png";
+    }
     return (
       // <Navbar backgroundColor={navBackground ? 'white' : 'transparent'}fixed='top' style={styles.navBig} expand="md" collapseOnSelect={true}>
-      <Container className="fixed-top" >
-        <Navbar fixed="top" expand="md" collapseOnSelect={true}style={styles.navBig}>
+      <Container className="fixed-top">
+        <Navbar
+          fixed="top"
+          expand="md"
+          collapseOnSelect={true}
+          style={styles.navBig}
+        >
           <Container>
             <Navbar.Brand
               className="mr-auto navBrand"
               href="/"
               style={styles.navBrand}
             >
-              circle
+              <img
+                src={logo}
+                style={styles.logo}
+                className="align-items-center"
+              />
             </Navbar.Brand>
             {/* <Navbar.Toggle.Icon/> */}
             <Navbar.Toggle

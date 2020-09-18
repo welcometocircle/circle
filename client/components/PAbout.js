@@ -24,16 +24,18 @@ class PAbout extends Component {
     return (
       <Container>
         <Row className="justify-content-center">
+          <Col sm={10} md={8}>
           <h1 style={styles.title}>About us</h1>
+          <p style={{ textAlign: "center" }}>
+            Description of the project goes here. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Vestibulum facilisis purus ac arcu
+            malesuada, nec egestas dolor sollicitudin.Description of the project
+            goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Vestibulum facilisis purus ac arcu malesuada, nec egestas dolor
+            sollicitudin.
+          </p>
+          </Col>
         </Row>
-        <p style={{ textAlign: "center" }}>
-          Description of the project goes here. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit. Vestibulum facilisis purus ac arcu
-          malesuada, nec egestas dolor sollicitudin.Description of the project
-          goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Vestibulum facilisis purus ac arcu malesuada, nec egestas dolor
-          sollicitudin.
-        </p>
         <Row className="justify-content-center" style={{ marginTop: 30}}>
           <Col sm={6} md={5}>
             <CAboutCard

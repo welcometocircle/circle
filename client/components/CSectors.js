@@ -3,29 +3,27 @@ import CSectorAnimation from './global/CSectorAnimation.js'
 import CSectorSection from './CSectorSection.js';
 
 const styles = {
-    sector: {
-        backgroundColor: '#1F2022',
-        borderRadius: 25,
-        height: 250,
-        width: 250,
-        marginBottom: 30,
-        padding: 20
-    },
-    title: {
-        // marginLeft: 20,
-        background: 'linear-gradient(45deg, #939393, #6C6C6C)',
-        webkitBackgroundClip: 'text',
-        webkitTextFillColor: 'transparent',
-        fontWeight: 400,
-        position: 'absolute',
-        bottom: 0,
-        textAlign: 'left',
-        marginBottom: 45,
-        paddingLeft: 0
-    },
-    
-
-}
+  sector: {
+    backgroundColor: "#1F2022",
+    borderRadius: 25,
+    height: 250,
+    width: 250,
+    marginBottom: 30,
+    padding: 20,
+  },
+  title: {
+    // marginLeft: 20,
+    background: "linear-gradient(45deg, #939393, #6C6C6C)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+    fontWeight: 400,
+    position: "absolute",
+    bottom: 0,
+    textAlign: "left",
+    marginBottom: 45,
+    paddingLeft: 0,
+  },
+};
 
 class CSectors extends Component {
     constructor(props) {

@@ -32,7 +32,7 @@ class CEmailForm extends Component {
         <Row className="justify-content-center">
           <Col lg={colLg}>
             <div
-              class="input-group mb-3"
+              className="input-group mb-3"
               style={{
                 border: "solid 2px #F4F4F4",
                 borderRadius: 20,
@@ -45,7 +45,7 @@ class CEmailForm extends Component {
             >
               <input
                 type="text"
-                class="form-control emailForm"
+                className="form-control emailForm"
                 style={{
                   border: 0,
                   boxShadow: "none",
@@ -57,9 +57,9 @@ class CEmailForm extends Component {
                 aria-label="Recipient's username"
                 aria-describedby="basic-addon2"
               />
-              <div class="input-group-append">
+              <div className="input-group-append">
                 <button
-                  class="btn btn-outline-secondary"
+                  className="btn btn-outline-secondary"
                   style={{
                     height: 45,
                     borderRadius: 10,
