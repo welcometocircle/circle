@@ -8,14 +8,16 @@
   --body-text-clor: black;
   --nav-text-color: black;
   --nav-brand-color: black;
+  --p-color: #747474;
 }
 
 [data-theme="dark"] {
   /* --footer-logo: url("../assets/circle-white.png"); */
-  --body-bg-color: #131416;
+  --body-bg-color: #0c0d0e;
   --body-text-color: white;
   --med-gray: #969696;
   --hr-color: #333333;
+  --p-color: #b9b9b9;
 }
 html,
 body {
@@ -76,7 +78,7 @@ h6 {
 p {
   font-size: 20px;
   line-height: 30px;
-  color: #b9b9b9;
+  color: var(--p-color);
   padding-left: 2vw;
   padding-right: 2vw;
 }

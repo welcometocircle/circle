@@ -40,20 +40,50 @@ class CProjectCard extends Component {
         borderRadius: 40,
         overflow: "hidden",
         transition: "1s ease",
+        height: this.state.open ? "unset" : 300,
+        backgroundImage: this.state.open
+          ? "none"
+          : "url(" + this.props.headImg + ")",
+        backgroundRepeat: "no-repeat",
+        // width: '500',
+        backgroundSize: "cover",
       },
       headImg: {
         borderRadius: 30,
       },
       header: {},
       title: {
-        textAlign: "left"
+        textAlign: "left",
+      },
+      titleRow: {
+        marginTop: this.state.open ? "unset" : 200,
+        paddingRight: this.state.open? '0%':"5%",
       },
       btnMore: {
         background: "none",
         border: "none",
-        // backgroundColor: "#C9C9C9",
-        // borderRadius: 50,
+        backgroundColor: "#C9C9C9",
+        borderRadius: "50%",
         // textAlign: 'right'
+        height: "45px",
+        width: "45px",
+        alignItems: "center",
+        textAlign: "center",
+        marginTop: "-3px"
+      },
+      btnTxtMore: {
+        // paddingRight: "100px",
+        // marginRight: "100px",
+        paddingRight: 0,
+        paddingLeft: 0,
+        textAlign: 'center',
+        verticalAlign: 'middle',
+        color: 'black',
+        border:'none',
+        display:'block',
+        lineHeight:0,
+        marginTop:1
+
       },
       btnImgMore: {
         width: "100%",
@@ -63,52 +93,37 @@ class CProjectCard extends Component {
         display: this.state.open ? "inline" : "none",
         // textAlign: "left",
       },
-      eleg:{
-
-      },
-      elegTitle:{
+      eleg: {},
+      elegTitle: {
         color: "white",
-        letterSpacing: "0em"
+        letterSpacing: "0em",
       },
-      elegText:{
-        marginBottom: -1
+      elegText: {
+        marginBottom: -1,
       },
       sectorImg: {
         height: 90,
         width: 90,
-        padding:10
+        padding: 10,
       },
       btnHire: {
-        background: "linear-gradient(90.65deg, #3C9FFA -25.2%, #DB00FF 189.89%), #FFFFFF",
+        background:
+          "linear-gradient(90.65deg, #3C9FFA -25.2%, #DB00FF 189.89%), #FFFFFF",
         borderRadius: 10,
-        border: 'none',
+        border: "none",
         // marginLeft: -10,
         // marginRight: -10
       },
-      btnDisabled:{
+      btnDisabled: {
         background: "#C4C4C4",
         borderRadius: 10,
-        border: 'none'
-      }
+        border: "none",
+      },
     };
 
     var sectorSrcList = []
     var sectorList = this.props.sectorList
-    // for (var i=0;i<sectorList.length;i++) {
-    //   var sec = sectorList[i]
-    //   if (sec =='Biz'){
-    //     sectorSrcList.push({k:i,src:"../assets/filler.png"})
-    //   }
-    //   if (sec == "Tech") {
-    //     sectorSrcList.push({ k: i, src: "../assets/filler.png" });
-    //   }
-    //   if (sec == "SSci") {
-    //     sectorSrcList.push({ k: i, src: "../assets/filler.png" });
-    //   }
-    //   if (sec == "Sci") {
-    //     sectorSrcList.push({ k: i, src: "../assets/filler.png" });
-    //   }
-    // }
+
     for (var i = 0; i < sectorList.length; i++) {
       var sec = sectorList[i];
       if (sec == "Biz") {
@@ -160,19 +175,29 @@ class CProjectCard extends Component {
           </a>
           </Row>
     }
+    var headerImg;
+    if (this.state.open) {
+      headerImg = 
+      <Card.Img
+        src={this.props.headImg}
+        style={styles.headImg}
+        onClick={this.handleClick}
+      />
+    }else{
+      headerImg=null;
+    }
 
     const cardKey = "card" + this.props.cardKey;
     return (
-      <div style={this.props.style} ref={this.myRef}>
+      <div style={this.props.style} ref={this.myRef} onClick={this.state.open? '':this.handleClick}>
         <Col xs={12} sm={12} lg={this.state.open ? 12 : 6}>
           <Card style={styles.card}>
-            <Card.Img
-              src={this.props.headImg}
-              style={styles.headImg}
-              onClick={this.handleClick}
-            />
+            {headerImg}
             <Card.Title>
-              <Row className="justify-content-start align-items-center">
+              <Row
+                className="justify-content-start align-items-center"
+                style={styles.titleRow}
+              >
                 <Col xs={9} sm={9} lg={10}>
                   <h5 style={styles.title}>{this.props.title}</h5>
                 </Col>
@@ -189,11 +214,12 @@ class CProjectCard extends Component {
                     onClick={this.handleClick}
                   >
                     {/* <h5>+</h5> */}
-                    <img
+                    {/* <img
                       style={styles.btnImgMore}
                       src="../assets/openCardsMore.png"
                       className="float-right collapsed"
-                    />
+                    /> */}
+                    <h5 style={styles.btnTxtMore}>{this.state.open? "x":'+'}</h5>
                   </button>
                 </Col>
               </Row>
@@ -209,11 +235,17 @@ class CProjectCard extends Component {
                 <h6 className={textAlign + " col"}>SECTORS</h6>
                 {/* </Row> */}
                 <Row
-                  className={"justify-content-around justify-content-lg-start"}
+                  className={"justify-content-xs-center justify-content-around justify-content-lg-start"}
                 >
                   {sectorSrcList.map((sec) => (
                     <Col xs={6} sm={2}>
-                      <CSectorAnimation sector={sec.s} key={sec.k} height={50} width={50} style={{padding: 10}} />
+                      <CSectorAnimation
+                        sector={sec.s}
+                        key={sec.k}
+                        height={50}
+                        width={50}
+                        style={{ padding: 10 }}
+                      />
                       {/* <img src={sec.src} key={sec.k} style={styles.sectorImg} /> */}
                     </Col>
                   ))}

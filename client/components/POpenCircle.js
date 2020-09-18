@@ -26,33 +26,14 @@ class POpenCircle extends Component {
         marginLeft: "10vw",
         marginTop: 30,
       },
-      BGRight: {
-        // position: "absolute",
-        // zIndex:0,
-        backgroundHeight: "40vh",
-        backgroundImage: "../assets/openBGRight.png",
-        backgroundAttachment: "fixed",
-        backgroundPosition: "right",
-        backgroundRepeat: "no-repeat",
-      },
-      BGLeft: {
-        position: "absolute",
-        zIndex: 0,
-        height: "40vh",
-      },
       BG: {
-        // backgroundImage: 'url("../assets/openBGRight.png")',
-        // backgroungPosition: "right center",
-        // backgroundRepeat: "no-repeat",
-        // backgroundSize: "",
-
-        // position: 'absolute',
-        backgroundImage: "url('../assets/openBGLeft.png'), url('../assets/openBGRight.png')",
-        backgroundAttachment: "fixed, fixed",
-        backgroundPosition: "top left, bottom right",
+        backgroundImage:
+          "url('../assets/openBGLeft.png'), url('../assets/openBGRight.png')",
+        backgroundAttachment: "scroll, scroll",
+        backgroundPosition: "top left, 100% 25%",
         backgroundRepeat: "no-repeat, no-repeat",
         backgroundSize: "30vh, 30vh",
-        paddingTop: '25vh',
+        paddingTop: "25vh",
       },
       HIW: {
         backgroundColor: "#1F1F1F",
@@ -60,10 +41,21 @@ class POpenCircle extends Component {
         borderRadius: 40,
         marginTop: 100,
         textAlign: "left",
+        // display: "block",
+        marginBottom:50,
+      },
+      idea: {
+        backgroundColor: "#1F1F1F",
+        padding: 30,
+        borderRadius: 40,
+        marginTop: 15,
+        textAlign: "left",
+        marginBottom: 30,
       },
       HIWTitle: {},
       AP: {
         marginTop: 50,
+        display: "inline",
       },
       submit: {
         marginTop: 25,
@@ -79,10 +71,6 @@ class POpenCircle extends Component {
     };
     return (
       <div style={styles.BG}>
-        {/* <img src={'../assets/openBGRight.png'} style={styles.BGRight}/>
-        <img src={'../assets/openBGLeft.png'} style={styles.BGLeft}/> */}
-        {/* <div style={{marginBottom:'25vh'}}></div> */}
-        {/* <div style={styles.BGRight}></div> */}
         <Container style={styles.header}>
           <h6>PROJECT HUB</h6>
           <h1>Open Circle</h1>
@@ -92,26 +80,26 @@ class POpenCircle extends Component {
             coordinate the process. Select from current available projects or
             submit an idea of your own.
           </p>
-          {/* <Row className="justify-content-center" style={styles.header}> */}
-          {/* </Row> */}
-          <div style={styles.HIW}>
-            <Row>
-              <h5 style={styles.HIWTitle}>How it Works</h5>
-            </Row>
-            <Row>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum facilisis purus ac arcu malesuada, nec egestas dolor
-                sollicitudin.Description of the project goes here. Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit. Vestibulum
-                facilisis purus ac arcu malesuada, nec egestas dolor
-                sollicitudin.
-              </p>
-            </Row>
-          </div>
+          <Row className="justify-content-center">
+            <Col md={7} style={styles.HIW}>
+              <Row>
+                <h5 style={styles.HIWTitle}>How it Works</h5>
+              </Row>
+              <Row>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Vestibulum facilisis purus ac arcu malesuada, nec egestas
+                  dolor sollicitudin.Description of the project goes here. Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                  facilisis purus ac arcu malesuada, nec egestas dolor
+                  sollicitudin.
+                </p>
+              </Row>
+            </Col>
+          </Row>
 
-          <div style={styles.AP}>
-            <Row>
+          <div style={styles.AP} className="row">
+            <Row className="justify-content-center justify-content-sm-start">
               <h4 className="pull-left">Available Projects</h4>
             </Row>
             <CProjectCard
@@ -169,31 +157,37 @@ class POpenCircle extends Component {
               currHiring={true}
             />
           </div>
-          <Row style={{ marginBottom: -50 }}></Row>
-          <div style={styles.HIW}>
-            <Row>
-              <h5 style={styles.HIWTitle}>Submit your own idea!</h5>
-            </Row>
-            <Row>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum facilisis purus ac arcu malesuada, nec egestas dolor
-                sollicitudin.Description of the project goes here. Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit. Vestibulum
-                facilisis purus ac arcu malesuada, nec egestas dolor
-                sollicitudin.
-              </p>
-            </Row>
-            <Row className="justify-content-center justify-content-lg-start">
-              <a
-                href="http://www.google.com"
-                style={styles.btnSubmit}
-                target="_blank"
-              >
-                <p style={{ marginTop: 10, color: "white" }}>Submit Idea!</p>
-              </a>
-            </Row>
-          </div>
+          {/* <Row style={{ marginBottom: -50 }}></Row> */}
+          <Row style={{ marginTop: 50 }}>
+            <Col xs={12}>
+              <h4 className="pull-left" style={styles.HIWTitle}>
+                Submit your own idea!
+              </h4>
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col style={styles.idea}>
+              <Row>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Vestibulum facilisis purus ac arcu malesuada, nec egestas
+                  dolor sollicitudin.Description of the project goes here. Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                  facilisis purus ac arcu malesuada, nec egestas dolor
+                  sollicitudin.
+                </p>
+              </Row>
+              <Row className="justify-content-center justify-content-lg-start">
+                <a
+                  href="http://www.google.com"
+                  style={styles.btnSubmit}
+                  target="_blank"
+                >
+                  <p style={{ marginTop: 10, color: "white" }}>Submit Idea!</p>
+                </a>
+              </Row>
+            </Col>
+          </Row>
         </Container>
       </div>
     );
