@@ -2,7 +2,13 @@ import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import { Navbar, Nav ,Container, Row, Col} from "react-bootstrap";
 import {FaFacebook, FaInstagram, FaLinkedin,} from 'react-icons/fa';
-
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobileOnly,
+  isMobile,
+} from "react-device-detect";
 class Footer extends Component {
   constructor(props) {
     super(props);
@@ -40,6 +46,7 @@ class Footer extends Component {
         // color: "white",
         fontSize: 30,
         fontWeight: 700,
+        paddingRight:0
       },
       navLinks: {
         // color: "white",
@@ -50,6 +57,7 @@ class Footer extends Component {
         // marginLeft: "10px",
         // marginRight: "10px",
         whiteSpace: "nowrap",
+        textAlign: "center"
       },
       footDivider: {
         // backgroundImage:
@@ -60,7 +68,7 @@ class Footer extends Component {
       },
       sections: {
         // backgroundColor: bgColor,
-        marginTop: "10px",
+        marginTop: isMobile? "30px":"10px",
         // backdropFilter: "blur(10px)",
       },
       socialIcon: {
@@ -93,9 +101,9 @@ class Footer extends Component {
             style={styles.footRow}
             className="align-items-center justify-content-center text-align-center"
           >
-            <Col lg={4}>
+            <Col lg={4} className="d-flex justify-content-center justify-content-lg-start">
               <Navbar.Brand
-              className="mr-auto navBrand"
+              className="navBrand"
               href="/"
               style={styles.navBrand}
             >
@@ -109,13 +117,10 @@ class Footer extends Component {
             </Col>
             <Col lg={4}>
               <div
-                className="d-flex justify-content-center"
+                className={isMobileOnly ? "justify-content-center":"d-flex justify-content-center"}
                 style={styles.sections}
               >
-                <Nav.Link
-                  href="/about"
-                  className="navText"
-                  style={styles.navLinks}
+                <Nav.Link href="/about" style={styles.navLinks}
                 >
                   About
                 </Nav.Link>
