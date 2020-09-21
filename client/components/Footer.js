@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import { Navbar, Nav ,Container, Row, Col} from "react-bootstrap";
+import {FaFacebook, FaInstagram, FaLinkedin,} from 'react-icons/fa';
 
 class Footer extends Component {
   constructor(props) {
@@ -46,8 +47,9 @@ class Footer extends Component {
           ? "white"
           : "black",
         fontSize: 15,
-        marginLeft: "10px",
-        marginRight: "10px",
+        // marginLeft: "10px",
+        // marginRight: "10px",
+        whiteSpace: "nowrap"
       },
       footDivider: {
         // backgroundImage:
@@ -66,6 +68,7 @@ class Footer extends Component {
         width: 40,
         marginLeft: 10,
         marginRight: 10,
+        color:'black'
       },
     };
     console.log(this.props.location.pathname)
@@ -79,9 +82,9 @@ class Footer extends Component {
             style={styles.footRow}
             className="align-items-center justify-content-center text-align-center"
           >
-            <Col md={4}>
+            <Col lg={4}>
               <div
-                className="d-flex justify-content-md-start justify-content-center"
+                className="d-flex justify-content-lg-start justify-content-center"
                 style={styles.sections}
               >
                 <a className="navBrand" href="/" style={styles.navBrand}>
@@ -89,70 +92,52 @@ class Footer extends Component {
                 </a>
               </div>
             </Col>
-            <Col md={4}>
+            <Col lg={4}>
               <div
                 className="d-flex justify-content-center"
                 style={styles.sections}
               >
+                <Nav.Link
+                  href="/about"
+                  className="navText"
+                  style={styles.navLinks}
+                >
+                  About
+                </Nav.Link>
+                <Nav.Link href="/conferences" style={styles.navLinks}>
+                  Conferences
+                </Nav.Link>
                 <Nav.Link href="/open-circle" style={styles.navLinks}>
                   Open Circle
                 </Nav.Link>
+                <Nav.Link href="/opportunities" style={styles.navLinks}>
+                  Opportunties
+                </Nav.Link>
+                <Nav.Link href="/contact" style={styles.navLinks}>
+                  Contact
+                </Nav.Link>
               </div>
             </Col>
-            <Col md={4}>
+            <Col lg={4}>
               <div
-                className="d-flex justify-content-md-end justify-content-center"
+                className="d-flex justify-content-lg-end justify-content-center"
                 style={styles.sections}
               >
-                <img src={"../assets/filler.png"} style={styles.socialIcon} />
-                <img src={"../assets/filler.png"} style={styles.socialIcon} />
-                <img src={"../assets/filler.png"} style={styles.socialIcon} />
+                <a href="https://facebook.com" target="_blank">
+                  <FaFacebook style={styles.socialIcon} />
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                  <FaInstagram style={styles.socialIcon} />
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                  <FaLinkedin style={styles.socialIcon} />
+                </a>
+                {/* <img src={"../assets/filler.png"} style={styles.socialIcon} /> */}
               </div>
             </Col>
           </Row>
         </Container>
       </div>
-      /* <Container className="fixed-top" >
-        <Navbar fixed="top" expand="md" collapseOnSelect={true}style={styles.navBig}>
-          <Container>
-            <Navbar.Brand
-              className="mr-auto navBrand"
-              href="/"
-              style={styles.navBrand}
-            >
-              circle
-            </Navbar.Brand>
-            {/* <Navbar.Toggle.Icon/> */
-      //       <Navbar.Toggle
-      //         aria-controls="responsive-navbar-nav"
-      //         style={styles.navToggle}
-      //       />
-      //       <Navbar.Collapse>
-      //         <Nav className="ml-auto">
-      //           <Nav.Link
-      //             href="/about"
-      //             className="navText"
-      //             style={styles.navLinks}
-      //           >
-      //             About
-      //           </Nav.Link>
-      //           <Nav.Link href="/open-circle" style={styles.navLinks}>
-      //             Open Circle
-      //           </Nav.Link>
-      //           <Nav.Link href="/conferences" style={styles.navLinks}>
-      //             Conferences
-      //           </Nav.Link>
-      //           <Nav.Link href="/opportunities" style={styles.navLinks}>
-      //             Opportunties
-      //           </Nav.Link>
-      //           <Nav.Link href="/contact" style={styles.navLinks}>
-      //             Contact
-      //           </Nav.Link>
-      //         </Nav>
-      //       </Navbar.Collapse>
-      //     </Container>
-      //   </Navbar>
-      // </Container> */}
     );
   }
 }

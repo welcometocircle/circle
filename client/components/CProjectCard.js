@@ -12,16 +12,8 @@ class CProjectCard extends Component {
   }
 
   componentDidMount() {
-    // var moveTo = this.myRef.current.offsetTop + this.myRef.current.offsetHeight;
-    // console.log(this.myRef.current.offsetTop + this.myRef.current.offsetHeigh);
-    // if (this.state.scrollTo){
-    //   console.log(this.myRef.current.offsetTop);
-    //   window.scrollTo(0, this.myRef.current.offsetTop);
-    //   this.setState({open: this.state.open, scrollTo: false});
-    // } 
   }
 
-  componentWillUnmount() {}
 
   handleClick(){
       this.myRef.current.scrollIntoView({behavior:'smooth'});
@@ -141,7 +133,6 @@ class CProjectCard extends Component {
     }
     const textAlign = "text-xs-center text-sm-center text-lg-left"
     const justifyContent = "justify-content-center  justify-content-lg-start"
-    // const justifyContent = "justify-content-lg-center justify-content-sm-center justify-content-xs-center"
  
 
     let btnApplications;
@@ -213,19 +204,11 @@ class CProjectCard extends Component {
                     role="button"
                     onClick={this.handleClick}
                   >
-                    {/* <h5>+</h5> */}
-                    {/* <img
-                      style={styles.btnImgMore}
-                      src="../assets/openCardsMore.png"
-                      className="float-right collapsed"
-                    /> */}
                     <h5 style={styles.btnTxtMore}>{this.state.open? "x":'+'}</h5>
                   </button>
                 </Col>
               </Row>
             </Card.Title>
-            {/* <div style={styles.cardBody}> */}
-            {/* <Card.Body className={textAlign}> */}
             <Row style={styles.cardBody}>
               <Col lg={8}>
                 <Row>
@@ -246,7 +229,6 @@ class CProjectCard extends Component {
                         width={50}
                         style={{ padding: 10 }}
                       />
-                      {/* <img src={sec.src} key={sec.k} style={styles.sectorImg} /> */}
                     </Col>
                   ))}
                 </Row>
@@ -263,8 +245,6 @@ class CProjectCard extends Component {
                 {btnApplications}
               </Col>
             </Row>
-            {/* </Card.Body> */}
-            {/* </div> */}
           </Card>
         </Col>
       </div>

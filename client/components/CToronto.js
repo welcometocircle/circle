@@ -18,7 +18,9 @@ const styles = {
         textAlign: 'center'
     },
     joinButton: {
-
+        marginLeft: 'auto',
+        marginRight: 'auto'
+        
     }
 }
 
@@ -59,12 +61,9 @@ class CToronto extends Component {
                             <p style={styles.joinText}>We are always expanding our team. If there is an available role you are interested in, apply by visiting our opportunities page.</p>
                         </Col>
                     </Row>
-                    <Row className="justify-content-center">
-                        <Col lg="6" style={{ marginTop: 20, marginBottom: 100 }}>
-                            {/* <a href="" className="openButton" style={{color: '#1B1B1B'}}>EXPLORE OPEN CIRCLE</a> */}
-                            <p style={{ textAlign: 'center' }}>
-                                <a href="/opportunities" style={styles.joinButton} className="btnDark"><p style={{color: 'white'}}>Opportunities </p></a>
-                            </p>
+                    <Row className="justify-content-center" >
+                        <Col lg="6" style={{ marginTop: 20, marginBottom: 100}} className="d-flex">
+                            <a href="/opportunities" style={styles.joinButton} className="btnDark"><p style={{color: 'white', textAlign: 'center'}}>Opportunities </p></a>
                         </Col>
                     </Row>
 
