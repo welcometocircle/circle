@@ -135,7 +135,7 @@ class PLanding extends Component {
                 </span>
               </Col>
               <Col lg="6" md="6" sm="12">
-                <CSectors title="Technology" sector="Tech" styleAnimation={{ marginLeft: -120, }} height="60px"></CSectors>
+                <CSectors title="Tech" sector="Tech" styleAnimation={{ marginLeft: -120, }} height="60px"></CSectors>
               </Col>
             </Row>
             <Row className="justify-content-center">

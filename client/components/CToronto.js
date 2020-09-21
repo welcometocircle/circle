@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap'
+import {FaHeart} from 'react-icons/fa'
 
 const styles = {
     sectorStyle: {
@@ -10,7 +11,7 @@ const styles = {
     },
     title: {
         color: "#161616",
-        marginTop: 80,
+        marginTop: 75,
     },
     joinText: {
         color: "#4B4B4B",
@@ -40,18 +41,22 @@ class CToronto extends Component {
         } else if (this.state.width < 1000) {
             torontoHeight = '25vh';
         } else if (this.state.width < 1100) {
-            torontoHeight = '25vh';
+            torontoHeight = '15vh';
         } else {
-            torontoHeight = '75vh';
+            torontoHeight = '40vh';
         }
 
         return (
             <div style={{ backgroundColor: 'white'}}>
                 <Container>
                     <Row className="justify-content-center" style={{ marginTop: 100}}>
-                        <h3 style={styles.title}>Made in the <img src="../assets/heart.png" />{" "} of Toronto.</h3>
+                        <Row>
+                        <h3 style={styles.title}>Made in the <FaHeart style={{color:'red'}}/> of Toronto.</h3>
+                        </Row>
+                        <Row>
                         <img src="../assets/toronto.png" style={{ height: torontoHeight, marginTop: 75}}/>
-                        <Col lg="8" style={{ marginTop: 20 }}>
+                        </Row>
+                        <Col lg="8" style={{ marginTop: 75 }}>
                             <hr style={{ borderColor: '#8B8B8B' }} />
                         </Col>
                     </Row>

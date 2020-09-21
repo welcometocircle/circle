@@ -16,12 +16,13 @@ const styles = {
     background: "linear-gradient(45deg, #939393, #6C6C6C)",
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
-    fontWeight: 400,
+    fontWeight: 600,
     position: "absolute",
     bottom: 0,
     textAlign: "left",
     marginBottom: 45,
     paddingLeft: 0,
+    paddingRight:10
   },
 };
 

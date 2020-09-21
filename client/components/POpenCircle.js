@@ -34,18 +34,19 @@ class POpenCircle extends Component {
         backgroundRepeat: "no-repeat, no-repeat",
         backgroundSize: "30vh, 30vh",
         paddingTop: "25vh",
+        marginBottom:100
       },
       HIW: {
-        backgroundColor: "#1F1F1F",
+        backgroundColor: "#131416",
         padding: 30,
         borderRadius: 40,
         marginTop: 100,
         textAlign: "left",
         // display: "block",
-        marginBottom:50,
+        marginBottom: 50,
       },
       idea: {
-        backgroundColor: "#1F1F1F",
+        backgroundColor: "#131416",
         padding: 30,
         borderRadius: 40,
         marginTop: 15,

@@ -49,7 +49,7 @@ class Footer extends Component {
         fontSize: 15,
         // marginLeft: "10px",
         // marginRight: "10px",
-        whiteSpace: "nowrap"
+        whiteSpace: "nowrap",
       },
       footDivider: {
         // backgroundImage:
@@ -68,7 +68,9 @@ class Footer extends Component {
         width: 40,
         marginLeft: 10,
         marginRight: 10,
-        color:'black'
+        color: darkPages.includes(this.props.location.pathname)
+          ? "white"
+          : "black",
       },
     };
     console.log(this.props.location.pathname)
