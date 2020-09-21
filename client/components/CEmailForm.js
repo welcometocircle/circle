@@ -35,7 +35,7 @@ class CEmailForm extends Component {
               className="input-group mb-3"
               style={{
                 border: "solid 2px #F4F4F4",
-                borderRadius: 20,
+                borderRadius: 50,
                 height: 75,
                 padding: 5,
                 paddingRight: 15,
@@ -62,7 +62,7 @@ class CEmailForm extends Component {
                   className="btn btn-outline-secondary"
                   style={{
                     height: 45,
-                    borderRadius: 10,
+                    borderRadius: 50,
                     margin: "auto",
                     marginLeft: 2,
                     backgroundColor: "#373737",
