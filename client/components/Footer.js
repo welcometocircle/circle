@@ -72,9 +72,18 @@ class Footer extends Component {
           ? "white"
           : "black",
       },
+      logo: {
+        height: 22,
+        marginTop: 10,
+      },
     };
     console.log(this.props.location.pathname)
-    
+    var logo;
+    if (darkPages.includes(this.props.location.pathname)) {
+      logo = "../assets/logoWhite.png";
+    } else {
+      logo = "../assets/logoBlack.png";
+    }
     return (
       // <Navbar backgroundColor={navBackground ? 'white' : 'transparent'}fixed='top' style={styles.navBig} expand="md" collapseOnSelect={true}>
       <div style={styles.footBig}>
@@ -85,14 +94,18 @@ class Footer extends Component {
             className="align-items-center justify-content-center text-align-center"
           >
             <Col lg={4}>
-              <div
-                className="d-flex justify-content-lg-start justify-content-center"
-                style={styles.sections}
-              >
-                <a className="navBrand" href="/" style={styles.navBrand}>
-                  circle
-                </a>
-              </div>
+              <Navbar.Brand
+              className="mr-auto navBrand"
+              href="/"
+              style={styles.navBrand}
+            >
+              <img
+                src={logo}
+                style={styles.logo}
+                className="align-items-center"
+              />
+            </Navbar.Brand>
+
             </Col>
             <Col lg={4}>
               <div

@@ -37,7 +37,7 @@ class CSectors extends Component {
                 {/* <img src={this.props.img} /> */}
                 <CSectorAnimation height="50" sector={this.props.sector} styleAnimation={this.props.styleAnimation} height={this.props.height}/>
                 <span style={styles.spans}>
-                    <h4 style={styles.title}>{this.props.title}</h4>
+                    <h3 style={styles.title}>{this.props.title}</h3>
                 </span>
             </div>
         )
