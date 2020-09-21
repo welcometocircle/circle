@@ -112,16 +112,16 @@ class PLanding extends Component {
             <Col md={8}>
               <p style={{ zIndex: 2, position: "relative", overflowX: 'hidden', textAlign: "center" }} >Circle is a new-age innovation company dedicated to bringing opportunities for students and empowering them to become the leaders of tomorrow. With an interdisicplinary focus, we aspire for students of multiple sectors to come together and create for the future.</p>
             </Col>
-
+            <Col md={8}>
+              <hr style={{marginTop:35}}/>
+            </Col>
           </Row>
-          <hr />
         </Container>
         <Container>
           <div style={{ marginTop: 30 }}>
-
             <div className="justify-content-center">
               <p style={{ textAlign: 'center' }}>SECTOR</p>
-                <h2>All 4 One.</h2>
+              <h2>All 4 One.</h2>
               <Row className="justify-content-center">
                 <Col md="8">
                   <p style={{ textAlign: 'center' }}>Designed with core sectors in mind, Circle integrates science, technology, business, and social science to bring solutions to the issues we face today.</p>

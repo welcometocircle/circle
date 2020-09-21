@@ -10,7 +10,7 @@ const styles = {
     },
     title: {
         color: "#161616",
-        marginTop: 50,
+        marginTop: 80,
     },
     joinText: {
         color: "#4B4B4B",
@@ -46,11 +46,11 @@ class CToronto extends Component {
         }
 
         return (
-            <div style={{ backgroundColor: 'white', marginTop: 50 }}>
+            <div style={{ backgroundColor: 'white'}}>
                 <Container>
-                    <Row className="justify-content-center">
+                    <Row className="justify-content-center" style={{ marginTop: 100}}>
                         <h3 style={styles.title}>Made in the <img src="../assets/heart.png" />{" "} of Toronto.</h3>
-                        <img src="../assets/toronto.png" style={{ height: torontoHeight}}/>
+                        <img src="../assets/toronto.png" style={{ height: torontoHeight, marginTop: 75}}/>
                         <Col lg="8" style={{ marginTop: 20 }}>
                             <hr style={{ borderColor: '#8B8B8B' }} />
                         </Col>

@@ -1,6 +1,14 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import { Navbar, Nav ,Container} from "react-bootstrap";
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile,
+  isMobileOnly,
+  isTablet,
+} from "react-device-detect";
 
 class NavBar extends Component {
   constructor(props) {
@@ -75,9 +83,10 @@ class NavBar extends Component {
     }
     return (
       // <Navbar backgroundColor={navBackground ? 'white' : 'transparent'}fixed='top' style={styles.navBig} expand="md" collapseOnSelect={true}>
-      <Container className="fixed-top">
+      // <Container className="">
         <Navbar
-          fixed="top"
+          fixed={isMobileOnly? "top":""}
+          // className="fixed-top"
           expand="md"
           collapseOnSelect={true}
           style={styles.navBig}
@@ -124,7 +133,7 @@ class NavBar extends Component {
             </Navbar.Collapse>
           </Container>
         </Navbar>
-      </Container>
+      // </Container>
     );
   }
 }

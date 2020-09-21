@@ -22,15 +22,20 @@ class CEmailForm extends Component {
   }
 
   render() {
+    if (this.props.colMd === undefined) {
+      var colMd = "6";
+    } else {
+      var colMd = this.props.colLg;
+    }
     if (this.props.colLg === undefined) {
-      var colLg = "4";
+      var colLg = "6";
     } else {
       var colLg = this.props.colLg;
     }
     return (
       <div style={this.props.style} className={this.props.className}>
         <Row className="justify-content-center">
-          <Col lg={colLg}>
+          <Col md={colMd} lg={colLg}>
             <div
               className="input-group mb-3"
               style={{

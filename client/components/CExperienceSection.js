@@ -8,6 +8,7 @@ import {
   MobileView,
   isBrowser,
   isMobileOnly,
+  isMobile,
 } from "react-device-detect";
 
 
@@ -75,9 +76,9 @@ class CExperienceSection extends Component {
 
 
     return (
-      <div style={{ backgroundColor: "white", marginTop: 50 }}>
+      <div style={{ backgroundColor: "white", marginTop: 100 }}>
         <Container>
-          <Row style={{ marginTop: 50 }}>
+          <Row style={{ marginTop: 150 }}>
             <Col lg="10">
               <h2 style={{ color: "black", textAlign: "left" }}>
                 Experiences like never before.
@@ -127,14 +128,14 @@ class CExperienceSection extends Component {
             </Col>
           </Row>
           <Row
-            className="justify-content-center"
+            className="justify-content-center align-items-center"
             style={{
               backgroundColor: "#F5F5F5",
               borderRadius: 70,
-              padding: 20,
+              padding: isMobileOnly? 25: 75,
             }}
           >
-            <Col lg="3" sm="12">
+            <Col md="4" sm="12">
               <img
                 src="../assets/compass.png"
                 style={{
@@ -146,22 +147,23 @@ class CExperienceSection extends Component {
                 }}
               />
             </Col>
-            <Col lg="9">
-              <p style={{ color: "#969696" }}>JULY 18 - JULY 19, 2020</p>
-              <h3 style={{ color: "black", textAlign: "left" }}>Compass</h3>
-              <p>
+            <Col md="8" className="text-md-left text-center">
+              <p style={{ color: "#969696", letterSpacing:'0.05em' }}>JULY 18 - JULY 19, 2020</p>
+              <h3 style={{ color: "black", textAlign: isMobileOnly? 'center':'left',marginTop:35}}>Compass</h3>
+              <p style={{ color: "#969696", marginTop: 35}}>
                 Students from 17 universities across North America came together
                 virtually and created innovative solutions to the most pressing
                 issues of the education system.
               </p>
               {/* <Row className="justify-content-center" > */}
                 {/* <Col lg="6" style={{ marginTop: 20, marginBottom: 100}} className="d-flex"> */}
-              <a href="/conferences" style={{marginLeft:'4%'}} className="btnDark"><p style={{color: 'white', textAlign: 'center'}}>Learn More </p></a>
+              <a href="/conferences" style={{marginLeft:'4%',marginTop:20}} className="btnDark"><p style={{color: 'white', textAlign: 'center'}}>Learn More </p></a>
                 {/* </Col> */}
               {/* </Row> */}
             </Col>
           </Row>
-          <h5 style={{ color: "black", marginTop: 30, marginBottom: 20 }}>
+            
+          <h5 style={{ color: "black", marginTop: 100, marginBottom: 20 }}>
             Never miss a Circle event
           </h5>
           <p style={{ textAlign: "center", marginBottom: 20 }}>
@@ -170,10 +172,11 @@ class CExperienceSection extends Component {
           </p>
           <CEmailForm />
           <p
-            style={{ textAlign: "center", fontSize: "10px", marginBottom: 50 }}
+            style={{ textAlign: "center", fontSize: "10px", marginBottom: 75 }}
           >
             We respect your privacy.
           </p>
+
         </Container>
       </div>
     );

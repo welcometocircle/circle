@@ -6,13 +6,15 @@ import {
   MobileView,
   isBrowser,
   isMobile,
+  isMobileOnly,
+  isTablet
 } from "react-device-detect";
 
 const styles = {
     openSquare: {
         backgroundColor: '#181818',
         borderRadius: 40,
-        height: 300,
+        height: isMobile? 200: 300,
         width: '100%',
         marginBottom: 20,
         objectFit:'cover'
@@ -21,9 +23,10 @@ const styles = {
         background: 'linear-gradient(45deg, #CF10FF, #0DD3EE)',
         webkitBackgroundClip: 'text',
         webkitTextFillColor: 'transparent',
+        marginTop:25
     },
     spacer: {
-      marginTop: isMobile? 0 : 100,
+      marginTop: isMobileOnly? 0: 150,
     }
 }
 
@@ -35,15 +38,15 @@ class COpenCircle extends Component {
 
     render() {
         return (
-          <div style={{ marginTop: 50 }}>
+          <div style={{ marginTop: 75 }}>
             <Container>
               <p style={{ textAlign: "center" }}>INTRODUCING</p>
               <h2 style={styles.title}>Open Circle</h2>
-              <h5 style={{ color: "white", fontWeight: 500, marginTop: 15 }}>
+              <h5 style={{ color: "white", fontWeight: 500, marginTop: 25 }}>
                 An innovative project hub.
               </h5>
               <Row className="justify-content-center">
-                <Col lg="8" style={{ marginTop: 20 }}>
+                <Col md="8" style={{ marginTop: 35 }}>
                   <p style={{ textAlign: "center" }}>
                     We believe that ideas should be curated with collaboration.
                     With Open Circle, we are bringing you an opportunity to
@@ -62,14 +65,14 @@ class COpenCircle extends Component {
                     style={{ marginLeft: "auto", marginRight: "auto" }}
                   >
                     <p style={{ color: "#1B1B1B", textAlign: "center" }}>
-                      Explore Open Circle
+                      EXPLORE OPEN CIRCLE
                     </p>
                   </a>
                 </Col>
               </Row>
             </Container>
             <Container>
-              <Row style={{marginTop:50}}>
+              <Row style={{marginTop: isMobileOnly? 50:-25, marginBottom: 150}}>
                 <Col md="4">
                   <img src="../assets/teamEvent.png" style={styles.openSquare}/>
                   <img src="../assets/teamDev.png" style={styles.openSquare}/>
