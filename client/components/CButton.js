@@ -28,17 +28,10 @@ class CButton extends Component {
         backgroundColor: "rgba(191, 148, 118, 1)",
         color: "#fff",
       },
-      buttonLinkStyle: {
-        textDecoration: "none",
-      },
     };
     return (
       <div className={this.props.className}>
-        <a
-          href={this.props.href}
-          target="_blank"
-          style={styles.buttonLinkStyle}
-        >
+        <a href={this.props.href}>
           <button style={styles.buttonStyle}>{this.props.text}</button>
         </a>
       </div>
