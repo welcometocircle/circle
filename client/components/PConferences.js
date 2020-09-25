@@ -64,8 +64,16 @@ class PConferences extends Component {
                 virtually and created innovative solutions to the most pressing
                 issues of the education system.
               </p>
-              <CButton text="&#9658; Watch Opening Keynote" className="mt-5" />
-              <CButton text="&#9658; Watch Closing Recap" className="mt-3" />
+              <CButton
+                text="&#9658; Watch Opening Keynote"
+                className="mt-5"
+                href="https://www.youtube.com/watch?v=2UBo1weNpew"
+              />
+              <CButton
+                text="&#9658; Watch Closing Recap"
+                className="mt-3"
+                href="https://www.youtube.com/watch?v=h9JJqhkZfTI"
+              />
             </div>
             <div className="col-md-6 mt-5 mt-md-0">
               <div className="float-md-right">
