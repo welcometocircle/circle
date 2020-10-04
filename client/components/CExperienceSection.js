@@ -99,15 +99,15 @@ class CExperienceSection extends Component {
             <Col lg="4" md="6" sm="12">
               <CExperiences
                 img="../assets/filler.png"
-                title="Versatile Experiences"
-                desc="description"
+                title="Synergy"
+                desc="An organization aiming to bring together seemingly disparate components to result in something greater than each individual component"
               ></CExperiences>
             </Col>
             <Col lg="4" md="6" sm="12">
               <CExperiences
                 img="../assets/filler.png"
-                title="Versatile Experiences"
-                desc="description"
+                title="Constantly Evolving"
+                desc="Circle veers from stagnancy and aims to evolve with the everchanging climate of the world"
               ></CExperiences>
             </Col>
           </Row>
@@ -115,15 +115,15 @@ class CExperienceSection extends Component {
             <Col lg="4" md="6" sm="12">
               <CExperiences
                 img="../assets/filler.png"
-                title="Versatile Experiences"
-                desc="description"
+                title="Interdisciplinary"
+                desc="The start-up encourages evaluating problems with a broad perspective"
               ></CExperiences>
             </Col>
             <Col lg="4" md="6" sm="12">
               <CExperiences
                 img="../assets/filler.png"
-                title="Versatile Experiences"
-                desc="description"
+                title="Opportunity"
+                desc="An enriching opportunity to partake in the myriad of subsidiaries, competitions, and events offered by Circle"
               ></CExperiences>
             </Col>
           </Row>
@@ -132,7 +132,7 @@ class CExperienceSection extends Component {
             style={{
               backgroundColor: "#F5F5F5",
               borderRadius: 70,
-              padding: isMobileOnly? 25: 75,
+              padding: isMobileOnly ? 25 : 75,
             }}
           >
             <Col md="4" sm="12">
@@ -148,35 +148,52 @@ class CExperienceSection extends Component {
               />
             </Col>
             <Col md="8" className="text-md-left text-center">
-              <p style={{ color: "#969696", letterSpacing:'0.05em' }}>JULY 18 - JULY 19, 2020</p>
-              <h3 style={{ color: "black", textAlign: isMobileOnly? 'center':'left',marginTop:35}}>Compass</h3>
-              <p style={{ color: "#969696", marginTop: 35}}>
+              <p style={{ color: "#969696", letterSpacing: "0.05em" }}>
+                JULY 18 - JULY 19, 2020
+              </p>
+              <h3
+                style={{
+                  color: "black",
+                  textAlign: isMobileOnly ? "center" : "left",
+                  marginTop: 35,
+                }}
+              >
+                Compass
+              </h3>
+              <p style={{ color: "#969696", marginTop: 35 }}>
                 Students from 17 universities across North America came together
                 virtually and created innovative solutions to the most pressing
                 issues of the education system.
               </p>
               {/* <Row className="justify-content-center" > */}
-                {/* <Col lg="6" style={{ marginTop: 20, marginBottom: 100}} className="d-flex"> */}
-              <a href="/conferences" style={{marginLeft:'4%',marginTop:20}} className="btnDark"><p style={{color: 'white', textAlign: 'center'}}>Learn More </p></a>
-                {/* </Col> */}
+              {/* <Col lg="6" style={{ marginTop: 20, marginBottom: 100}} className="d-flex"> */}
+              <a
+                href="/conferences"
+                style={{ marginLeft: "4%", marginTop: 20 }}
+                className="btnDark"
+              >
+                <p style={{ color: "white", textAlign: "center" }}>
+                  Learn More{" "}
+                </p>
+              </a>
+              {/* </Col> */}
               {/* </Row> */}
             </Col>
           </Row>
-            
+{/* 
           <h5 style={{ color: "black", marginTop: 100, marginBottom: 20 }}>
             Never miss a Circle event
           </h5>
           <p style={{ textAlign: "center", marginBottom: 20 }}>
             Get the latest updates from Circle
             <br /> right to your inbox.
-          </p>
-          <CEmailForm />
-          <p
+          </p> */}
+          {/* <CEmailForm /> */}
+          {/* <p
             style={{ textAlign: "center", fontSize: "10px", marginBottom: 75 }}
           >
             We respect your privacy.
-          </p>
-
+          </p> */}
         </Container>
       </div>
     );

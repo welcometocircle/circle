@@ -153,7 +153,7 @@ class PLanding extends Component {
         </Container>
         {/* <CSectorSection /> */}
         <CExperienceSection />
-        <COpenCircle />
+        {/* <COpenCircle /> */}
         <CToronto />
       </div>
 

@@ -188,7 +188,7 @@ class PConferences extends Component {
             </div>
           </Row>
         </Container>
-        <div style={{ backgroundColor: "white", height: "70vh" }}>
+        {/* <div style={{ backgroundColor: "white", height: "70vh" }}>
           <Row className="h-100 justify-content-center align-items-center text-center">
             <div>
               <h4>Never miss a Circle event.</h4>
@@ -201,7 +201,7 @@ class PConferences extends Component {
               <p style={{ fontSize: "10px" }}>We respect your privacy.</p>
             </div>
           </Row>
-        </div>
+        </div> */}
       </div>
     );
   }

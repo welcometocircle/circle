@@ -127,15 +127,15 @@ class Footer extends Component {
                 <Nav.Link href="/conferences" style={styles.navLinks}>
                   Conferences
                 </Nav.Link>
-                <Nav.Link href="/open-circle" style={styles.navLinks}>
+                {/* <Nav.Link href="/open-circle" style={styles.navLinks}>
                   Open Circle
-                </Nav.Link>
+                </Nav.Link> */}
                 <Nav.Link href="/opportunities" style={styles.navLinks}>
                   Opportunties
                 </Nav.Link>
-                <Nav.Link href="/contact" style={styles.navLinks}>
+                {/* <Nav.Link href="/contact" style={styles.navLinks}>
                   Contact
-                </Nav.Link>
+                </Nav.Link> */}
               </div>
             </Col>
             <Col lg={4}>
