@@ -23,8 +23,8 @@ class Footer extends Component {
     var darkPages = ['/open-circle','/about']
     const lightPages = ['/opportunities']
     const bgColor = darkPages.includes(this.props.location.pathname)
-          ? "#131416"
-          : "white"
+      ? "#0B0B0B"
+      : "white";
     const styles = {
       footBig: {
         backgroundColor: bgColor,

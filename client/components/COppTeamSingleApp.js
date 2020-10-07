@@ -24,7 +24,7 @@ class COppTeamSingleApp extends Component {
         // height: "30vh",
         // width: "70vw",
         // textAlign: "center",
-        borderRadius: 20,
+        borderRadius: 50,
         marginTop: "5vh",
         backgroundImage: "url(" + this.props.img + ")",
         backgroundSize: "100% 100%",
@@ -100,7 +100,6 @@ class COppTeamSingleApp extends Component {
               </h6>
             </Row>
           ))}
-
           <Row
             style={{ marginBottom: "40px", marginTop: "30px" }}
             className={justifications}

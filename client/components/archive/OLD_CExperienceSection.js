@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Radium from 'radium'
-import CExperiences from "./archive/OLD_CExperiences.js"
+import CExperiences from "./CExperiences.js"
 import { Container, Row, Col } from 'react-bootstrap';
 import CEmailForm from "./CEmailForm.js"
 import {
@@ -14,55 +14,44 @@ import {
 
 const styles = {
   button: {
-    backgroundColor: "black",
+    backgroundColor: 'black',
     borderRadius: 20,
     height: 20,
     width: 100,
-    display: "inline-block",
-    hover: {
-      backgroundColor: "#fae1e1",
-      textDecoration: "none",
+    display: 'inline-block',
+    'hover': {
+      backgroundColor: '#fae1e1',
+      textDecoration: 'none'
     },
-    link: {
-      color: "black",
-      textDecoration: "none",
-      textAlign: "center",
+    'link': {
+      color: 'black',
+      textDecoration: 'none',
+      textAlign: 'center'
     },
-    active: {
-      color: "black",
-      textDecoration: "none",
-    },
+    'active': {
+      color: 'black',
+      textDecoration: 'none'
+    }
   },
   titleStyle: {
     marginTop: 80,
     marginLeft: 20,
     fontWeight: 300,
-    textAlign: "left",
+    textAlign: 'left',
   },
   linkText: {
     font: 50,
-    textAlign: "center",
+    textAlign: 'center'
   },
   emailForm: {
     fontSize: 90,
     lineHeight: 30,
-    color: "green",
-    paddingLeft: "2vw",
-    paddingRight: "2vw",
+    color: 'green',
+    paddingLeft: '2vw',
+    paddingRight: '2vw'
   },
-  title: {
-    background:"linear-gradient(98.06deg, #A4C8FF 1.01%, #D781FF 44.66%, rgba(255, 109, 77, 0.82) 91.52%)",
-    WebkitBackgroundClip: "text",
-    WebkitTextFillColor: "transparent"
-    // color:'black'
-  },
-  compassSection: {
-    backgroundColor: "#F5F5F5",
-    borderRadius: 70,
-    padding: isMobileOnly ? 25 : 75,
-    marginTop: 105
-  }
-};
+
+}
 
 class CExperienceSection extends Component {
   constructor(props) {
@@ -89,41 +78,62 @@ class CExperienceSection extends Component {
     return (
       <div style={{ backgroundColor: "white", marginTop: 100 }}>
         <Container>
-          <Row style={{ marginTop: 150 }} className="justify-content-center">
+          <Row style={{ marginTop: 150 }}>
             <Col lg="10">
-              <h2 style={styles.title}>
-                Experiences, projects, ideas like never before.
+              <h2 style={{ color: "black", textAlign: "left" }}>
+                Experiences like never before.
               </h2>
             </Col>
           </Row>
-          <Row
-            className="justify-content-center text-center"
-            style={{ marginTop: 75 }}
-          >
-            <Col lg={8}>
-              <p>
-                We believe in an interdisciplinary future where problems are
-                solved via multiple perspectives. Ideation challenges,
-                conferences, accelerators, innovation hubs, are just some of the
-                great things we are working on. We hope to promote innovative
-                solutions and turn ideas into reality to make a meaningful
-                impact in the world.
+          <Row style={{ marginTop: 20 }}>
+            <Col lg="8">
+              <p style={{ color: "black" }}>
+                Our love for innovation allows us to bring you experiences like
+                never before. Whether it is our flagship ideation conferences to
+                networking sessions with industry leaders, the Circle experience
+                is....BLAH BLAH BLAH.
               </p>
             </Col>
           </Row>
-          <Row className="justify-content-center" style={{ marginTop: 75 }}>
-            <a
-              href="/about"
-              style={{ marginLeft: "4%", marginTop: 20 }}
-              className="btnDark"
-            >
-              <p style={{ color: "white", textAlign: "center" }}>About Us</p>
-            </a>
+          <Row className="justify-content-center" style={{ marginTop: 30 }}>
+            <Col lg="4" md="6" sm="12">
+              <CExperiences
+                img="../assets/filler.png"
+                title="Synergy"
+                desc="An organization aiming to bring together seemingly disparate components to result in something greater than each individual component"
+              ></CExperiences>
+            </Col>
+            <Col lg="4" md="6" sm="12">
+              <CExperiences
+                img="../assets/filler.png"
+                title="Constantly Evolving"
+                desc="Circle veers from stagnancy and aims to evolve with the everchanging climate of the world"
+              ></CExperiences>
+            </Col>
           </Row>
-
+          <Row className="justify-content-center" style={{ marginTop: 30 }}>
+            <Col lg="4" md="6" sm="12">
+              <CExperiences
+                img="../assets/filler.png"
+                title="Interdisciplinary"
+                desc="The start-up encourages evaluating problems with a broad perspective"
+              ></CExperiences>
+            </Col>
+            <Col lg="4" md="6" sm="12">
+              <CExperiences
+                img="../assets/filler.png"
+                title="Opportunity"
+                desc="An enriching opportunity to partake in the myriad of subsidiaries, competitions, and events offered by Circle"
+              ></CExperiences>
+            </Col>
+          </Row>
           <Row
             className="justify-content-center align-items-center"
-            style={styles.compassSection}
+            style={{
+              backgroundColor: "#F5F5F5",
+              borderRadius: 70,
+              padding: isMobileOnly ? 25 : 75,
+            }}
           >
             <Col md="4" sm="12">
               <img
@@ -155,18 +165,22 @@ class CExperienceSection extends Component {
                 virtually and created innovative solutions to the most pressing
                 issues of the education system.
               </p>
+              {/* <Row className="justify-content-center" > */}
+              {/* <Col lg="6" style={{ marginTop: 20, marginBottom: 100}} className="d-flex"> */}
               <a
                 href="/conferences"
                 style={{ marginLeft: "4%", marginTop: 20 }}
                 className="btnDark"
               >
                 <p style={{ color: "white", textAlign: "center" }}>
-                  Learn More
+                  Learn More{" "}
                 </p>
               </a>
+              {/* </Col> */}
+              {/* </Row> */}
             </Col>
           </Row>
-          {/* 
+{/* 
           <h5 style={{ color: "black", marginTop: 100, marginBottom: 20 }}>
             Never miss a Circle event
           </h5>
