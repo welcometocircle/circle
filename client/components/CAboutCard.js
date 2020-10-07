@@ -1,5 +1,13 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile,
+  isMobileOnly,
+  isTablet,
+} from "react-device-detect";
 
 class CAboutCard extends Component {
   constructor(props) {
@@ -18,7 +26,7 @@ class CAboutCard extends Component {
       cardMain: {
         background: gradient,
         // backgroundColor: "#070707",
-        // height: '25vh',
+        // height: isMobile? isMobileOnly? 325 : 375: 425,
         // width: '50vw',
         // marginLeft: 20,
         // marginRight: 20,

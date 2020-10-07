@@ -62,7 +62,7 @@ class PAbout extends Component {
           <Col sm={6} md={5}>
             <CAboutCard
               title="Mission"
-              desc="We are on a mission to solving global problems through collaboration between science, technology, business, and social science. This multi-perspective approach will allow for innovative ideas, solutions, and more."
+              desc="We are on a mission to solve global problems through collaboration between science, technology, business, and social science. This multi-perspective approach allows for innovative ideas, solutions, and more."
             />
           </Col>
         </Row>
