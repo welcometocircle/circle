@@ -101,7 +101,7 @@ class CExperienceSection extends Component {
             style={{ marginTop: 75 }}
           >
             <Col lg={8}>
-              <p>
+              <p style={{ color: "#747474" }}>
                 We believe in an interdisciplinary future where problems are
                 solved via multiple perspectives. Ideation challenges,
                 conferences, accelerators, innovation hubs, are just some of the
