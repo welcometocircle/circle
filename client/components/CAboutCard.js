@@ -12,9 +12,12 @@ class CAboutCard extends Component {
   componentWillUnmount() {}
 
   render() {
+    var gradient = this.props.title=='Vision'? "linear-gradient(180deg, rgba(255, 255, 255, 0.74) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(130.68deg, #C9E5FF -1.33%, #FDB0FF 47.28%, #FFBD81 107.34%)"
+                    : "linear-gradient(180deg, rgba(255, 255, 255, 0.74) 0%, rgba(255, 255, 255, 0) 100%),linear-gradient(213.12deg, #C9E5FF -21.03%, #FDB0FF 35.48%, #FFBD81 105.29%)"
     const styles = {
       cardMain: {
-        backgroundColor: "#070707",
+        background: gradient,
+        // backgroundColor: "#070707",
         // height: '25vh',
         // width: '50vw',
         // marginLeft: 20,
@@ -35,12 +38,6 @@ class CAboutCard extends Component {
     return (
       <div style={{}}>
         <div style={styles.cardMain}>
-          {/* <Row className="justify-content-around">
-              <h4>{this.props.title}</h4>
-            </Row>
-            <Row>
-              <p>{this.props.desc}</p>
-            </Row> */}
             <Row>
               <h4 style={styles.cardTitle} className="pull-left">{this.props.title}</h4>
             </Row>

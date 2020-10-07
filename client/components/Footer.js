@@ -20,8 +20,8 @@ class Footer extends Component {
   }
 
   render() {
-    var darkPages = ['/open-circle','/about']
-    const lightPages = ['/opportunities']
+    var darkPages = ['/open-circle']
+    const lightPages = ["/opportunities", "/about"];
     const bgColor = darkPages.includes(this.props.location.pathname)
       ? "#0B0B0B"
       : "white";
