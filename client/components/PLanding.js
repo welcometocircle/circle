@@ -91,9 +91,6 @@ class PLanding extends Component {
 
 
     return (
-
-
-
       <div>
         {/* <Controller>
           <Scene duration={200} classToggle="zap" triggerElement="#trigger" indicators={true}>
@@ -103,52 +100,105 @@ class PLanding extends Component {
           </Scene>
         </Controller> */}
         <Container>
-          <Row className="justify-content-center" style={{ position: "relative", zIndex: 0, marginTop:'25vh'}}>
-            <LandingPageAnimation height={aniHeight} width={aniWidth} id='aniDivLanding' style={{position: 'absolute',top:'-25vh'}}/>
+          <Row
+            className="justify-content-center"
+            style={{ position: "relative", zIndex: 0, marginTop: "25vh" }}
+          >
+            <LandingPageAnimation
+              height={aniHeight}
+              width={aniWidth}
+              id="aniDivLanding"
+              style={{ position: "absolute", top: "-25vh" }}
+            />
             <Col md={8}>
-              <h1 id="landingText" style={{ zIndex: 2, position: "relative", overflow: 'hidden' }} className=''>Innovation is just the beginning.</h1>
+              <h1
+                id="landingText"
+                style={{ zIndex: 2, position: "relative", overflow: "hidden" }}
+                className=""
+              >
+                Innovation is just the beginning.
+              </h1>
             </Col>
             {/* <animated.h1 style={animation}>Innovation is just<br/> the beginning</animated.h1> */}
             <Col md={8}>
-              <p style={{ zIndex: 2, position: "relative", overflowX: 'hidden', textAlign: "center" }} >Circle is a new-age innovation company dedicated to bringing opportunities for students and empowering them to become the leaders of tomorrow. With an interdisicplinary focus, we aspire for students of multiple sectors to come together and create for the future.</p>
+              <p
+                style={{
+                  zIndex: 2,
+                  position: "relative",
+                  overflowX: "hidden",
+                  textAlign: "center",
+                }}
+              >
+                Circle is a new-age innovation company dedicated to bringing
+                opportunities for students and empowering them to become the
+                leaders of tomorrow. With an interdisciplinary focus, we aspire
+                for students of multiple sectors to come together and create for
+                the future.
+              </p>
             </Col>
             <Col md={8}>
-              <hr style={{marginTop:35}}/>
+              <hr style={{ marginTop: 35 }} />
             </Col>
           </Row>
         </Container>
         <Container>
           <div style={{ marginTop: 30 }}>
             <div className="justify-content-center">
-              <p style={{ textAlign: 'center' }}>SECTOR</p>
+              <p style={{ textAlign: "center" }}>SECTOR</p>
               <h2>All 4 One.</h2>
               <Row className="justify-content-center">
                 <Col md="8">
-                  <p style={{ textAlign: 'center' }}>Designed with core sectors in mind, Circle integrates science, technology, business, and social science to bring solutions to the issues we face today.</p>
+                  <p style={{ textAlign: "center" }}>
+                    Designed with core sectors in mind, Circle integrates
+                    science, technology, business, and social science to bring
+                    solutions to the issues we face today.
+                  </p>
                 </Col>
               </Row>
             </div>
             <Row className="justify-content-center" style={{ marginTop: 30 }}>
               <Col lg="6" md="6" sm="12">
                 <span className="pull-right">
-                  <CSectors title="Business" sector="Biz" styleAnimation={{ transform: 'scaleX(-1)', marginLeft: -120, }} height="60px"></CSectors>
+                  <CSectors
+                    title="Business"
+                    sector="Biz"
+                    styleAnimation={{
+                      transform: "scaleX(-1)",
+                      marginLeft: -120,
+                    }}
+                    height="60px"
+                  ></CSectors>
                 </span>
               </Col>
               <Col lg="6" md="6" sm="12">
-                <CSectors title="Tech" sector="Tech" styleAnimation={{ marginLeft: -120, }} height="60px"></CSectors>
+                <CSectors
+                  title="Tech"
+                  sector="Tech"
+                  styleAnimation={{ marginLeft: -120 }}
+                  height="60px"
+                ></CSectors>
               </Col>
             </Row>
             <Row className="justify-content-center">
               <Col lg="4" md="6" sm="12">
                 <span className="pull-right">
-                  <CSectors title="Social Science" sector="SSci" styleAnimation={{ marginLeft: -130, }} height="60px"></CSectors>
+                  <CSectors
+                    title="Social Science"
+                    sector="SSci"
+                    styleAnimation={{ marginLeft: -130 }}
+                    height="60px"
+                  ></CSectors>
                 </span>
               </Col>
               <Col lg="4" md="6" sm="12">
-                <CSectors title="Science" sector="Sci" styleAnimation={{ marginLeft: -130, }} height="60px"></CSectors>
+                <CSectors
+                  title="Science"
+                  sector="Sci"
+                  styleAnimation={{ marginLeft: -130 }}
+                  height="60px"
+                ></CSectors>
               </Col>
             </Row>
-
           </div>
         </Container>
         {/* <CSectorSection /> */}
@@ -156,7 +206,6 @@ class PLanding extends Component {
         {/* <COpenCircle /> */}
         <CToronto />
       </div>
-
     );
   }
 }
