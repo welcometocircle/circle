@@ -84,55 +84,58 @@ class NavBar extends Component {
     return (
       // <Navbar backgroundColor={navBackground ? 'white' : 'transparent'}fixed='top' style={styles.navBig} expand="md" collapseOnSelect={true}>
       // <Container className="">
-        <Navbar
-          fixed={isMobileOnly? "top":""}
-          // className="fixed-top"
-          expand="md"
-          collapseOnSelect={true}
-          style={styles.navBig}
-        >
-          <Container>
-            <Navbar.Brand
-              className="mr-auto navBrand"
-              href="/"
-              style={styles.navBrand}
-            >
-              <img
-                src={logo}
-                style={styles.logo}
-                className="align-items-center"
-              />
-            </Navbar.Brand>
-            {/* <Navbar.Toggle.Icon/> */}
-            <Navbar.Toggle
-              aria-controls="responsive-navbar-nav"
-              style={styles.navToggle}
+      <Navbar
+        fixed={isMobileOnly ? "top" : ""}
+        // className="fixed-top"
+        expand="md"
+        collapseOnSelect={true}
+        style={styles.navBig}
+      >
+        <Container>
+          <Navbar.Brand
+            className="mr-auto navBrand"
+            href="/"
+            style={styles.navBrand}
+          >
+            <img
+              src={logo}
+              style={styles.logo}
+              className="align-items-center"
             />
-            <Navbar.Collapse>
-              <Nav className="ml-auto">
-                <Nav.Link
-                  href="/about"
-                  className="navText"
-                  style={styles.navLinks}
-                >
-                  About
-                </Nav.Link>
-                {/* <Nav.Link href="/open-circle" style={styles.navLinks}>
+          </Navbar.Brand>
+          {/* <Navbar.Toggle.Icon/> */}
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            style={styles.navToggle}
+          />
+          <Navbar.Collapse>
+            <Nav className="ml-auto">
+              <Nav.Link
+                href="/about"
+                className="navText"
+                style={styles.navLinks}
+              >
+                About
+              </Nav.Link>
+              {/* <Nav.Link href="/open-circle" style={styles.navLinks}>
                   Open Circle
                 </Nav.Link> */}
-                <Nav.Link href="/conferences" style={styles.navLinks}>
-                  Conferences
-                </Nav.Link>
-                <Nav.Link href="/opportunities" style={styles.navLinks}>
-                  Opportunties
-                </Nav.Link>
-                {/* <Nav.Link href="/contact" style={styles.navLinks}>
+              <Nav.Link href="/conferences" style={styles.navLinks}>
+                Conferences
+              </Nav.Link>
+              <Nav.Link href="/opportunities" style={styles.navLinks}>
+                Opportunties
+              </Nav.Link>
+              <Nav.Link href="mailto:info@hellocircle.ca" style={styles.navLinks}>
+                Contact Us
+              </Nav.Link>
+              {/* <Nav.Link href="/contact" style={styles.navLinks}>
                   Contact
                 </Nav.Link> */}
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
       // </Container>
     );
   }

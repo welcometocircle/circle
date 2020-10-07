@@ -31,8 +31,8 @@ class CButton extends Component {
     };
     return (
       <div className={this.props.className}>
-        <a href={this.props.href}>
-          <button style={styles.buttonStyle}>{this.props.text}</button>
+        <a href={this.props.href} target="_blank" style={{textDecoration:'none'}}>
+          <button style={styles.buttonStyle} className="btnHoverLight">{this.props.text}</button>
         </a>
       </div>
     );

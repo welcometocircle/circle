@@ -5,7 +5,13 @@ import CSpeaker from "./CSpeaker";
 import CEmailForm from "./CEmailForm";
 import LottieAnimation from "./global/LottieAnimation";
 import * as compassani from "../assets/animations/compass/compass-logo-layered.json";
-
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobileOnly,
+  isMobile,
+} from "react-device-detect";
 class PConferences extends Component {
   constructor(props) {
     super(props);
@@ -20,7 +26,15 @@ class PConferences extends Component {
   componentWillUnmount() {}
 
   render() {
-    const styles = {};
+    const styles = {
+      mind: {
+        maxWidth: isMobileOnly ? "100%" : "600px",
+        maxHeight: isMobileOnly ? "100%" : "600px",
+        marginBottom: 30,
+        width: isMobileOnly ? "100%" : "600px",
+        height: isMobileOnly ? "100%" : "600px",
+      },
+    };
     return (
       <div /* style={{ backgroundColor: "#E5E5E5" }} */>
         <div style={{ height: "100vh" }}>
@@ -64,8 +78,16 @@ class PConferences extends Component {
                 virtually and created innovative solutions to the most pressing
                 issues of the education system.
               </p>
-              <CButton text="&#9658; Watch Opening Keynote" className="mt-5" />
-              <CButton text="&#9658; Watch Closing Recap" className="mt-3" />
+              <CButton
+                text="&#9658; Watch Opening Keynote"
+                className="mt-5"
+                href="https://www.youtube.com/watch?v=2UBo1weNpew&t=135s"
+              />
+              <CButton
+                text="&#9658; Watch Closing Recap"
+                className="mt-3"
+                href="https://www.youtube.com/watch?v=h9JJqhkZfTI&t=2s"
+              />
             </div>
             <div className="col-md-6 mt-5 mt-md-0">
               <div className="float-md-right">
@@ -81,7 +103,11 @@ class PConferences extends Component {
         </Container>
         <Container style={{ marginTop: "50px" }}>
           <Row className="justify-content-center">
-            <img className="col-12" src="../assets/compass-mind.png" />
+            <img
+              className="col-12"
+              src="../assets/compass-mind.png"
+              style={styles.mind}
+            />
           </Row>
         </Container>
         <Container className="mt-1">
@@ -89,51 +115,51 @@ class PConferences extends Component {
           <Row className="justify-content-between mt-md-5">
             <CSpeaker
               name="Jonathan Javier"
-              src="../assets/Compass/Cspeaker-jonathan.png"
+              src="../assets/compass/Cspeaker-jonathan.png"
               company="Wonsulting"
             />
             <CSpeaker
               name="Jerry Lee"
-              src="../assets/Compass/Cspeaker-jerry.png"
+              src="../assets/compass/Cspeaker-jerry.png"
               company="Wonsulting"
             />
             <CSpeaker
               name="Denys Linkov"
-              src="../assets/Compass/Cspeaker-denys.png"
+              src="../assets/compass/Cspeaker-denys.png"
               company="RBC"
             />
             <CSpeaker
               name="Devin Golets"
-              src="../assets/Compass/Cspeaker-devin.png"
+              src="../assets/compass/Cspeaker-devin.png"
               company="Top Hat"
             />
           </Row>
           <Row className="justify-content-between mt-md-5">
             <CSpeaker
               name="Dr. Prasa Gopee-Ramanan"
-              src="../assets/Compass/Cspeaker-dr-prasa.png"
+              src="../assets/compass/Cspeaker-dr-prasa.png"
               company="University of Toronto"
             />
             <CSpeaker
               name="Gabriella Paniccia"
-              src="../assets/Compass/Cspeaker-gabriella.png"
+              src="../assets/compass/Cspeaker-gabriella.png"
               company="Big 4 Accounting Firms"
             />
             <CSpeaker
               name="Stephanie Nuesi"
-              src="../assets/Compass/Cspeaker-stephanie.png"
+              src="../assets/compass/Cspeaker-stephanie.png"
               company="Max Up"
             />
             <CSpeaker
               name="Dr. Nigmendra Narain"
-              src="../assets/Compass/Cspeaker-dr-nigmendra.png"
+              src="../assets/compass/Cspeaker-dr-nigmendra.png"
               company="Western University"
             />
           </Row>
           <Row className="justify-content-between mt-md-5">
             <CSpeaker
               name="Dr. Laura Jana"
-              src="../assets/Compass/Cspeaker-dr-laura-jana.png"
+              src="../assets/compass/Cspeaker-dr-laura-jana.png"
               company="Pediatrician"
             />
           </Row>

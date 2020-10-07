@@ -147,20 +147,20 @@ hr{
   font-weight: 500;
   
 }
-.btnLight:hover {
+.btnLight:hover, .btnHoverLight:hover {
   background-color:  #9ec0ff !important;
   text-decoration: none;
 }
-.btnLight:link {
+.btnLight:link, .btnHoverLight:link {
   color: #1B1B1B;
   text-decoration: none;
   text-align: center;
 }
-.btnLight:visited {
+.btnLight:visited, .btnHoverLight:visited {
   color: white;
   text-decoration: none;
 }
-.btnLight:active {
+.btnLight:active, .btnHoverLight:active {
   color: white;
   text-decoration: none;
 }
@@ -177,20 +177,20 @@ hr{
 
   
 }
-.btnDark:hover {
+.btnDark:hover, .btnHoverDark:hover  {
   background-color:  #9ec0ff;
   text-decoration: none;
 }
-.btnDark:link {
+.btnDark:link, .btnHoverDark:link {
   color: #1B1B1B;
   text-decoration: none;
   text-align: center;
 }
-.btnDark:visited {
+.btnDark:visited, .btnHoverDark:visited {
   color: white;
   text-decoration: none;
 }
-.btnDark:active {
+.btnDark:active, .btnHoverDark:active {
   color: white;
   text-decoration: none;
 }

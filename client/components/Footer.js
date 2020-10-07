@@ -133,6 +133,9 @@ class Footer extends Component {
                 <Nav.Link href="/opportunities" style={styles.navLinks}>
                   Opportunties
                 </Nav.Link>
+                <Nav.Link href="mailto:info@hellocircle.ca" style={styles.navLinks}>
+                Contact Us
+                </Nav.Link>
                 {/* <Nav.Link href="/contact" style={styles.navLinks}>
                   Contact
                 </Nav.Link> */}
