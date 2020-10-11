@@ -20,7 +20,7 @@ class PConferences extends Component {
 
   componentDidMount() {
     window.scrollTo(0, 0);
-    // analytics.logEvent("Landing Did Mount");
+    analytics.logEvent("Conference Did Mount");
   }
 
   componentWillUnmount() {}

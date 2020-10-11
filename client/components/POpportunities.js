@@ -14,7 +14,7 @@ class POpportunities extends Component {
 
   componentDidMount() {
     window.scrollTo(0, 0);
-    // analytics.logEvent("Landing Did Mount");
+    analytics.logEvent("Opps Did Mount");
   }
 
   componentWillUnmount() {}
