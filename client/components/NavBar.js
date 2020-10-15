@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
-import { Navbar, Nav ,Container} from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import {
   BrowserView,
   MobileView,
@@ -15,17 +15,14 @@ class NavBar extends Component {
     super(props);
   }
 
-
-  componentDidMount() {
-
-  }
+  componentDidMount() {}
 
   render() {
-    const darkPages = ['/','/open-circle']
+    const darkPages = ["/", "/open-circle", "/envision"];
     const lightPages = ["/opportunities", "contact", "/about"];
     const bgColor = darkPages.includes(this.props.location.pathname)
-          ? "rgba(19, 20, 22, 0.96)"
-          : "rgba(255, 255, 255, 0.96)"
+      ? "rgba(19, 20, 22, 0.96)"
+      : "rgba(255, 255, 255, 0.96)";
     const styles = {
       navBig: {
         backgroundColor: bgColor,
@@ -74,11 +71,11 @@ class NavBar extends Component {
         marginTop: 10,
       },
     };
-    console.log(this.props.location.pathname)
+    console.log(this.props.location.pathname);
     var logo;
-    if (darkPages.includes(this.props.location.pathname)){
-      logo ="../assets/logoWhite.png"
-    }else{
+    if (darkPages.includes(this.props.location.pathname)) {
+      logo = "../assets/logoWhite.png";
+    } else {
       logo = "../assets/logoBlack.png";
     }
     return (
@@ -126,7 +123,10 @@ class NavBar extends Component {
               <Nav.Link href="/opportunities" style={styles.navLinks}>
                 Opportunties
               </Nav.Link>
-              <Nav.Link href="mailto:info@hellocircle.ca" style={styles.navLinks}>
+              <Nav.Link
+                href="mailto:info@hellocircle.ca"
+                style={styles.navLinks}
+              >
                 Contact Us
               </Nav.Link>
               {/* <Nav.Link href="/contact" style={styles.navLinks}>

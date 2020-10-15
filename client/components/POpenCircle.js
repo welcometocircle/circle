@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row,Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import CProjectCard from "./CProjectCard";
 
 class POpenCircle extends Component {
@@ -16,7 +16,7 @@ class POpenCircle extends Component {
   componentWillUnmount() {}
 
   render() {
-		const styles = {
+    const styles = {
       header: {
         // marginTop: "25vh",
         textAlign: "center",
@@ -34,7 +34,7 @@ class POpenCircle extends Component {
         backgroundRepeat: "no-repeat, no-repeat",
         backgroundSize: "30vh, 30vh",
         paddingTop: "25vh",
-        marginBottom:100
+        marginBottom: 100,
       },
       HIW: {
         backgroundColor: "#131416",

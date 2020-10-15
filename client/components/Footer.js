@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
-import { Navbar, Nav ,Container, Row, Col} from "react-bootstrap";
-import {FaFacebook, FaInstagram, FaLinkedin,} from 'react-icons/fa';
+import { Navbar, Nav, Container, Row, Col } from "react-bootstrap";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import {
   BrowserView,
   MobileView,
@@ -14,13 +14,10 @@ class Footer extends Component {
     super(props);
   }
 
-
-  componentDidMount() {
-
-  }
+  componentDidMount() {}
 
   render() {
-    var darkPages = ['/open-circle']
+    var darkPages = ["/open-circle", "/envision"];
     const lightPages = ["/opportunities", "/about"];
     const bgColor = darkPages.includes(this.props.location.pathname)
       ? "#0B0B0B"
@@ -46,7 +43,7 @@ class Footer extends Component {
         // color: "white",
         fontSize: 30,
         fontWeight: 700,
-        paddingRight:0
+        paddingRight: 0,
       },
       navLinks: {
         // color: "white",
@@ -57,7 +54,7 @@ class Footer extends Component {
         // marginLeft: "10px",
         // marginRight: "10px",
         whiteSpace: "nowrap",
-        textAlign: "center"
+        textAlign: "center",
       },
       footDivider: {
         // backgroundImage:
@@ -68,7 +65,7 @@ class Footer extends Component {
       },
       sections: {
         // backgroundColor: bgColor,
-        marginTop: isMobile? "30px":"10px",
+        marginTop: isMobile ? "30px" : "10px",
         // backdropFilter: "blur(10px)",
       },
       socialIcon: {
@@ -85,7 +82,7 @@ class Footer extends Component {
         marginTop: 10,
       },
     };
-    console.log(this.props.location.pathname)
+    console.log(this.props.location.pathname);
     var logo;
     if (darkPages.includes(this.props.location.pathname)) {
       logo = "../assets/logoWhite.png";
@@ -101,27 +98,32 @@ class Footer extends Component {
             style={styles.footRow}
             className="align-items-center justify-content-center text-align-center"
           >
-            <Col lg={4} className="d-flex justify-content-center justify-content-lg-start">
-              <Navbar.Brand
-              className="navBrand"
-              href="/"
-              style={styles.navBrand}
+            <Col
+              lg={4}
+              className="d-flex justify-content-center justify-content-lg-start"
             >
-              <img
-                src={logo}
-                style={styles.logo}
-                className="align-items-center"
-              />
-            </Navbar.Brand>
-
+              <Navbar.Brand
+                className="navBrand"
+                href="/"
+                style={styles.navBrand}
+              >
+                <img
+                  src={logo}
+                  style={styles.logo}
+                  className="align-items-center"
+                />
+              </Navbar.Brand>
             </Col>
             <Col lg={4}>
               <div
-                className={isMobileOnly ? "justify-content-center":"d-flex justify-content-center"}
+                className={
+                  isMobileOnly
+                    ? "justify-content-center"
+                    : "d-flex justify-content-center"
+                }
                 style={styles.sections}
               >
-                <Nav.Link href="/about" style={styles.navLinks}
-                >
+                <Nav.Link href="/about" style={styles.navLinks}>
                   About
                 </Nav.Link>
                 <Nav.Link href="/conferences" style={styles.navLinks}>
@@ -133,8 +135,11 @@ class Footer extends Component {
                 <Nav.Link href="/opportunities" style={styles.navLinks}>
                   Opportunties
                 </Nav.Link>
-                <Nav.Link href="mailto:info@hellocircle.ca" style={styles.navLinks}>
-                Contact Us
+                <Nav.Link
+                  href="mailto:info@hellocircle.ca"
+                  style={styles.navLinks}
+                >
+                  Contact Us
                 </Nav.Link>
                 {/* <Nav.Link href="/contact" style={styles.navLinks}>
                   Contact
