@@ -1,0 +1,54 @@
+.conferences-page-title {
+  background: linear-gradient(115deg, #ff2323 15%, #1d18ff 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.eventBtn {
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #040404;
+  opacity: 1;
+}
+
+.eventBtn:hover {
+  opacity: 0.6;
+  color: #040404;
+}
+
+.sub-event-box {
+  background-color: #e4e4e4;
+  border-radius: 40px;
+}
+
+.sub-event-title {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.sub-event-desc {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.sub-event-subtitle {
+  font-weight: 400;
+}
+
+.flagship-event-box {
+  background: linear-gradient(-135deg, #ff2323 -30%, #1d18ff 130%);
+  border-radius: 35px;
+  color: white;
+}
+
+.flagship-event-title {
+  font-weight: 700;
+}
+
+.flagship-event-date {
+  color: #ffc2d4;
+  font-weight: 500;
+}

@@ -5,6 +5,7 @@ import CSpeaker from "./CSpeaker";
 import CEmailForm from "./CEmailForm";
 import LottieAnimation from "./global/LottieAnimation";
 import * as compassani from "../assets/animations/compass/compass-logo-layered.json";
+import "../css/conferences.css";
 import {
   BrowserView,
   MobileView,
@@ -12,6 +13,7 @@ import {
   isMobileOnly,
   isMobile,
 } from "react-device-detect";
+
 class PConferences extends Component {
   constructor(props) {
     super(props);
@@ -34,26 +36,110 @@ class PConferences extends Component {
         width: isMobileOnly ? "100%" : "600px",
         height: isMobileOnly ? "100%" : "600px",
       },
+      title: {
+        background: "linear-gradient(115deg, #FF2323 15%, #1D18FF 90%)",
+        WebkitBackgroundClip: "text",
+        WebkitTextFillColor: "transparent",
+      },
     };
     return (
       <div /* style={{ backgroundColor: "#E5E5E5" }} */>
         <div style={{ height: "100vh" }}>
           <Row className="h-100 justify-content-center align-items-center">
             <div className="text-center">
-              <h1>
+              <h1 className="conferences-page-title">
                 A new ideation <br /> challenge.
               </h1>
               <div className="row justify-content-center mt-5">
-                <p className="col-md-5 col-10">
-                  Circle conferences encompass its vision by allowing students
-                  from multiple sectors to get together and solve global
-                  challenges. Our ideation challenges are unlike another. Each
-                  conference is different from the previous one.
+                <p className="col-md-6 col-10">
+                  Our ideation challenge format offers opportunities for
+                  students to create revolutionary ideas to challenges
+                  throughout the year. Four challenges are offered on various
+                  topics ultimately leading to a final Flagship Ideation
+                  Conference. Winners of the four challenge events along with
+                  other participants are invited for the Flagship Ideation
+                  Conference. Participation in our four challenge events offers
+                  many perks to students.
                 </p>
               </div>
             </div>
           </Row>
         </div>
+        <Container>
+          <Row className="justify-content-between">
+            <div className="col sub-event-box mx-3">
+              <p className="sub-event-subtitle mt-5 pt-1 ml-4 p-0">
+                Challenge 1
+              </p>
+              <p className="sub-event-title ml-4 p-0">Raise your Pitch</p>
+              <p className="sub-event-desc ml-4 p-0">November 25, 2020</p>
+              <div className="ml-4 mb-5">
+                <a href="/raiseyourpitch" className="eventBtn ">
+                  Learn More
+                </a>
+              </div>
+            </div>
+            <div className="col sub-event-box mx-3">
+              <Row className="justify-content-between align-items-center h-100">
+                <div className="col">
+                  <p className="sub-event-subtitle text-center p-0 m-0">
+                    Challenge 2
+                  </p>
+                  <p className="sub-event-desc text-center">Coming Soon</p>
+                </div>
+              </Row>
+            </div>
+            <div className="col sub-event-box mx-3">
+              <Row className="justify-content-between align-items-center h-100">
+                <div className="col">
+                  <p className="sub-event-subtitle text-center p-0 m-0">
+                    Challenge 3
+                  </p>
+                  <p className="sub-event-desc text-center">Coming Soon</p>
+                </div>
+              </Row>
+            </div>
+            <div className="col sub-event-box mx-3">
+              <Row className="justify-content-between align-items-center h-100">
+                <div className="col">
+                  <p className="sub-event-subtitle text-center p-0 m-0">
+                    Challenge 4
+                  </p>
+                  <p className="sub-event-desc text-center">Coming Soon</p>
+                </div>
+              </Row>
+            </div>
+          </Row>
+          <Row className="justify-content-center mt-4 ">
+            <div className="flagship-event-box col-md-6">
+              <Row className="justify-content-center">
+                <Row className="align-items-center">
+                  <div className="">
+                    <h4 className="text-left flagship-event-date">2021</h4>
+                  </div>
+                  <div className="my-5">
+                    <h4 className="text-left flagship-event-title">
+                      Flagship Ideation
+                      <br />
+                      Conference
+                    </h4>
+                  </div>
+                </Row>
+              </Row>
+            </div>
+          </Row>
+          <Row>
+            <div className="col-md-4">
+              <h4 className="text-left p-0">
+                Challenge
+                <br /> Perks
+              </h4>
+            </div>
+            <div className="col-md-8">
+              <h5 className="text-left p-0">Experience</h5>
+            </div>
+          </Row>
+        </Container>
         <Container>
           <h3 className="text-left p-0">Past events</h3>
           <hr style={{ borderColor: "#8C8C8C" }} />

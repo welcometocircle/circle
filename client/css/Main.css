@@ -73,7 +73,7 @@ h5 {
 h6 {
   font-size: 25px;
   line-height: 30px;
-  color: #6F737B;
+  color: #6f737b;
   /* letter-spacing: 0.1em; */
 }
 
@@ -85,10 +85,9 @@ p {
   padding-right: 2vw;
 }
 
-
-hr{
-  border: 1px solid ;
-  border-color: var(--hr-color); 
+hr {
+  border: 1px solid;
+  border-color: var(--hr-color);
 }
 
 .test {
@@ -107,7 +106,7 @@ hr{
   background-color: #1e1e1e;
 }
 .aButton:hover {
-  background: #C4C4C4;
+  background: #c4c4c4;
   text-decoration: none;
 }
 .aButton:link {
@@ -134,9 +133,8 @@ hr{
   cursor: pointer;
   display: inline-block;
   background-color: white;
-  
 }
-.btnLight{
+.btnLight {
   border-radius: 50px;
   padding-left: 15px;
   padding-right: 15px;
@@ -145,52 +143,57 @@ hr{
   display: inline-block;
   background-color: white;
   font-weight: 500;
-  
 }
-.btnLight:hover, .btnHoverLight:hover {
-  background-color:  #9ec0ff !important;
+.btnLight:hover,
+.btnHoverLight:hover {
+  background-color: #9ec0ff !important;
   text-decoration: none;
 }
-.btnLight:link, .btnHoverLight:link {
-  color: #1B1B1B;
+.btnLight:link,
+.btnHoverLight:link {
+  color: #1b1b1b;
   text-decoration: none;
   text-align: center;
 }
-.btnLight:visited, .btnHoverLight:visited {
+.btnLight:visited,
+.btnHoverLight:visited {
   color: white;
   text-decoration: none;
 }
-.btnLight:active, .btnHoverLight:active {
+.btnLight:active,
+.btnHoverLight:active {
   color: white;
   text-decoration: none;
 }
 
-.btnDark{
+.btnDark {
   border-radius: 50px;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 10px;
   cursor: pointer;
   display: inline-block;
-  background-color: #1E1E1E;
+  background-color: #1e1e1e;
   font-weight: 500;
-
-  
 }
-.btnDark:hover, .btnHoverDark:hover  {
-  background-color:  #9ec0ff;
+.btnDark:hover,
+.btnHoverDark:hover {
+  background-color: #9ec0ff;
   text-decoration: none;
 }
-.btnDark:link, .btnHoverDark:link {
-  color: #1B1B1B;
+.btnDark:link,
+.btnHoverDark:link {
+  color: #1b1b1b;
   text-decoration: none;
   text-align: center;
 }
-.btnDark:visited, .btnHoverDark:visited {
+.btnDark:visited,
+.btnHoverDark:visited {
   color: white;
   text-decoration: none;
 }
-.btnDark:active, .btnHoverDark:active {
+.btnDark:active,
+.btnHoverDark:active {
   color: white;
   text-decoration: none;
 }
@@ -206,9 +209,6 @@ opsButton {
 row:after {
   display: inline-block;
 }
-
-
-
 
 @media screen and (max-width: 768px) {
   h1 {
