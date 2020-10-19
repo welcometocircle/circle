@@ -8,6 +8,7 @@ import POpenCircle from "./POpenCircle.js";
 import PError from "./PError.js";
 import PConferences from "./PConferences.js";
 import PContact from "./PContact.js";
+import Pryp from "./Pryp";
 import PEnvision from "./PEnvision";
 
 export default function Routes() {
@@ -20,6 +21,7 @@ export default function Routes() {
       <Route path="/open-circle" exact component={POpenCircle} />
       <Route path="/conferences" exact component={PConferences} />
       <Route path="/contact" exact component={PContact} />
+      <Route path="/ryp" exact component={Pryp} />
       <Route path="/envision" exact component={PEnvision} />
 
       <Route component={PError} />

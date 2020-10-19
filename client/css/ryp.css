@@ -1,0 +1,33 @@
+.ryp-jumbo {
+  background-image: url(../assets/webryp.png);
+  background-position: top;
+  background-size: cover;
+  background-clip: content-box;
+  background-repeat: no-repeat;
+  height: "2000px";
+}
+
+.ryp-bold {
+  font-weight: 600;
+  color: #8e1d1d;
+}
+
+.ryp-info {
+  background-color: #ff8789;
+}
+
+.ryp-info-title {
+  color: #de4448;
+}
+
+.ryp-info-desc {
+  color: #fff !important;
+  font-weight: 500 !important;
+  font-size: 25px;
+}
+
+.ryp-sum {
+  font-weight: 600;
+  font-size: 25px;
+  color: white;
+}
