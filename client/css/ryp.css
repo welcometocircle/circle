@@ -4,7 +4,7 @@
   background-size: cover;
   background-clip: content-box;
   background-repeat: no-repeat;
-  height: "2000px";
+  height: 1600px !important;
 }
 
 .ryp-bold {
@@ -28,6 +28,13 @@
 
 .ryp-sum {
   font-weight: 600;
-  font-size: 25px;
   color: white;
+}
+
+@media screen and (max-width: 560px) {
+  .ryp-jumbo {
+    height: 700px !important;
+    background-position: bottom;
+    background-size: contain;
+  }
 }

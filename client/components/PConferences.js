@@ -44,6 +44,35 @@ class PConferences extends Component {
     };
     return (
       <div /* style={{ backgroundColor: "#E5E5E5" }} */>
+        <Container>
+          <div className="ryp-banner-div">
+            <Row className="position-relative">
+              <div className="col-md-5 col-7 position-absolute h-100 ryp-banner-text-div">
+                <Row className="position-relative align-items-center h-100 ">
+                  <div className="ml-5">
+                    <h5 className="text-left">Raise Your Pitch</h5>
+                    <h5 className="text-left" style={{ fontWeight: "400" }}>
+                      November 4, 2020
+                    </h5>
+                    <a
+                      href="/ryp"
+                      className="btnDark mt-2"
+                      style={{ marginLeft: "20px" }}
+                    >
+                      <p style={{ color: "white", textAlign: "center" }}>
+                        Learn More
+                      </p>
+                    </a>
+                  </div>
+                </Row>
+              </div>
+              <div className="col-md-4"></div>
+              <div className="col-md-8">
+                <img className="h-100 w-100" src="../assets/rypbanner2.png" />
+              </div>
+            </Row>
+          </div>
+        </Container>
         <div style={{ height: "100vh" }}>
           <Row className="h-100 justify-content-center align-items-center">
             <div className="text-center">
@@ -67,7 +96,7 @@ class PConferences extends Component {
         </div>
         <Container>
           <Row className="justify-content-between">
-            <div className="col sub-event-box sub-event-box-ryp mx-3">
+            <div className="col-12 col-md sub-event-box sub-event-box-ryp mx-md-3">
               <p
                 className="sub-event-subtitle mt-5 pt-1 ml-4 p-0"
                 style={{ color: "white" }}
@@ -89,7 +118,7 @@ class PConferences extends Component {
                 </a>
               </div>
             </div>
-            <div className="col sub-event-box mx-3">
+            <div className="col-12 col-md sub-event-box mx-md-3 mt-md-0 mt-4">
               <Row className="justify-content-between align-items-center h-100">
                 <div className="col">
                   <p className="sub-event-subtitle text-center p-0 m-0">
@@ -99,7 +128,7 @@ class PConferences extends Component {
                 </div>
               </Row>
             </div>
-            <div className="col sub-event-box mx-3">
+            <div className="col-12 col-md sub-event-box mx-md-3 mt-md-0 mt-4">
               <Row className="justify-content-between align-items-center h-100">
                 <div className="col">
                   <p className="sub-event-subtitle text-center p-0 m-0">
@@ -109,7 +138,7 @@ class PConferences extends Component {
                 </div>
               </Row>
             </div>
-            <div className="col sub-event-box mx-3">
+            <div className="col-12 col-md sub-event-box mx-md-3 mt-md-0 mt-4">
               <Row className="justify-content-between align-items-center h-100">
                 <div className="col">
                   <p className="sub-event-subtitle text-center p-0 m-0">
@@ -147,7 +176,7 @@ class PConferences extends Component {
                 </h3>
               </div>
             </div>
-            <div className="col-md-7">
+            <div className="col-md-7 mt-md-0 mt-5">
               <Row className="mb-5">
                 <div className="col-2">
                   <div className="perk-number">

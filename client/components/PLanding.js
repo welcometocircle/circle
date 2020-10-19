@@ -1,36 +1,34 @@
 import React, { Component } from "react";
-import { Controller, Scene } from 'react-scrollmagic';
-import * as aniLinesData from '../assets/animations/LinesData.json';
+import { Controller, Scene } from "react-scrollmagic";
+import * as aniLinesData from "../assets/animations/LinesData.json";
 import LottieAnimation from "./global/LottieAnimation";
-import { useTransition, useSpring, animated } from 'react-spring';
-import { Container, Row, Col } from 'react-bootstrap';
-import CSectorSection from './CSectorSection.js';
-import LandingPageAnimation from './global/LandingPageAnimation.js';
+import { useTransition, useSpring, animated } from "react-spring";
+import { Container, Row, Col } from "react-bootstrap";
+import CSectorSection from "./CSectorSection.js";
+import LandingPageAnimation from "./global/LandingPageAnimation.js";
 import CSectors from "./CSectors.js";
-import CExperienceSection from './CExperienceSection.js';
-import COpenCircle from './COpenCircle.js';
-import CToronto from './CToronto.js';
-
+import CExperienceSection from "./CExperienceSection.js";
+import COpenCircle from "./COpenCircle.js";
+import CToronto from "./CToronto.js";
 
 class PLanding extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = { width: window.innerWidth };
     document.documentElement.setAttribute("data-theme", "dark");
   }
-
 
   componentDidMount() {
     window.scrollTo(0, 0);
     analytics.logEvent("Landing Did Mount");
 
-    var aniDiv = document.getElementById('aniDivLanding');
-    var aniDivText = document.getElementById('landingText')
+    var aniDiv = document.getElementById("aniDivLanding");
+    var aniDivText = document.getElementById("landingText");
 
     function transformAnimation(e) {
-      var xPos = (e.clientX - aniDiv.offsetWidth / 2) / 30
-      var yPos = (e.clientY - aniDiv.offsetHeight / 2) / 30
-      var translate3dValue = "translate3d(" + xPos + 'px,' + yPos + 'px,0)';
+      var xPos = (e.clientX - aniDiv.offsetWidth / 2) / 30;
+      var yPos = (e.clientY - aniDiv.offsetHeight / 2) / 30;
+      var translate3dValue = "translate3d(" + xPos + "px," + yPos + "px,0)";
       aniDiv.style.transform = translate3dValue;
     }
 
@@ -39,18 +37,14 @@ class PLanding extends Component {
     window.addEventListener("resize", this.handleResize.bind(this));
   }
 
-
   handleResize(e) {
-    console.log('resize')
-    this.setState({ width: window.innerWidth })
-  };
-
-  componentWillUnmount() {
+    console.log("resize");
+    this.setState({ width: window.innerWidth });
   }
 
+  componentWillUnmount() {}
 
   render() {
-
     var aniHeight;
     var aniWidth;
     var aniMargin;
@@ -58,37 +52,34 @@ class PLanding extends Component {
     var paraMargin;
 
     if (this.state.width < 576) {
-      console.log("576")
-      aniHeight = "55vh"
-      aniWidth = "130vw"
-      aniMargin = "-40vh"
-      txtMargin = "12vh"
-      paraMargin = "35vh"
+      console.log("576");
+      aniHeight = "55vh";
+      aniWidth = "130vw";
+      aniMargin = "-40vh";
+      txtMargin = "12vh";
+      paraMargin = "35vh";
     } else if (this.state.width < 1000) {
-      console.log('768')
+      console.log("768");
       aniHeight = "50vh";
       aniWidth = "130vw";
       aniMargin = "-40vh";
-      txtMargin = "15vh"
-      paraMargin = "30vh"
+      txtMargin = "15vh";
+      paraMargin = "30vh";
     } else if (this.state.width < 1100) {
-      console.log('768')
+      console.log("768");
       aniHeight = "50vh";
       aniWidth = "130vw";
       aniMargin = "-40vh";
-      txtMargin = "10vh"
-      paraMargin = "35vh"
+      txtMargin = "10vh";
+      paraMargin = "35vh";
     } else {
-      console.log('large')
-      aniHeight = "95vh"
-      aniWidth = "130vw"
-      aniMargin = "-20vh"
-      txtMargin = "25vh"
-      paraMargin = "55vh"
+      console.log("large");
+      aniHeight = "95vh";
+      aniWidth = "130vw";
+      aniMargin = "-20vh";
+      txtMargin = "25vh";
+      paraMargin = "55vh";
     }
-
-
-
 
     return (
       <div>
@@ -100,6 +91,38 @@ class PLanding extends Component {
           </Scene>
         </Controller> */}
         <Container>
+          <div className="ryp-banner-div">
+            <Row className="position-relative">
+              <div className="col-md-5 col-7 position-absolute h-100 ryp-banner-text-div">
+                <Row className="position-relative align-items-center h-100 ">
+                  <div className="ml-5">
+                    <h5 className="text-left" style={{ color: "black" }}>
+                      Raise Your Pitch
+                    </h5>
+                    <h5
+                      className="text-left"
+                      style={{ fontWeight: "400", color: "black" }}
+                    >
+                      November 4, 2020
+                    </h5>
+                    <a
+                      href="/ryp"
+                      className="btnDark mt-2"
+                      style={{ marginLeft: "20px" }}
+                    >
+                      <p style={{ color: "white", textAlign: "center" }}>
+                        Learn More
+                      </p>
+                    </a>
+                  </div>
+                </Row>
+              </div>
+              <div className="col-md-4"></div>
+              <div className="col-md-8">
+                <img className="h-100 w-100" src="../assets/rypbanner2.png" />
+              </div>
+            </Row>
+          </div>
           <Row
             className="justify-content-center"
             style={{ position: "relative", zIndex: 0, marginTop: "25vh" }}

@@ -19,7 +19,7 @@ class Pryp extends Component {
     const styles = {};
     return (
       <div>
-        <div className="ryp-jumbo" style={{ height: "1600px" }}>
+        <div className="ryp-jumbo">
           <div style={{ height: "80vh" }}>
             <Row className="h-100 justify-content-center align-items-center">
               <div className="text-center">
@@ -43,7 +43,7 @@ class Pryp extends Component {
         <div className="ryp-info">
           <Container>
             <Row className="justify-content-between margin-top-120">
-              <div className="col-md-6">
+              <div className="col-md-6 mt-4">
                 <h5 className="text-left mb-3 ryp-info-title">
                   The challenge.
                 </h5>
@@ -52,21 +52,21 @@ class Pryp extends Component {
                   science/science causes in today’s world.
                 </h6>
               </div>
-              <div className="col-md-6">
+              <div className="col-md-6 mt-4">
                 <h5 className="text-left mb-3 ryp-info-title">
                   The time is ticking.
                 </h5>
                 <h6 className="text-left ryp-info-desc">Duration: 3 hours</h6>
               </div>
             </Row>
-            <Row className="justify-content-between mt-4">
-              <div className="col-md-6">
+            <Row className="justify-content-between">
+              <div className="col-md-6 mt-4">
                 <h5 className="text-left mb-3 ryp-info-title">Eligability</h5>
                 <h6 className="text-left ryp-info-desc">
                   Must be an undergraduate student within North America
                 </h6>
               </div>
-              <div className="col-md-6">
+              <div className="col-md-6 mt-4">
                 <h5 className="text-left mb-3 ryp-info-title">Prize</h5>
                 <h6 className="text-left ryp-info-desc">
                   Put your money where your mouth is. Win{" "}

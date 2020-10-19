@@ -1,3 +1,15 @@
+.ryp-banner-div {
+  border-radius: 45px;
+  overflow: hidden !important;
+  box-shadow: 0 0 70px rgba(0, 0, 0, 0.25);
+}
+
+.ryp-banner-text-div {
+  background-color: #fff;
+  border-radius: 45px;
+  z-index: 1000;
+}
+
 .conferences-page-title {
   background: linear-gradient(115deg, #ff2323 15%, #1d18ff 90%);
   -webkit-background-clip: text;
@@ -58,16 +70,24 @@
   font-weight: 500;
 }
 
-.perk-number {
-  background-color: #f4f4f4;
-  border-radius: 100px;
-  width: 75%;
-}
-
 .perk-number h5 {
-  padding: 10px 22px !important;
+  padding: 0 22px !important;
 }
 
 .perk-title {
   border-right: 1px solid #b4b4b4;
+}
+
+@media screen and (max-width: 768px) {
+  .ryp-banner-text-div h5 {
+    font-size: 17px;
+  }
+
+  .ryp-banner-text-div a {
+    margin-left: 5px !important;
+  }
+
+  .sub-event-title {
+    font-size: 35px;
+  }
 }
