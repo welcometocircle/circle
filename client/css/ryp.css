@@ -9,7 +9,7 @@
 
 .ryp-bold {
   font-weight: 600;
-  color: #8e1d1d;
+  color: #8e1d1d !important;
 }
 
 .ryp-info {
