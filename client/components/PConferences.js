@@ -67,14 +67,24 @@ class PConferences extends Component {
         </div>
         <Container>
           <Row className="justify-content-between">
-            <div className="col sub-event-box mx-3">
-              <p className="sub-event-subtitle mt-5 pt-1 ml-4 p-0">
+            <div className="col sub-event-box sub-event-box-ryp mx-3">
+              <p
+                className="sub-event-subtitle mt-5 pt-1 ml-4 p-0"
+                style={{ color: "white" }}
+              >
                 Challenge 1
               </p>
-              <p className="sub-event-title ml-4 p-0">Raise your Pitch</p>
-              <p className="sub-event-desc ml-4 p-0">November 25, 2020</p>
+              <p
+                className="sub-event-title ml-4 p-0"
+                style={{ color: "white" }}
+              >
+                Raise your Pitch
+              </p>
+              <p className="sub-event-desc ml-4 p-0" style={{ color: "white" }}>
+                November 25, 2020
+              </p>
               <div className="ml-4 mb-5">
-                <a href="/raiseyourpitch" className="eventBtn ">
+                <a href="/ryp" className="eventBtn ">
                   Learn More
                 </a>
               </div>
@@ -128,19 +138,134 @@ class PConferences extends Component {
               </Row>
             </div>
           </Row>
-          <Row>
-            <div className="col-md-4">
-              <h4 className="text-left p-0">
-                Challenge
-                <br /> Perks
-              </h4>
+          <Row className="margin-top-120">
+            <div className="col-md-5">
+              <div className="col-md-11 perk-title h-100">
+                <h3 className="text-left p-0 " style={{ fontWeight: "600" }}>
+                  Challenge
+                  <br /> Perks
+                </h3>
+              </div>
             </div>
-            <div className="col-md-8">
-              <h5 className="text-left p-0">Experience</h5>
+            <div className="col-md-7">
+              <Row className="mb-5">
+                <div className="col-2">
+                  <div className="perk-number">
+                    <h5 className="text-left p-0">1</h5>
+                  </div>
+                </div>
+                <div className="col-10">
+                  <h5 className="text-left p-0">Experience</h5>
+                  <p className="text-left p-0">
+                    Participate in engaging experiences to show off your skills,
+                    enahnce them, and network with industry professionals.
+                  </p>
+                </div>
+              </Row>
+              <Row className="mb-5">
+                <div className="col-2">
+                  <div className="perk-number">
+                    <h5 className="text-left p-0">2</h5>
+                  </div>
+                </div>
+                <div className="col-10">
+                  <h5 className="text-left p-0">Prizes</h5>
+                  <p className="text-left p-0">
+                    Win exclusive prizes at challenge events.
+                  </p>
+                </div>
+              </Row>
+              <Row className="mb-5">
+                <div className="col-2">
+                  <div className="perk-number">
+                    <h5 className="text-left p-0">3</h5>
+                  </div>
+                </div>
+                <div className="col-10">
+                  <h5 className="text-left p-0">
+                    Flagship Ideation
+                    <br /> Conference Perks
+                  </h5>
+                  <p className="text-left p-0">
+                    Participation in challenge events gains you special perks
+                    from Circle for our flagship ideation conference.
+                  </p>
+                </div>
+              </Row>
+              <Row className="mb-5">
+                <div className="col-2">
+                  <div className="perk-number">
+                    <h5 className="text-left p-0">4</h5>
+                  </div>
+                </div>
+                <div className="col-10">
+                  <h5 className="text-left p-0">Special Recognition</h5>
+                  <p className="text-left p-0">
+                    Who doesn’t love bragging rights? Be officially recognized
+                    by Circle as a challenge participant and show it off at our
+                    flagship ideation conference.
+                  </p>
+                </div>
+              </Row>
+            </div>
+          </Row>
+          <Row className="justify-content-center mt-5">
+            <a href="/ryp" className="btnDark">
+              <p style={{ color: "white", textAlign: "center" }}>Learn More</p>
+            </a>
+          </Row>
+          <Row className="justify-content-center mt-5">
+            <h3>FAQs</h3>
+          </Row>
+          <Row className="justify-content-between mt-5">
+            <div className="col-md-6">
+              <h6 className="text-left mb-3" style={{ color: "black" }}>
+                Can I participate in the flagship event if I am not involved
+                with the challenge events?
+              </h6>
+              <p classname="pl-0">
+                Yes! Although we encourage you to participate in the challenge
+                events (they’re lots of fun!), it is totally up to you whether
+                you want to do so. You can still particiapte in the flagship
+                event if you choose not to participate in the four challenge
+                events.
+              </p>
+            </div>
+            <div className="col-md-6">
+              <h6 className="text-left mb-3" style={{ color: "black" }}>
+                Do I have to participate in all four challenge events?
+              </h6>
+              <p>
+                We want to provide an ideation experience that fits you
+                therefore you can pick and choose which challenge events you
+                would like to attend.
+              </p>
+            </div>
+          </Row>
+          <Row className="justify-content-between mt-4">
+            <div className="col-md-6">
+              <h6 className="text-left mb-3" style={{ color: "black" }}>
+                Are the events free of cost?
+              </h6>
+              <p classname="pl-0">
+                As a brand dedicated to promoting student engagement, we try to
+                keep costs as low as we can however, in order to deliver the
+                best experience, events may be paid.
+              </p>
+            </div>
+            <div className="col-md-6">
+              <h6 className="text-left mb-3" style={{ color: "black" }}>
+                How can I participate?
+              </h6>
+              <p>
+                You can find registration information directly on our website or
+                on our social media pages. We will release event information
+                closer to the date of the event.
+              </p>
             </div>
           </Row>
         </Container>
-        <Container>
+        <Container className="margin-top-70">
           <h3 className="text-left p-0">Past events</h3>
           <hr style={{ borderColor: "#8C8C8C" }} />
         </Container>

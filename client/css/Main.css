@@ -210,6 +210,14 @@ row:after {
   display: inline-block;
 }
 
+.margin-top-70 {
+  margin-top: 70px;
+}
+
+.margin-top-120 {
+  margin-top: 120px;
+}
+
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 50px;
