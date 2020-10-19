@@ -31,7 +31,12 @@ class Pryp extends Component {
                     voice-only pitch challenge presented by Circle.
                   </p>
                 </div>
-                <a href="#" style={{ marginTop: 20 }} className="btnLight">
+                <a
+                  href="https://docs.google.com/forms/d/1JOWmttpeSrpmZM5OdhwMF_BeCg2LGz3zGXZ__YHAHWQ/viewform?edit_requested=true"
+                  target="_blank"
+                  style={{ marginTop: 20 }}
+                  className="btnLight"
+                >
                   <p style={{ color: "black", textAlign: "center" }}>
                     Register Now
                   </p>
@@ -61,7 +66,7 @@ class Pryp extends Component {
             </Row>
             <Row className="justify-content-between">
               <div className="col-md-6 mt-4">
-                <h5 className="text-left mb-3 ryp-info-title">Eligability</h5>
+                <h5 className="text-left mb-3 ryp-info-title">Eligibility</h5>
                 <h6 className="text-left ryp-info-desc">
                   Must be an undergraduate student within North America
                 </h6>
@@ -87,18 +92,24 @@ class Pryp extends Component {
               <p className="ryp-sum text-center col-md-10">
                 On November 4th, Circle will be hosting Raise Your Pitch, an
                 Ideation Pitch Competition, which intersects Science and Social
-                Science. In teams of 3-4 students, you will be presented with a
-                topic and must prepare an innovative approach for or against the
-                issue. There will be 4 rounds of evaluation, in which a judge
-                will challenge and evalaute your solution in a live setting to
-                determine if you suceed to the next round.{" "}
+                Science. Although focused on Science and Social Science, the
+                challenge is open to all sectors! In teams of 3-4 students, you
+                will be presented with a topic and must prepare an innovative
+                approach for or against the issue. There will be 4 rounds of
+                evaluation in which a judge will challenge and evaluate your
+                solution in a live setting to determine if you succeed and move
+                on to the next round.
               </p>
             </Row>
             <Row
               className="justify-content-center margin-top-70"
               style={{ marginBottom: "120px" }}
             >
-              <a href="#" className="btnLight">
+              <a
+                href="https://docs.google.com/forms/d/1JOWmttpeSrpmZM5OdhwMF_BeCg2LGz3zGXZ__YHAHWQ/viewform?edit_requested=true"
+                target="_blank"
+                className="btnLight"
+              >
                 <p style={{ color: "black", textAlign: "center" }}>
                   Register Now
                 </p>
