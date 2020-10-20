@@ -155,7 +155,7 @@ class CExperienceSection extends Component {
                 Raise your Pitch
               </p>
               <p className="sub-event-desc ml-4 p-0" style={{ color: "white" }}>
-                November 25, 2020
+                November 4, 2020
               </p>
               <div className="ml-4 mb-5">
                 <a href="/ryp" className="eventBtn ">
@@ -301,7 +301,7 @@ class CExperienceSection extends Component {
             </div>
           </Row>
           <Row className="justify-content-center mt-5">
-            <a href="/ryp" className="btnDark">
+            <a href="/conferences" className="btnDark">
               <p style={{ color: "white", textAlign: "center" }}>Learn More</p>
             </a>
           </Row>

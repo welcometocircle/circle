@@ -110,7 +110,7 @@ class PConferences extends Component {
                 Raise your Pitch
               </p>
               <p className="sub-event-desc ml-4 p-0" style={{ color: "white" }}>
-                November 25, 2020
+                November 4, 2020
               </p>
               <div className="ml-4 mb-5">
                 <a href="/ryp" className="eventBtn ">
