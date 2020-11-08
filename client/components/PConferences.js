@@ -45,7 +45,7 @@ class PConferences extends Component {
     return (
       <div /* style={{ backgroundColor: "#E5E5E5" }} */>
         <Container>
-          <div className="ryp-banner-div">
+          {/* <div className="ryp-banner-div">
             <Row className="position-relative">
               <div className="col-md-5 col-7 position-absolute h-100 ryp-banner-text-div">
                 <Row className="position-relative align-items-center h-100 ">
@@ -71,7 +71,7 @@ class PConferences extends Component {
                 <img className="h-100 w-100" src="../assets/rypbanner2.png" />
               </div>
             </Row>
-          </div>
+          </div> */}
         </Container>
         <div style={{ height: "100vh" }}>
           <Row className="h-100 justify-content-center align-items-center">
@@ -94,7 +94,7 @@ class PConferences extends Component {
             </div>
           </Row>
         </div>
-        <Container>
+        {/* <Container>
           <Row className="justify-content-between">
             <div className="col-12 col-md sub-event-box sub-event-box-ryp mx-md-3">
               <p
@@ -293,7 +293,7 @@ class PConferences extends Component {
               </p>
             </div>
           </Row>
-        </Container>
+        </Container> */}
         <Container className="margin-top-70">
           <h3 className="text-left p-0">Past events</h3>
           <hr style={{ borderColor: "#8C8C8C" }} />

@@ -119,7 +119,7 @@ class CExperienceSection extends Component {
               <p style={{ color: "white", textAlign: "center" }}>About Us</p>
             </a>
           </Row>
-          <div style={{ height: "100vh" }}>
+          {/* <div style={{ height: "100vh" }}>
             <Row className="h-100 justify-content-center align-items-center">
               <div className="text-center">
                 <h1 className="conferences-page-title">
@@ -304,7 +304,7 @@ class CExperienceSection extends Component {
             <a href="/conferences" className="btnDark">
               <p style={{ color: "white", textAlign: "center" }}>Learn More</p>
             </a>
-          </Row>
+          </Row> */}
           <Row
             className="justify-content-center align-items-center"
             style={styles.compassSection}

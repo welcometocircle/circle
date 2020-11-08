@@ -129,13 +129,6 @@ class NavBar extends Component {
               >
                 Contact Us
               </Nav.Link>
-              <Nav.Link
-                href="/ryp"
-                className="ryp-bold"
-                style={styles.navLinks}
-              >
-                Raise Your Pitch
-              </Nav.Link>
               {/* <Nav.Link href="/contact" style={styles.navLinks}>
                   Contact
                 </Nav.Link> */}

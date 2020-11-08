@@ -91,7 +91,7 @@ class PLanding extends Component {
           </Scene>
         </Controller> */}
         <Container>
-          <div className="ryp-banner-div">
+          {/* <div className="ryp-banner-div">
             <Row className="position-relative">
               <div className="col-md-5 col-7 position-absolute h-100 ryp-banner-text-div">
                 <Row className="position-relative align-items-center h-100 ">
@@ -122,7 +122,8 @@ class PLanding extends Component {
                 <img className="h-100 w-100" src="../assets/rypbanner2.png" />
               </div>
             </Row>
-          </div>
+          </div> */}
+
           <Row
             className="justify-content-center"
             style={{ position: "relative", zIndex: 0, marginTop: "25vh" }}
